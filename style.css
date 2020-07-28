@@ -40,31 +40,23 @@ img{
     align-items: center;
     margin: auto;
 }
-.navbar-footer{
-    padding-top: 10px;
-    margin-top: 20px;
+h5{
     font-family: HK Grotesk;
     font-size: 15px;
-    text-align: left;
     font-weight: 600;
 }
 .navbar-footer-sub{
-    margin-top: 0px;
-    margin-bottom: 13px;
     font-family: HK Grotesk;
-    font-size: 15px;
-    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
     color: #869AB8;
 }
 a{
     color: black;
 }
-.navbar-footer-email{
-    margin-top: 20px;
-    padding-top: 10px;
+.nav-item{
     font-family: HK Grotesk;
     font-size: 15px;
-    text-align: right;
     font-weight: 600;
 }
 footer{
