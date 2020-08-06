@@ -22,483 +22,37 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Nubela Corp</title>
+    <title>Proxycurl</title>
 
   </head>
   <body>
 
-    <!-- MODALS
-    ================================================== -->
-    <!-- Example -->
-    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-
-            <!-- Close -->
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-
-            <!-- Image -->
-            <div class="text-center">
-              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
-            </div>
-
-            <!-- Heading -->
-            <h2 class="font-weight-bold text-center mb-1" id="modalExampleTitle">
-              Schedule a demo with us
-            </h2>
-
-            <!-- Text -->
-            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-              We can help you solve company communication.
-            </p>
-
-            <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
-
-                  <!-- First name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
-                    <label for="registrationFirstNameModal">First name</label>
-                  </div>
-
-                </div>
-                <div class="col-12 col-md-6">
-
-                  <!-- Last name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
-                    <label for="registrationLastNameModal">Last name</label>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
-
-                  <!-- Email -->
-                  <div class="form-label-group">
-                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
-                    <label for="registrationEmailModal">Email</label>
-                  </div>
-
-                </div>
-                <div class="col-12 col-md-6">
-
-                  <!-- Password -->
-                  <div class="form-label-group">
-                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
-                    <label for="registrationPasswordModal">Password</label>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-
-                  <!-- Submit -->
-                  <button class="btn btn-block btn-primary mt-3 lift">
-                    Request a demo
-                  </button>
-
-                </div>
-              </div>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Signup: Horizontal  -->
-    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card card-row">
-            <div class="row no-gutters">
-              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-8.jpg);">
-
-                <!-- Image (placeholder) -->
-                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
-
-                <!-- Shape -->
-                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
-                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>
-                </div>
-
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card-body">
-
-                  <!-- Close -->
-                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-
-                  <!-- Heading -->
-                  <h2 class="mb-0 font-weight-bold text-center" id="modalSignupHorizontalTitle">
-                    Sign Up
-                  </h2>
-
-                  <!-- Text -->
-                  <p class="mb-6 text-center text-muted">
-                    Simplify your workflow in minutes.
-                  </p>
-
-                  <!-- Form -->
-                  <form class="mb-6">
-
-                    <!-- Email -->
-                    <div class="form-group">
-                      <label class="sr-only" for="modalSignupHorizontalEmail">
-                        Your email
-                      </label>
-                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
-                    </div>
-
-                    <!-- Password -->
-                    <div class="form-group mb-5">
-                      <label class="sr-only" for="modalSignupHorizontalPassword">
-                        Create a password
-                      </label>
-                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
-                    </div>
-
-                    <!-- Submit -->
-                    <button class="btn btn-block btn-primary" type="submit">
-                      Sign up
-                    </button>
-
-                  </form>
-
-                  <!-- Text -->
-                  <p class="mb-0 font-size-sm text-center text-muted">
-                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
-                  </p>
-
-                </div>
-              </div>
-
-            </div> <!-- / .row -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Signup: Vertical  -->
-    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-
-            <!-- Close -->
-            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-
-            <!-- Image -->
-            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
-
-            <!-- Shape -->
-            <div class="position-relative">
-              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-              </div>
-            </div>
-
-            <!-- Body -->
-            <div class="card-body">
-
-              <!-- Heading -->
-              <h2 class="mb-0 font-weight-bold text-center" id="modalSignupVerticalTitle">
-                Sign Up
-              </h2>
-
-              <!-- Text -->
-              <p class="mb-6 text-center text-muted">
-                Simplify your workflow in minutes.
-              </p>
-
-              <!-- Form -->
-              <form class="mb-6">
-
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="sr-only" for="modalSignupVerticalEmail">
-                    Your email
-                  </label>
-                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
-                </div>
-
-                <!-- Password -->
-                <div class="form-group mb-5">
-                  <label class="sr-only" for="modalSignupVerticalPassword">
-                    Create a password
-                  </label>
-                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
-                </div>
-
-                <!-- Submit -->
-                <button class="btn btn-block btn-primary" type="submit">
-                  Sign up
-                </button>
-
-              </form>
-
-              <!-- Text -->
-              <p class="mb-0 font-size-sm text-center text-muted">
-                Already have an account? <a href="./signin-illustration.html">Log in</a>.
-              </p>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Signin: Horizontal  -->
-    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card card-row">
-            <div class="row no-gutters">
-              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-1.jpg);">
-
-                <!-- Image (placeholder) -->
-                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
-
-                <!-- Shape -->
-                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
-                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>
-                </div>
-
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card-body">
-
-                  <!-- Close -->
-                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-
-                  <!-- Heading -->
-                  <h2 class="mb-0 font-weight-bold text-center" id="modalSigninHorizontalTitle">
-                    Sign In
-                  </h2>
-
-                  <!-- Text -->
-                  <p class="mb-6 text-center text-muted">
-                    Simplify your workflow in minutes.
-                  </p>
-
-                  <!-- Form -->
-                  <form class="mb-6">
-
-                    <!-- Email -->
-                    <div class="form-group">
-                      <label class="sr-only" for="modalSigninHorizontalEmail">
-                        Your email
-                      </label>
-                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
-                    </div>
-
-                    <!-- Password -->
-                    <div class="form-group mb-5">
-                      <label class="sr-only" for="modalSigninHorizontalPassword">
-                        Enter your password
-                      </label>
-                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
-                    </div>
-
-                    <!-- Submit -->
-                    <button class="btn btn-block btn-primary" type="submit">
-                      Sign in
-                    </button>
-
-                  </form>
-
-                  <!-- Text -->
-                  <p class="mb-0 font-size-sm text-center text-muted">
-                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
-                  </p>
-
-                </div>
-              </div>
-
-            </div> <!-- / .row -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Signup: Vertical  -->
-    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-
-            <!-- Close -->
-            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-
-            <!-- Image -->
-            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
-
-            <!-- Shape -->
-            <div class="position-relative">
-              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-              </div>
-            </div>
-
-            <!-- Body -->
-            <div class="card-body">
-
-              <!-- Heading -->
-              <h2 class="mb-0 font-weight-bold text-center" id="modalSigninVerticalTitle">
-                Sign In
-              </h2>
-
-              <!-- Text -->
-              <p class="mb-6 text-center text-muted">
-                Simplify your workflow in minutes.
-              </p>
-
-              <!-- Form -->
-              <form class="mb-6">
-
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="sr-only" for="modalSigninVerticalEmail">
-                    Your email
-                  </label>
-                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
-                </div>
-
-                <!-- Password -->
-                <div class="form-group mb-5">
-                  <label class="sr-only" for="modalSigninVerticalPassword">
-                    Enter your password
-                  </label>
-                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Enter your password">
-                </div>
-
-                <!-- Submit -->
-                <button class="btn btn-block btn-primary" type="submit">
-                  Sign in
-                </button>
-
-              </form>
-
-              <!-- Text -->
-              <p class="mb-0 font-size-sm text-center text-muted">
-                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
-              </p>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Example -->
-    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-
-            <!-- Close -->
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-
-            <!-- Heading -->
-            <h2 class="font-weight-bold text-center mb-1" id="modalPaymentTitle">
-              Add Payment
-            </h2>
-
-            <!-- Text -->
-            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-              Simplify your workflow in minutes.
-            </p>
-
-            <!-- Form -->
-            <form>
-
-              <!-- Name -->
-              <div class="form-group">
-                <label for="modalPaymentName">Name on card</label>
-                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
-              </div>
-
-              <!-- Name -->
-              <div class="form-group">
-                <label for="modalPaymentNumbber">Card number</label>
-                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
-              </div>
-
-              <!-- Name -->
-              <div class="form-group">
-                <label for="modalPaymentDate">Exp. Date</label>
-                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
-              </div>
-
-              <!-- Submit -->
-              <button class="btn btn-block btn-primary mt-3 lift">
-                Add Payment Method
-              </button>
-
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- NAVBAR
-    ================================================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
-
-        <!-- Brand -->
-        <a class="navbar-brand" href="./index.html">
-          <img src="./assets/img/Nubela_logo.png" class="navbar-brand-img" alt="...">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/proxycurl@4x.png" width="auto" height="40" class="d-inline-block align-top" alt="" loading="lazy">
         </a>
 
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-
-          <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fe fe-x"></i>
-          </button>
-
-          <!-- Navigation -->
           <ul class="navbar-nav ml-auto">
-            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Linkedin API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Documentation</a>
+            </li>
+            <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="#!">
+            Log in
+            </a>            
           </ul>
-
-          <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="mailto:hello@nubela.co" target="_blank">
-            Contact us
-          </a>
 
         </div>
 
-      </div>
+    </div>
     </nav>
 
 
@@ -506,184 +60,122 @@
     ================================================== -->
     <section class="pt-4 pt-md-11">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
 
+        <div class="row align-items-center">
+
+          <div class="col-12 col-md-5 col-lg-6 order-md-2">
             <!-- Image -->
             <img src="assets/img/illustrations/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
-
           </div>
+
           <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
 
             <!-- Heading -->
             <h1 class="display-3 text-center text-md-left">
-              Welcome to <span class="text-primary">Nubela</span>
+            <span class="text-primary">Crawl the web</span>
+            with 150,000 browsers used by real people 
             </h1>
 
             <!-- Text -->
             <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
-              Automating everything menial.
+              More than just a Proxy Network. Proxycurl is a network of browsers with an API.
             </p>
 
-            <!-- Buttons -->
-            <div class="text-center text-md-left">
-              <a href="overview.html" class="btn btn-primary shadow lift mr-1">
-                Find out how we will achieve this mision <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
-              </a>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
+              </div>
 
-              <!-- <a href="docs/index.html" class="btn btn-primary-soft lift">
-                Documentation
-              </a>
-            </div>-->
+            <!-- Buttons -->
+            <button type="button" class="btn btn-primary btn-md btn-block text-center">
+              Get trial API key
+            </button>
+            </form>
 
           </div>
+
         </div> <!-- / .row -->
+
       </div> <!-- / .container -->
     </section>
 
+    <!-- FEATURES
+    ================================================== -->
     <section class="py-8 py-md-11 border-bottom">
-
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-7 text-center">
-          <h2 class="font-weight-bold">
-            Nubela Products
-          </h2>
-          <p class="font-size-lg text-muted mb-7 mb-md-9">
-          Founded by engineers who built software used by millions of users
-          </p>
-        </div>
-      </div>
-      
-    <div class="container">
-
-      <div class="row" id="portfolio" data-isotope="{&quot;layoutMode&quot;: &quot;fitRows&quot;}" style="position: relative; height: 2175.81px;">
-        
-        <div class="col-12 ux" style="position: absolute; left: 0px; top: 0px;">
-          <!-- Card -->
-          <a class="card lift lift-lg shadow-light-lg mb-7" href="https://nubela.co/proxycurl">
-            <!-- Image -->
-            <img class="card-img-top" src="./assets/img/products/proxycurl.png" alt="...">
-
-            <!-- Body -->
-            <div class="card-body">
-              <!-- Shape -->
-              <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
-              </div>
-
-              <!-- Preheading -->
-              <h6 class="text-uppercase mb-1 text-muted">For crawling the web without being blocked</h6>
-
-              <!-- Heading -->
-              <h4 class="mb-0">ProxyCurl</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-4 ux" style="position: absolute; left: 0px; top: 1637.84px;">
-          <!-- Card -->
-          <a class="card lift lift-lg shadow-light-lg mb-7" href="https://getgom.com/">
-            <!-- Image -->
-            <img class="card-img-top" src="./assets/img/products/gom.png" alt="...">
-
-            <!-- Body -->
-            <div class="card-body">
-              <!-- Shape -->
-              <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
-              </div>
-
-              <!-- Preheading -->
-              <h6 class="text-uppercase mb-1 text-muted">For a one-click VPN to bypass blocked websites</h6>
-
-              <!-- Heading -->
-              <h4 class="mb-0">Gom</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-4 ux" style="position: absolute; left: 0px; top: 1637.84px;">
-          <!-- Card -->
-          <a class="card lift lift-lg shadow-light-lg mb-7" href="https://accountgram.com/">
-            <!-- Image -->
-            <img class="card-img-top" src="./assets/img/products/accountgram.png" alt="...">
-
-            <!-- Body -->
-            <div class="card-body">
-              <!-- Shape -->
-              <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
-              </div>
-
-              <!-- Preheading -->
-              <h6 class="text-uppercase mb-1 text-muted">For receipt backups with a Telegram Chatbot</h6>
-
-              <!-- Heading -->
-              <h4 class="mb-0">Accountgram</h4>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-4 ux" style="position: absolute; left: 0px; top: 1637.84px;">
-          <!-- Card -->
-          <a class="card lift lift-lg shadow-light-lg mb-7" href="https://giki.wiki/">
-            <!-- Image -->
-            <img class="card-img-top" src="./assets/img/products/giki.png" alt="...">
-
-            <!-- Body -->
-            <div class="card-body">
-              <!-- Shape -->
-              <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
-              </div>
-
-              <!-- Preheading -->
-              <h6 class="text-uppercase mb-1 text-muted">For a Markdown-based powered Wiki</h6>
-
-              <!-- Heading -->
-              <h4 class="mb-0">Giki</h4>
-            </div>
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-    </section>
-
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
-      </div>
-    </div>
-
-    <!-- FOOTER
-    ================================================== -->
-    <footer class="py-8 py-md-11 bg-gray-200">
-      
-      <div class="container text-center text-md-left">
-
+      <div class="container">
         <div class="row">
-        <div class="col md-y mt-md-0 mt-3">
-            <h5>Nubela Pte ltd</h5>
-            <small class="navbar-footer-sub">6 Harper Road #02-07 Singapore 369674</small>
-        </div>
-    
-        <div class="col-md-6 mb-md-0 mb-3 justify-content-center justify-content-md-end d-flex">
-          <ul class="nav">
-            <li class="nav-item">
-            <a href="mailto:hello@nubela.co">Email us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-        
-      </div>
+          
+          <div class="col-6">
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M7 3h10a4 4 0 110 8H7a4 4 0 110-8zm0 6a2 2 0 100-4 2 2 0 000 4z" fill="#335EEA"></path><path d="M7 13h10a4 4 0 110 8H7a4 4 0 110-8zm10 6a2 2 0 100-4 2 2 0 000 4z" fill="#335EEA" opacity=".3"></path></g></svg>
+            </div>
 
-    </footer>
+            <!-- Heading -->
+            <h3>
+              No More Captcha
+            </h3>
 
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0" style="padding-bottom: 32px;">
+              Crawl popular websites such as Google or Amazon signed in as real users without Captcha            </p>
+          </div>
+
+          <div class="col-6">
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M5.5 4h4A1.5 1.5 0 0111 5.5v1A1.5 1.5 0 019.5 8h-4A1.5 1.5 0 014 6.5v-1A1.5 1.5 0 015.5 4zm9 12h4a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-1a1.5 1.5 0 011.5-1.5z" fill="#335EEA"></path><path d="M5.5 10h4a1.5 1.5 0 011.5 1.5v7A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-7A1.5 1.5 0 015.5 10zm9-6h4A1.5 1.5 0 0120 5.5v7a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-7A1.5 1.5 0 0114.5 4z" fill="#335EEA" opacity=".3"></path></g></svg>
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              150,000 Residential IP addresses
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0" style="padding-bottom: 32px;">
+              Crawl the web with 150,000 unique residential IP addresses located around the world            </p>
+          </div>
+
+          <div class="w-100 d-none d-md-block"></div>
+
+          <div class="col-6">
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z" fill="#335EEA"></path><rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16" rx="1"></rect></g></svg>
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              Render Javascript on Websites
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-0" style="padding-bottom: 32px;">
+              Proxycurl lets you crawl the web with in-page assets downloaded and javascript rendered
+            </p>
+          </div>
+
+          <div class="col-6">
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z" fill="#335EEA"></path><rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16" rx="1"></rect></g></svg>
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              Execute Custom Javascript after Page Load
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-0" style="padding-bottom: 32px;">
+              Run custom Javascript code on nodes after the page is loaded, and get the results back
+            </p>
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
 
     <!-- JAVASCRIPT
     ================================================== -->
