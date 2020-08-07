@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Map -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -25,62 +26,88 @@
     <title>Proxycurl</title>
 
   </head>
-  <body>
+  <body class="pt-10">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/img/proxycurl@4x.png" width="auto" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/proxycurl@4x.png" class="navbar-brand-img" alt="...">
         </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Linkedin API</a>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLandings" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Linkedin API
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Pricing
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Documentation</a>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Documentation
+              </a>
             </li>
-            <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="#!">
-            Log in
-            </a>            
+
           </ul>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="https://themes.getbootstrap.com/product/landkit/" target="_blank">
+            Log in
+          </a>
 
         </div>
 
-    </div>
+      </div>
     </nav>
 
 
     <!-- WELCOME
     ================================================== -->
-    <section class="pt-4 pt-md-11">
+    <section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-light bg-between" style="background-image: url(assets/img/illustrations/illustration-6-cropped.png), url(assets/img/illustrations/illustration-4-cropped.png);">
       <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
 
-        <div class="row align-items-center">
-
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
-            <!-- Image -->
-            <img src="assets/img/illustrations/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
-          </div>
-
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
-
+            <!-- Image (mobile) -->
+            <img src="assets/img/illustrations/illustration-8.png" alt="..." class="img-fluid mb-6 d-lg-none">
+            
             <!-- Heading -->
-            <h1 class="display-3 text-center text-md-left">
-            <span class="text-primary">Crawl the web</span>
-            with 150,000 browsers used by real people 
+            <h1 class="display-2 font-weight-bold">
+              <span class="text-primary">Crawl the web</span>
+              with 150,000 browsers used by real people 
             </h1>
 
             <!-- Text -->
-            <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
-              More than just a Proxy Network. Proxycurl is a network of browsers with an API.
+            <p class="font-size-lg text-muted mb-6 mb-md-8">
+              More than just a Proxy Network. <br>
+              Proxycurl is a network of browsers with an API.
             </p>
 
+            <!-- Form -->
             <form>
               <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
@@ -93,11 +120,17 @@
             </form>
 
           </div>
-
         </div> <!-- / .row -->
-
       </div> <!-- / .container -->
     </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
 
     <!-- FEATURES
     ================================================== -->
@@ -176,6 +209,379 @@
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
+    
+    <section class="py-6 py-md-8 border-bottom">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Amazon -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+              <img src="./assets/img/Misc/Amazon.svg" style="color: grey;">
+            </div>
+
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Crunchbase -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+              <img src="./assets/img/Misc/Crunchbase.svg" style="color: grey; width: auto; height: 40px;">
+            </div>
+
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Linkedin -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+              <img src="./assets/img/Misc/linkedin.svg">
+            </div>
+
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Whitepages -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+              <img src="./assets/img/Misc/whitepages.svg">
+            </div>
+
+          </div>
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>    
+
+    <!-- CONTROL
+    ================================================== -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold">
+             Made for developers
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-7">
+              Proxycurl is a distributed crawling service that helps to circumvent most (if not all) rate-limiting techniques employed by complex websites.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 order-md-2">
+
+            <div class="card card-border card-border-lg border-success">
+            <div class="card-body shadow-light-lg">
+            <pre><code class="language-python">
+              <span class="text-primary">import</span> requests
+              
+              api_endpoint = <span class="text-python">'https://nubela.co/proxycurl/api'</span>
+              api_key = <span class="text-python">'YOUR_API_KEY'</span>
+              header_dic = <span class="text-python">{'Authorization': 'Bearer ' + api_key}</span>
+              payload = <span class="text-python">{'url': 'https://api.ipify.org?format=json'}</span>
+              
+              response = requests.get(api_endpoint,
+                                      json=payload,
+                                      headers=header_dic)
+              </code></pre>
+            </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- INTEGRATION
+    ================================================== -->
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold">
+              Our customers
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              We partner with organizations large and small to transform the way they do business.
+              See how businesses like yours found solutions with Proxycurl.
+            </p>
+
+          </div>
+
+          <div class="container">
+
+          <div class="row align-items-center justify-content-center">
+
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Diffbot -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+              <img src="./assets/img/Misc/diffbot.svg">
+            </div>          
+
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Hiretual -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+              <img src="./assets/img/Misc/hiretual.svg">
+            </div>          
+
+          </div>       
+          
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Canddi -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+              <img src="./assets/img/Misc/canddi.svg">
+            </div>          
+
+          </div>
+          
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Alore -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+              <img src="./assets/img/Misc/alore.svg">
+            </div>          
+
+          </div>          
+
+          </div>
+
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+    <!-- CTA
+    ================================================== -->
+    <section class="py-8 pt-md-11 pb-md-12 bg-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold text-white">
+              Try Proxycurl now with a trial API Key<br>
+              <br>
+            </h1>
+
+            <!-- Form -->
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
+              </div>
+
+            <!-- Buttons -->
+            <button type="button" class="btn btn-primary btn-md btn-block text-center">
+              Get trial API key
+            </button>
+            </form>            
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <img src="./assets/img/proxycurl@4x.png" alt="..." class="footer-brand img-fluid mb-2">
+
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Products
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Page Builder
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Styleguide
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Services
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Connect
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Page Builder
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Styleguide
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Legal
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
 
     <!-- JAVASCRIPT
     ================================================== -->
@@ -205,6 +611,6 @@
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
 
-
+      
   </body>
 </html>
