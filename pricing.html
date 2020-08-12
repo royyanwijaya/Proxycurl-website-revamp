@@ -7,6 +7,7 @@
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
     <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
@@ -55,19 +56,92 @@
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarLandings" data-toggle="dropdown" href="linkedin-api.html" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown" href="linkedin-api.html" aria-haspopup="true" aria-expanded="false">
                 Linkedin API
               </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="./docs/index.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-user-circle" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        People Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl people information
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="./docs/alerts.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-company" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Company Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl company information
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="./docs/changelog.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-bag" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Jobs Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl jobs information
+                      </p>
+
+                    </div>
+
+                  </a>
+                </div>
+              </div>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item">
+              <a class="nav-link" id="navbarPages" href="pricing.html">
                 Pricing
               </a>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="documentation.html">
                 Documentation
               </a>
             </li>
@@ -85,117 +159,232 @@
     </nav>
 
 
-    <!-- INTEGRATION
+    <!-- WELCOME
     ================================================== -->
-    <section class="py-8 py-md-11 border-bottom">
+    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+
+      <!-- Shape -->
+      <div class="shape shape-blur-3 svg-shim text-white">
+        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor" stop-opacity=".075"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs></svg>
+      </div>
+
+      <!-- Content -->
       <div class="container">
         <div class="row justify-content-center">
-
           <div class="col-12 col-md-10 col-lg-8 text-center">
-
+            
             <!-- Heading -->
-            <h1 class="font-weight-bold">
-              Pricing
+            <h1 class="display-2 text-white">
+              Simple, fair pricing.
             </h1>
 
             <!-- Text -->
-            <p class="font-size-lg text-muted mb-7 mb-md-9">
+            <p class="lead text-white-80 mb-6 mb-md-8">
               Companies of all sizes need access to Proxycurl, so we have a flexible pricing system for any size of project or company.
             </p>
 
           </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
 
-          <div class="container">
-            <div class="row">
-              <div class="col-6 aos-init aos-animate">
-                
-                <!-- Card -->
-                <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
-                  <div class="card-body">
-    
-                    <!-- Badge -->
-                    <span class="badge badge-pill badge-primary-desat badge-float badge-float-outside">
-                      US$1.00 / 100 CREDITS
-                    </span>
-    
-                    <!-- Heading -->
-                    <h4 class="font-weight-bold">
-                      Flexible
-                    </h4>
-    
-                    <!-- Text -->
-                    <p>
-                      0-150,000 requests<br>
-                      <span class="text-primary">1 credit / request</span>
-                    </p>
+    </section>
 
-                    <p>
-                      Next 150,001-1,000,000 requests<br>
-                      <span class="text-primary">0.8 credit / request</span>
-                    </p>
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
 
-                    <p>
-                      1,000,000+ requests<br>
-                      <span class="text-primary">0.5 credit / request</span>
-                    </p>
+    <!-- PRICING
+    ================================================== -->
+    <section class="mt-n8 mt-md-n14">
+      <div class="container">
+        <div class="form-row">
+          <div class="col-12 col-md-4">
 
-                    <p class="caption">
-                      * Quota is counted on a rolling month basis
-                    </p>
+            <!-- Card -->
+            <div class="card shadow-lg mb-6 mb-md-0">
+              <div class="card-body">
 
-                     <!-- Form -->
-                    <form>
-                    <div class="form-group">
-                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
-                    </div>
-
-                    <!-- Buttons -->
-                    <button type="button" class="btn btn-primary btn-md btn-block text-center">
-                      Get trial API key
-                    </button>
-                    </form>                    
-
-                  </div>
+                <!-- Preheading -->
+                <div class="text-center mb-3">
+                  <span class="badge badge-pill badge-primary-soft">
+                    <span class="h6 text-uppercase">Trial</span>
+                  </span>
                 </div>
-    
-              </div>
 
-              <div class="col-6 aos-init aos-animate">
-                
-                <!-- Card -->
-                <div class="card shadow-light-lg lift lift-lg">
-                  <div class="card-body">
-    
-                    <!-- Badge -->
-                    <span class="badge badge-pill badge-primary-desat badge-float badge-float-outside">
-                      CUSTOM
-                    </span>
-    
-                    <!-- Heading -->
-                    <h4 class="font-weight-bold">
-                      Enterprise
-                    </h4>
-    
-                    <!-- Text -->
-                    <p class="text-muted">
-                      Contact us for volume pricing
-                    </p>
-    
-                    <button type="button" href="mailto:hello@proxycurl.com" class="btn btn-primary btn-md btn-block text-center">
-                     Sent Email
-                    </button>
-                    
-                  </div>
+                <!-- Price -->
+                <div class="d-flex justify-content-center">
+                  <span class="h2 mb-0 mt-2">$</span>
+                  <span class="price display-2 mb-0">0</span>
                 </div>
-    
-              </div>
-            </div> <!-- / .row -->
+
+                <!-- List -->
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    5 credits
+                  </p>
+                  
+                </div>
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-5">
+                    5 requests
+                  </p>
+                  
+                </div>
+
+                <form>
+                  <div class="form-group">
+                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
+                  </div>
+
+                <!-- Button -->
+                <a href="#!" class="btn btn-block btn-primary-soft">
+                  Get Trial API Key <i class="fe fe-arrow-right ml-3"></i>
+                </a>
+                
+                  </div>
+                  </div>
+                 </form>
+
           </div>
+          <div class="col-12 col-md-4">
+            
+            <!-- Card -->
+            <div class="card shadow-lg mb-6 mb-md-0">
+              <div class="card-body">
 
+                <!-- Preheading -->
+                <div class="text-center mb-3">
+                  <span class="badge badge-pill badge-primary-soft">
+                    <span class="h6 text-uppercase">Flexible</span>
+                  </span>
+                </div>
+
+                <!-- Price -->
+                <div class="d-flex justify-content-center">
+                  <span class="h2 mb-0 mt-2">$</span>
+                  <span class="price display-2 mb-0">1</span>
+                </div>
+
+                <!-- Text -->
+                <p class="text-center text-muted mb-5">
+                  per 100 credits
+                </p>
+
+                <!-- List -->
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    0-150,000 requests<br>
+                    <span class="text-primary">1 credit / request</span>
+                  </p>
+                  
+                </div>
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    Next 150,001-1,000,000 requests<br>
+                      <span class="text-primary">0.8 credit / request</span>
+                  </p>
+                  
+                </div>
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    1,000,000+ requests<br>
+                    <span class="text-primary">0.5 credit / request</span>
+                  </p>
+                  
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Text -->
+                  <p class="caption">
+                    * Quota is counted on a rolling month basis
+                  </p>
+                  
+                </div>
+
+                <!-- Button -->
+                <a href="#!" class="btn btn-block btn-primary">
+                  Start with Flexible <i class="fe fe-arrow-right ml-3"></i>
+                </a>
+                
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4">
+            
+            <!-- Card -->
+            <div class="card shadow-lg mb-md-0">
+              <div class="card-body">
+
+                <!-- Preheading -->
+                <div class="text-center mb-3">
+                  <span class="badge badge-pill badge-primary-soft">
+                    <span class="h6 text-uppercase">Enterprise</span>
+                  </span>
+                </div>
+
+                <!-- Price -->
+                <div class="d-flex justify-content-center">
+                  <span class="h2 mb-0 mt-2">Custom</span>
+                </div>
+
+                <!-- Text -->
+                <p class="text-muted" style="text-align: center;">
+                Contact us for volume pricing
+                </p>
+
+                <!-- Button -->
+                <a href="mailto:hello@proxycurl.com" class="btn btn-block btn-primary-soft">
+                  Sent Email <i class="fe fe-arrow-right ml-3"></i>
+                </a>
+                
+              </div>
+            </div>
+
+          </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
-
 
     <!-- SHAPE
     ================================================== -->
@@ -203,50 +392,7 @@
       <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
       </div>
-    </div>    
-
-    <section class="py-6 py-md-8 border-bottom">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Amazon -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-              <img src="./assets/img/Misc/Amazon.svg" style="color: grey;">
-            </div>
-
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Crunchbase -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-              <img src="./assets/img/Misc/Crunchbase.svg" style="color: grey; width: auto; height: 40px;">
-            </div>
-
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Linkedin -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-              <img src="./assets/img/Misc/linkedin.svg">
-            </div>
-
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Whitepages -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-              <img src="./assets/img/Misc/whitepages.svg">
-            </div>
-
-          </div>
-          
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>      
+    </div>     
 
     <!-- OUR CUSTOMERS
     ================================================== -->
@@ -398,7 +544,7 @@
             <!-- List -->
             <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="documentation.html" class="text-reset">
                   Documentation
                 </a>
               </li>

@@ -7,6 +7,7 @@
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
     <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
@@ -55,19 +56,92 @@
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarLandings" data-toggle="dropdown" href="linkedin-api.html" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown" href="linkedin-api.html" aria-haspopup="true" aria-expanded="false">
                 Linkedin API
               </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="./docs/index.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-user-circle" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        People Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl people information <br>
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="./docs/alerts.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-company" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Company Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl company information
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="./docs/changelog.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-bag" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Jobs Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl jobs information
+                      </p>
+
+                    </div>
+
+                  </a>
+                </div>
+              </div>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item">
+              <a class="nav-link" id="navbarPages" href="pricing.html">
                 Pricing
               </a>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="documentation.html">
                 Documentation
               </a>
             </li>
@@ -130,87 +204,123 @@
       </div>
     </div>
 
-    <!-- FEATURES
+    <!-- SCREENSHOT
     ================================================== -->
-    <section class="py-8 py-md-11 border-bottom">
+    <section class="pt-8 pt-md-11" id="payItDown">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
 
-          <div class="col-6">
-            <img src="./assets/img/photos/billgates_profile.jpg" alt="..." class="img-fluid mb-4 rounded">
+            <!-- Heading -->
+            <h1>
+              Get any <span class="text-primary">information</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-gray-700 mb-7 mb-md-9">
+              With our Linkedin API, you can get any information you need, see the demo below for more information
+            </p>
+
           </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-7">
+            
+            <!-- Screenshot -->
+            <div class="mb-8 mb-md-0">
 
-          <div class="col-6">
-
-            <!--Code block-->
-            <div class="col-md order-md-2">
-
-              <div class="card card-border card-border-lg border-success">
-              <div class="card-body shadow-light-lg">
-              <pre><code>('{
-"public_identifier": "williamhgates",
-"profile_pic_url": '
-'"https://media-exp1.licdn.com/dms/image/C5603AQHv9IK9Ts0dFA/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=jBkdpk23kJ5r9zxjndQ2LngYx13-iWZNyRai7MU1kmw", '
-'"first_name": "Bill",
-"last_name": "Gates",
- "occupation": "Co-chair, Bill & '
-'Melinda Gates Foundation", "headline": "Co-chair, Bill & Melinda Gates '
-'Foundation", "summary": "Co-chair of the Bill & Melinda Gates Foundation. '
-'Microsoft Co-founder. Voracious reader. Avid traveler. Active blogger.", '
-'"country": "us",
-"birth_date": {
-"month": 10,
-"day": 28
-},
-"address": null, '
-'"wechat_contact_info": null,
-"primary_twitter_handle": null, '
-'"twitter_handles": [],
-"phone_numbers": [],
-"email_address": null, '
-'"websites": [],
-"experiences": [
-{
-"company": "Bill & Melinda Gates '
-'Foundation", "title": "Co-chair", "starts_at": {"month": null, "year": '
-'2000
-},
-"ends_at": null
-},
-{
-"company": "Microsoft",
-"title": "Co-founder", '
-'"starts_at": {
-"month": null,
-"year": 1975
-},
-"ends_at": null
-}
-],
-"education": '
-'[
-{
-"school": null,
-"degree_name": null,
-"field_of_study": null
-},
-{
-"school": '
-'"Harvard University",
-"degree_name": null,
-"field_of_study": null
-}
-], '
-'"languages": [],
-"organisations": []
-}')
-            </pre></code>
-              </div>
-              </div>
+              <!-- Image -->
+              <img src="./assets/img/photos/Bill gates.png" alt="screenshot" class="screenshot img-fluid mw-md-110 float-right mr-md-6 mb-6 mb-md-0">
+              
             </div>
 
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+            
+            <!-- List -->
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                <span>1</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  People Linkedin profile 
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
+
+                  <a class="mb-4" href="#!">Learn more 
+                    <i class="neu-right-sm"></i>
+                  </a>
+                </p>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                <span>2</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Company Linkedin profile
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
+
+                  <a class="mb-4" href="#!">Learn more 
+                    <i class="neu-right-sm"></i>
+                  </a>                  
+                </p>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                <span>3</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Jobs Linkedin profile
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
+
+                  <a class="mb-4" href="#!">Learn more 
+                    <i class="neu-right-sm"></i>
+                  </a>                  
+                </p>
+
+              </div>
+
             </div>
 
+          </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
@@ -266,125 +376,6 @@
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
-
-    <!-- INTEGRATION
-    ================================================== -->
-    <section class="py-8 py-md-11">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold">
-              Pricing
-            </h1>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-7 mb-md-9">
-              Companies of all sizes need access to Proxycurl, so we have a flexible pricing system for any size of project or company.
-            </p>
-
-          </div>
-
-          <div class="container">
-            <div class="row">
-              <div class="col-6 aos-init aos-animate">
-                
-                <!-- Card -->
-                <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
-                  <div class="card-body">
-    
-                    <!-- Badge -->
-                    <span class="badge badge-pill badge-primary-desat badge-float badge-float-outside">
-                      US$1.00 / 100 CREDITS
-                    </span>
-    
-                    <!-- Heading -->
-                    <h4 class="font-weight-bold">
-                      Flexible
-                    </h4>
-    
-                    <!-- Text -->
-                    <p>
-                      0-150,000 requests<br>
-                      <span class="text-primary">1 credit / request</span>
-                    </p>
-
-                    <p>
-                      Next 150,001-1,000,000 requests<br>
-                      <span class="text-primary">0.8 credit / request</span>
-                    </p>
-
-                    <p>
-                      1,000,000+ requests<br>
-                      <span class="text-primary">0.5 credit / request</span>
-                    </p>
-
-                    <p class="caption">
-                      * Quota is counted on a rolling month basis
-                    </p>
-
-                     <!-- Form -->
-                    <form>
-                    <div class="form-group">
-                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
-                    </div>
-
-                    <!-- Buttons -->
-                    <button type="button" class="btn btn-primary btn-md btn-block text-center">
-                      Get trial API key
-                    </button>
-                    </form>                    
-
-                  </div>
-                </div>
-    
-              </div>
-
-              <div class="col-6 aos-init aos-animate">
-                
-                <!-- Card -->
-                <div class="card shadow-light-lg lift lift-lg">
-                  <div class="card-body">
-    
-                    <!-- Badge -->
-                    <span class="badge badge-pill badge-primary-desat badge-float badge-float-outside">
-                      CUSTOM
-                    </span>
-    
-                    <!-- Heading -->
-                    <h4 class="font-weight-bold">
-                      Enterprise
-                    </h4>
-    
-                    <!-- Text -->
-                    <p class="text-muted">
-                      Contact us for volume pricing
-                    </p>
-    
-                    <button type="button" href="mailto:hello@proxycurl.com" class="btn btn-primary btn-md btn-block text-center">
-                     Sent Email
-                    </button>
-                    
-                  </div>
-                </div>
-    
-              </div>
-            </div> <!-- / .row -->
-          </div>
-
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
-      </div>
-    </div>
 
     <!-- CTA
     ================================================== -->
@@ -450,7 +441,7 @@
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="pricing.html" class="text-reset">
                   Pricing
                 </a>
               </li>
@@ -467,7 +458,7 @@
             <!-- List -->
             <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="documentation.html" class="text-reset">
                   Documentation
                 </a>
               </li>
