@@ -149,7 +149,7 @@
           </ul>
 
           <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="https://themes.getbootstrap.com/product/landkit/" target="_blank">
+          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="login.html" target="_blank">
             Log in
           </a>
 
@@ -472,70 +472,167 @@
                   
                   <!-- Collapse -->
                   <div class="collapse" id="helpFive" data-parent="#helpAccordionTwo">
-                    <div class="py-5">
+                    <div class="py-5" style="overflow: auto;">
 
                       <!-- Text -->
                       <p class="text-gray-700">
                         <code>GET https://nubela.co/proxycurl/api/linkedin</code>
-                      </p>
+                        <br>
+                        <br>
+                      </p>                   
 
-                    </div>
-                  </div>
-
-                </div>
-                <div class="list-group-item">
-                  
-                  <!-- Toggle -->
-                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpSix" role="button" aria-expanded="false" aria-controls="helpSix">
-
-                    <!-- Title -->
-                    <span class="mr-4">
-                      URL Parameters
-                    </span>
-                    
-                    <!-- Metadata -->
-                    <div class="text-muted ml-auto">
-                      
-                      <!-- Chevron -->
-                      <span class="collapse-chevron text-muted">
-                        <i class="fe fe-lg fe-chevron-down"></i>
-                      </span>
-                      
-                    </div>
-
-                  </a> <!-- / .row -->
-                  
-                  <!-- Collapse -->
-                  <div class="collapse" id="helpSix" data-parent="#helpAccordionTwo">
-                    <div class="py-5">
+                      <h5>URL Parameters</h5>
 
                       <table class="table">
                         <thead class="thead-dark">
                           <tr>
                             <th scope="col">Parameter</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">Required</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Input</th>
+                            <th scope="col">Example</th>
+                            <th scope="col">Default value</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <th scope="row"><code>url</code></th>
+                            <td>yes</td>
+                            <td>URL of the Linkedin Profile to crawl. URL should be in the format of<br>
+                              <code>https://www.linkedin.com/in/&lt;unique_li_id&gt;</code>
+                              <td>Linkedin Profile URL</td>
+                              <td><code>"https://www.linkedin.com/in/williamhgates"</code></td>
+                              <td></td>
+                            </td>
                           </tr>
                           <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <th scope="row"><code>src</code></th>
+                            <td>no</td>
+                            <td>Includes the raw HTML source code that is fetched and parsed</td>
+                            <td>The string "include"</td>
+                            <td>include</td>
+                            <td>N/A</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <br>
+
+                      <h5>People Profile Response</h5>
+
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Key</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Example</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>public_identifier</th>
+                            <td>The public id of the profile</td>
+                            <td><code>"williamhgates"</code></td>
                           </tr>
                           <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
+                            <th>profile_pic_url</th>
+                            <td>URL to the user's profile picture</td>
+                            <td><code>"https://media-exp1.licdn.com/dms/image/C5603AQHv9IK9Ts0dFA/profile-displayphoto-shrink_800_800/0?e=1597276800&v=beta&t=QN-3KjvC5KHvT3joe12sE3mlGLEwiBU0KSi2OJSap_U"</code></td>
+                          </tr>
+                          <tr>
+                            <th>first_name</th>
+                            <td>First name of the user</td>
+                            <td><code>"Bill"</code></td>
+                          </tr>
+                          <tr>
+                            <th>last_name</th>
+                            <td>Last name of the user</td>
+                            <td><code>"Gates"</code></td>
+                          </tr>
+                          <tr>
+                            <th>occupation</th>
+                            <td>Self declared occupation of the user</td>
+                            <td><code>"Co-chair, Bill & Melinda Gates Foundation"</code></td>
+                          </tr>
+                          <tr>
+                            <th>headline</th>
+                            <td>Self declared headline of the user</td>
+                            <td><code>"Co-chair, Bill & Melinda Gates Foundation"</code></td>
+                          </tr>
+                          <tr>
+                            <th>summary</th>
+                            <td>Self declared summary of the user</td>
+                            <td><code>"Co-chair of the Bill & Melinda Gates Foundation. Microsoft Co-founder. Voracious reader. Avid traveler. Active blogger."</code></td>
+                          </tr>
+                          <tr>
+                            <th>country</th>
+                            <td>Country that the user is based in</td>
+                            <td><code>"us"</code></td>
+                          </tr>
+                          <tr>
+                            <th>experiences</th>
+                            <td>List of work experiences</td>
+                            <td><code>[{"company":"Bill & Melinda Gates Foundation","title":"Co-chair","starts_at":{"month":null,"year":2000},"ends_at":null},{"company":"Microsoft","title":"Co-founder","starts_at":{"month":null,"year":1975},"ends_at":null}]</code></td>
+                          </tr>
+                          <tr>
+                            <th>education</th>
+                            <td>List of education background</td>
+                            <td><code>[{"school":"Lakeside School, Seattle","degree_name":null,"field_of_study":null},{"school":"Harvard University","degree_name":null,"field_of_study":null}]</code></td>
+                          </tr>
+                          <tr>
+                            <th>languages</th>
+                            <td>List of languages that the user is versatile in</td>
+                            <td><code>["English","Hindi"]</code></td>
+                          </tr>
+                          <tr>
+                            <th>organisations</th>
+                            <td>List of organisations that the user is a member of</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <th>birth_date</th>
+                            <td>Month and year of the user's birthday (Dependent on profile's privacy settings)</td>
+                            <td><code>{"month":12,"day":13}</code></td>
+                          </tr>
+                          <tr>
+                            <th>address</th>
+                            <td>Physical address of the user (Dependent on profile's privacy settings)</td>
+                            <td>"123 Acme Road"</td>
+                          </tr>
+                          <tr>
+                            <th>wechat_contact_info</th>
+                            <td>	Wechat contact information (Dependent on profile's privacy settings)</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <th>primary_twitter_handle</th>
+                            <td>	Primary Twitter Handle (Dependent on profile's privacy settings)</td>
+                            <td>"nubela"</td>
+                          </tr>
+                          <tr>
+                            <th>twitter_handles</th>
+                            <td>List of Twitter handles of this user (Dependent on profile's privacy settings)</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th>phone_numbers</th>
+                            <td>Phone number of this user (Dependent on profile's privacy settings)</td>
+                            <td><code>{"type":"MOBILE","number":"12345678","$type":"com.linkedin.voyager.identity.profile.PhoneNumber"}</code></td>
+                          </tr>
+                          <tr>
+                            <th>email_address</th>
+                            <td>Email address of this user (Dependent on profile's privacy settings)</td>
+                            <td><code>"steven@proxycurl.com"</code></td>
+                          </tr>
+                          <tr>
+                            <th>websites</th>
+                            <td>List of websites managed by this user (Dependent on profile's privacy settings)</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <th>html_src</th>
+                            <td>(Optional) HTML source of this Linkedin Profile. To have this value shown, please include src=include in the Proxycurl request</td>
+                            <td><code>&lt;html&gt;....&lt;/html&gt;</code></td>
                           </tr>
                         </tbody>
                       </table>
@@ -544,65 +641,7 @@
                   </div>
 
                 </div>
-                <div class="list-group-item">
-                  
-                  <!-- Toggle -->
-                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpSeven" role="button" aria-expanded="false" aria-controls="helpSeven">
 
-                    <!-- Title -->
-                    <span class="mr-4">
-                      Can I still pay with PayPal?
-                    </span>
-                    
-                    <!-- Metadata -->
-                    <div class="text-muted ml-auto">
-
-                      <!-- Text -->
-                      <span class="font-size-sm mr-4 d-none d-md-inline">
-                        Updated last week
-                      </span>
-                      
-                      <!-- Chevron -->
-                      <span class="collapse-chevron text-muted">
-                        <i class="fe fe-lg fe-chevron-down"></i>
-                      </span>
-                      
-                    </div>
-
-                  </a> <!-- / .row -->
-                  
-                  <!-- Collapse -->
-                  <div class="collapse" id="helpSeven" data-parent="#helpAccordionTwo">
-                    <div class="py-5">
-
-                      <!-- Text -->
-                      <p class="text-gray-700">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
-                      </p>
-
-                      <div class="d-flex align-items-center">
-                          
-                        <!-- Vote -->
-                        <div class="btn-group btn-group-toggle mr-4" data-toggle="buttons">
-                          <label class="btn btn-sm btn-white">
-                            <input type="radio" name="helpSevenVote" id="helpSevenDown" checked> <i class="fe fe-thumbs-down"></i>
-                          </label>
-                          <label class="btn btn-sm btn-white">
-                            <input type="radio" name="helpSevenVote" id="helpSevenUp"> <i class="fe fe-thumbs-up"></i>
-                          </label>
-                        </div>
-                        
-                        <!-- Text -->
-                        <span class="font-size-sm text-muted">
-                          Did this help solve your issue?
-                        </span>
-
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
                 <div class="list-group-item">
                   
                   <!-- Toggle -->
@@ -610,16 +649,11 @@
 
                     <!-- Title -->
                     <span class="mr-4">
-                      Can I use referral code to decrease my monthly fees?
+                      Crawling Company Profile
                     </span>
                     
                     <!-- Metadata -->
                     <div class="text-muted ml-auto">
-
-                      <!-- Text -->
-                      <span class="font-size-sm mr-4 d-none d-md-inline">
-                        Updated 3 weeks ago
-                      </span>
                       
                       <!-- Chevron -->
                       <span class="collapse-chevron text-muted">
@@ -632,31 +666,159 @@
                   
                   <!-- Collapse -->
                   <div class="collapse" id="helpEight" data-parent="#helpAccordionTwo">
-                    <div class="py-5">
+                    <div class="py-5" style="overflow: auto;">
 
                       <!-- Text -->
                       <p class="text-gray-700">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                        <code>GET https://nubela.co/proxycurl/api/linkedin/company</code>
+                        <br>
+                        <br>
                       </p>
 
-                      <div class="d-flex align-items-center">
-                          
-                        <!-- Vote -->
-                        <div class="btn-group btn-group-toggle mr-4" data-toggle="buttons">
-                          <label class="btn btn-sm btn-white">
-                            <input type="radio" name="helpEightVote" id="helpEightDown" checked> <i class="fe fe-thumbs-down"></i>
-                          </label>
-                          <label class="btn btn-sm btn-white">
-                            <input type="radio" name="helpEightVote" id="helpEightUp"> <i class="fe fe-thumbs-up"></i>
-                          </label>
-                        </div>
-                        
-                        <!-- Text -->
-                        <span class="font-size-sm text-muted">
-                          Did this help solve your issue?
-                        </span>
+                      <h5>URL Parameters</h5>
 
-                      </div>
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Parameter</th>
+                            <th scope="col">Required</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Input</th>
+                            <th scope="col">Example</th>
+                            <th scope="col">Default value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><code>url</code></th>
+                            <td>yes</td>
+                            <td>URL of the Linkedin Profile to crawl. URL should be in the format of<br>
+                              <code>https://www.linkedin.com/company/&lt;unique_li_id&gt;</code>
+                              <td>Linkedin Company Profile URL</td>
+                              <td><code>"https://www.linkedin.com/company/8m-real-estate-singapore/about"</code></td>
+                              <td></td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><code>src</code></th>
+                            <td>no</td>
+                            <td>Includes the raw HTML source code that is fetched and parsed</td>
+                            <td>The string "include"</td>
+                            <td>include</td>
+                            <td>N/A</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <br>
+
+                      <h5>Company Profile Response</h5>
+
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Key</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Example</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>description</th>
+                            <td>The overview section in the About page</td>
+                            <td><code>"8M is a specialized real estate investment & operating company with more than S$700M AUM. We employ creative, repositioning strategies across multiple asset classes in Singapore to unlock long-term value & build community."</code></td>
+                          </tr>
+                          <tr>
+                            <th>website</th>
+                            <td>The listed website on the profile</td>
+                            <td><code>"http://8mrealestate.com"</code></td>
+                          </tr>
+                          <tr>
+                            <th>industry</th>
+                            <td>Industry of the company</td>
+                            <td><code>"Real Estate"</code></td>
+                          </tr>
+                          <tr>
+                            <th>company_size</th>
+                            <td>Listed range of company headcount</td>
+                            <td><code>[11, 50]</code></td>
+                          </tr>
+                          <tr>
+                            <th>company_size_on_linkedin</th>
+                            <td>Total employees on Linkedin that declared themselves to be staff of said company</td>
+                            <td><code>39</code></td>
+                          </tr>
+                          <tr>
+                            <th>hq</th>
+                            <td>Address of company's headquarters</td>
+                            <td><code>`"[{'city': 'Singapore',
+                              'country': 'SG',
+                              'geographic_area': None,
+                              'is_hq': True,
+                              'line_1': '88a Amoy St',
+                              'postal_code': '069907'}]"</code></td>
+                          </tr>
+                          <tr>
+                            <th>company_type</th>
+                            <td>Enumerator of company type. Could be PUBLICLY_HELD or PRIVATELY_HELD</td>
+                            <td><code>"PUBLICLY_HELD"</code></td>
+                          </tr>
+                          <tr>
+                            <th>founded_year</th>
+                            <td>The year that this company is founded in</td>
+                            <td><code>1996</code></td>
+                          </tr>
+                          <tr>
+                            <th>specialities</th>
+                            <td>List of specialities</td>
+                            <td><code>["Acquisitions", "Asset Management"]</code></td>
+                          </tr>
+                          <tr>
+                            <th>locations</th>
+                            <td>List of locations</td>
+                            <td><code>[{"city":"Singapore","country":"SG","geographic_area":null,"is_hq":true,"line_1":"88a Amoy St","postal_code":"069907"}]</code></td>
+                          </tr>
+                          <tr>
+                            <th>name</th>
+                            <td>Name of the company</td>
+                            <td><code>"8M"</code></td>
+                          </tr>
+                          <tr>
+                            <th>tagline</th>
+                            <td>Tagline of the company</td>
+                            <td><code>"A SPECIALIZED REAL ESTATE INVESTMENT & OPERATING CO"</code></td>
+                          </tr>
+                          <tr>
+                            <th>universal_name_id</th>
+                            <td>Month and year of the user's birthday (Dependent on profile's privacy settings)</td>
+                            <td><code>"8m"</code></td>
+                          </tr>
+                          <tr>
+                            <th>profile_pic_url</th>
+                            <td>Profile picture of the</td>
+                            <td><code>"https://media-exp1.licdn.com/dms/image/C510BAQGSRz4mjWcjxg/company-logo_400_400/0?e=1603929600&v=beta&t=yJgQGG-jGRnP1IkFjMF_wJv4fdYlp5o6SaAbtXkFBQo"</code>></td>
+                          </tr>
+                          <tr>
+                            <th>background_cover_image_url</th>
+                            <td>Wechat contact information (Dependent on profile's privacy settings)</td>
+                            <td><code>"https://media-exp1.licdn.com/dms/image/C510BAQGSRz4mjWcjxg/company-logo_400_400/0?e=1603929600&v=beta&t=yJgQGG-jGRnP1IkFjMF_wJv4fdYlp5o6SaAbtXkFBQo"</code></td>
+                          </tr>
+                          <tr>
+                            <th>funding_data</th>
+                            <td>Crunchbase data of said company's funding data</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <th>phone</th>
+                            <td>Phone number</td>
+                            <td><code>"+65 1234 1234"</code></td>
+                          </tr>
+                            <th>html_src</th>
+                            <td>	(Optional) HTML source of this Linkedin Profile. To have this value shown, please include src=include in the Proxycurl request</td>
+                            <td><code>&lt;html&gt;....&lt;/html&gt;</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
                     </div>
                   </div>
