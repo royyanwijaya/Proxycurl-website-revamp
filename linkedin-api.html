@@ -171,7 +171,8 @@
             
             <!-- Heading -->
             <h1 class="display-2 font-weight-bold">
-              <span class="text-primary">Scrape Linkedin Profiles</span> with our easy-to-use API
+              <span class="text-primary">Crawl 1 million Linkedin profiles</span> in real -time in one-line of code for<br>
+               $0.01 / profile
             </h1>
 
             <!-- Text -->
@@ -204,178 +205,40 @@
       </div>
     </div>
 
-    <!-- SCREENSHOT
+    <!-- CODE REQUEST
     ================================================== -->
-    <section class="pt-8 pt-md-11" id="payItDown">
+    <section class="pt-8 pt-md-11">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
 
-            <!-- Heading -->
-            <h1>
-              Get any <span class="text-primary">information</span>
-            </h1>
+          <div class="highlight">
+            <pre>
+              <code class="language-python">
+    <span class="text-hl">import</span> requests
 
-            <!-- Text -->
-            <p class="lead text-gray-700 mb-7 mb-md-9">
-              With our Linkedin API, you can get any information you need, see the demo below for more information
-            </p>
-
+    api_endpoint <span class="text-hl">=</span> <span class="text-python-hl">'https://nubela.co/proxycurl/api/linkedin'</span>
+    linkedin_profile_url <span class="text-hl">=</span> <span class="text-python-hl">'https://www.linkedin.com/in/williamhgates'</span>    
+    api_key <span class="text-hl">=</span> <span class="text-python-hl">'YOUR_API_KEY'</span>
+    header_dic <span class="text-hl">=</span> {<span class="text-python-hl">'Authorization'</span>: <span class="text-python-hl">'Bearer '</span> <span class="text-hl">+</span> api_key}
+                
+    response = requests.get(api_endpoint,
+                            params<span class="text-hl">=</span>{<span class="text-python-hl">'url'</span>: linkedin_profile_url},
+                            headers<span class="text-hl">=</span>header_dic)
+              </code>
+            </pre>
           </div>
-        </div> <!-- / .row -->
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6 col-lg-7">
-            
-            <!-- Screenshot -->
-            <div class="mb-8 mb-md-0">
-
-              <!-- Image -->
-              <img src="./assets/img/photos/Bill gates.png" alt="screenshot" class="screenshot img-fluid mw-md-110 float-right mr-md-6 mb-6 mb-md-0">
-              
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-5">
-            
-            <!-- List -->
-            <div class="d-flex">
-                
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
-                <span>1</span>
-              </div>
-              
-              <!-- Body -->
-              <div class="ml-5">
-                
-                <!-- Heading -->
-                <h3>
-                  People Linkedin profile 
-                </h3>
-
-                <!-- Text -->
-                <p class="text-gray-700 mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
-
-                  <a class="mb-4" href="#!">Learn more 
-                    <i class="neu-right-sm"></i>
-                  </a>
-                </p>
-
-              </div>
-
-            </div>
-            <div class="d-flex">
-                
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
-                <span>2</span>
-              </div>
-              
-              <!-- Body -->
-              <div class="ml-5">
-                
-                <!-- Heading -->
-                <h3>
-                  Company Linkedin profile
-                </h3>
-
-                <!-- Text -->
-                <p class="text-gray-700 mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
-
-                  <a class="mb-4" href="#!">Learn more 
-                    <i class="neu-right-sm"></i>
-                  </a>                  
-                </p>
-
-              </div>
-
-            </div>
-            <div class="d-flex">
-                
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
-                <span>3</span>
-              </div>
-              
-              <!-- Body -->
-              <div class="ml-5">
-                
-                <!-- Heading -->
-                <h3>
-                  Jobs Linkedin profile
-                </h3>
-
-                <!-- Text -->
-                <p class="text-gray-700 mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
-
-                  <a class="mb-4" href="#!">Learn more 
-                    <i class="neu-right-sm"></i>
-                  </a>                  
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
+          
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
 
-    <!-- CONTROL
+    <!-- SHAPE
     ================================================== -->
-    <section class="py-8 py-md-11 border-bottom">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold">
-             Getting started
-            </h1>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-7">
-            
-              Python
-
-            </p>
-          </div>
-        </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-12 order-md-2">
-
-            <div class="card card-border card-border-lg border-success">
-            <div class="card-body shadow-light-lg">
-            <pre><code class="language-python">
-              <span class="text-primary">import</span> requests
-
-              api_endpoint = <span class="text-python">'https://nubela.co/proxycurl/api/linkedin'</span>
-              linkedin_profile_url = <span class="text-python">'https://www.linkedin.com/in/williamhgates'</span>
-              api_key = <span class="text-python">'YOUR_API_KEY'</span>
-              header_dic = {<span class="text-python">'Authorization': 'Bearer '</span> + api_key}
-              
-              response = requests.get(api_endpoint,
-                                      params={{<span class="text-python">'url'</span>: linkedin_profile_url},
-                                      headers=header_dic)
-              
-                              
-            </pre></code>
-            </div>
-            </div>
-
-            <!-- Buttons -->
-            <button type="button" href="#!" class="btn btn-primary btn-md btn-block text-center">
-              See Documentation
-            </button>            
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>    
 
     <!-- CTA
     ================================================== -->

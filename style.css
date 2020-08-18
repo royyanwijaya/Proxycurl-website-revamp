@@ -1,7 +1,25 @@
 .text-python{
     color: #3FB422;
 }
+.text-python-hl{
+    color: #acc267;
+}
+.text-hl{
+    color: #f92672;
+}
 .caption{
     color: #869ab8!important;
     font-size: 12px;
+}
+.highlight{
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px 1px rgba(0,0,0,.25);
+}
+
+.highlight pre,
+.highlight table {
+    background: #1e1e1e;
+    color: white;
 }
