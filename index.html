@@ -230,7 +230,7 @@
             <div class="mb-8 mb-md-0">
 
               <!-- Image -->
-              <img src="./assets/img/photos/billgates_profile.jpg" alt="screenshot" class="screenshot img-fluid mw-md-110 float-right mr-md-6 mb-6 mb-md-0">
+              <img src="./assets/img/photos/bill-gates-highlight.png" alt="screenshot" class="screenshot img-fluid mw-md-110 float-right mr-md-6 mb-6 mb-md-0">
               
             </div>
 
@@ -238,9 +238,18 @@
 
           <div class="col-12 col-md-6 col-lg-5">
             
-            <div class="card card-border card-border-lg border-success">
-              <div class="card-body shadow-light-lg">
-              <pre><code class="language-python">('{
+              <div class="highlight-block">
+
+              <!-- Controls -->
+              <div class="d-flex">
+                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              </div> 
+
+              <pre><code class="language-python">
+
+('{
     "public_identifier": "williamhgates",
     "profile_pic_url": '
     '"https://media-exp1.licdn.com/dms/image/C5603AQHv9IK9Ts0dFA/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=jBkdpk23kJ5r9zxjndQ2LngYx13-iWZNyRai7MU1kmw", '
@@ -299,7 +308,6 @@
 }')
                 </code></pre>
               </div>
-              </div>  
 
           </div>
 
@@ -324,6 +332,7 @@
             <p class="font-size-lg text-muted mb-7">
               The important things you get from Proxycurl
             </p>
+            
           </div>
         </div> <!-- / .row -->        
 
@@ -344,6 +353,12 @@
             <p class="text-muted mb-6 mb-md-0" style="padding-bottom: 32px;">
               Crawl popular websites such as Google or Amazon signed in as real users without Captcha
             </p>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="linkedin-api.html">
+            Learn more
+          </a>
+                      
           </div>
 
           <div class="col-12 col-md-6 col-lg-6">
@@ -359,7 +374,14 @@
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0" style="padding-bottom: 32px;">
-              Crawl the web with 150,000 unique residential IP addresses located around the world            </p>
+              Crawl the web with 150,000 unique residential IP addresses located around the world
+            </p>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="linkedin-api.html">
+            Learn more
+          </a>
+
           </div>
 
         </div> <!-- / .row -->
@@ -384,24 +406,29 @@
             </p>
           </div>
         </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-12 order-md-2">
+        <div class="row justify-content-center">
+          <div>
 
-            <div class="card card-border card-border-lg border-success">
-            <div class="card-body shadow-light-lg">
+            <div class="highlight-block" style="max-width: min-content; align-items: center; justify-items: center;">
+
+              <!-- Controls -->
+              <div class="d-flex">
+                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              </div>               
+
             <pre><code class="language-python">
-              <span class="text-primary">import</span> requests
+<span class="text-hl">import</span> requests
               
-              api_endpoint = <span class="text-python">'https://nubela.co/proxycurl/api'</span>
-              api_key = <span class="text-python">'YOUR_API_KEY'</span>
-              header_dic = <span class="text-python">{'Authorization': 'Bearer ' + api_key}</span>
-              payload = <span class="text-python">{'url': 'https://api.ipify.org?format=json'}</span>
+api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
+api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
+header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
+payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
               
-              response = requests.get(api_endpoint,
-                                      json=payload,
-                                      headers=header_dic)
-              </code></pre>
-            </div>
+response = requests.get(api_endpoint,
+                        json=payload,
+                        headers=header_dic)</code></pre>
             </div>
 
           </div>
