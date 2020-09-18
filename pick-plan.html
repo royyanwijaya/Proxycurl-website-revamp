@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />   
 
     <!-- Map -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -33,31 +33,40 @@
       <div class="container d-flex flex-column">
         <div class="row align-items-center justify-content-center no-gutters min-vh-100">
 
-          <div class="col-12 mt-10">
-
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>            
+          <div class="col-12 mt-10">  
+            <hr>        
 
           <div class="row">
 
-            <div class="col-4 py-6">
-              <h5 class="font-weight-bold">Plan</h5>
+            <div class="col-3 py-6">
+              <span class="badge badge-pill badge-success-soft ml-10">
+                <h5 class="font-weight-bold mb-0 text-center">Plan</h5>          
+              </span>
             </div>
 
-            <div class="col-4 py-6">
-              <h5 class="text-muted">Review</h5>
+            <div class="col-3 py-6">
+              <span class="badge badge-pill badge-disable-soft ml-10">
+              <h5 class="text-muted mb-0 text-center">Checkout</h5>
+              </span>
+            </div>            
+
+            <div class="col-3 py-6">
+              <span class="badge badge-pill badge-disable-soft ml-10">
+              <h5 class="text-muted mb-0 text-center">Review</h5>
+              </span>
             </div>
 
-            <div class="col-4 py-6">
-              <h5 class="text-muted">Pay</h5>
+            <div class="col-3 py-6">
+              <span class="badge badge-pill badge-disable-soft ml-10">
+              <h5 class="text-muted mb-0 text-center">Pay</h5>
+              </span>
             </div>
 
           </div>
+          
           </div>          
 
-          <div class="col-12 col-md-5 col-lg-4 py-8 py-md-11">
+          <div class="col-12 col-lg-6 py-8 py-md-11">          
             
             <!-- Heading -->
             <h1 class="mb-0 font-weight-bold text-center">
@@ -82,32 +91,52 @@
 
             </div>
 
-            <!--Email Signup For New Users-->
-            <div class="form-group mt-4">
-              <label for="email">
-                Email
-              </label>
-              <input type="email" class="form-control" id="email" placeholder="name@address.com">
-            </div>
-
+            <!-- Dropdown Select -->
             <div class="form-group mb-5 mb-md-0">
 
               <!-- Label -->
-              <label for="plans">Pick new plan</label>
+              <label for="plans" class="mt-4">Pick new plan</label>
 
               <!-- Select -->
-              <select id="plans" class="custom-select">
-                <option selected="">Plans</option>
-                <option>Lite</option>
-                <option>Startup</option>
-                <option>Pro</option>
-                <option>XL</option>
+              <select class="custom-select">
+                <option selected>Plans</option>
+                <option value="lite">Lite</option>
+                <option value="startup">Startup</option>
+                <option value="pro">Pro</option>
+                <option value="xl">XL</option>
               </select>
 
             </div>
 
+            <!--Radio Button-->
+            <div class="mt-4 mb-4 plans startup">
+
+              <div class="row">
+              <div class="col-sm-10">
+
+                <!-- Paid monthly -->
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="time" id="month" value="monthly">
+                  <label class="form-check-label" for="month"> Paid monthly</label>
+                </div>                      
+
+                <!-- Paid annually -->
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="time" id="annual" value="annually" checked="checked">
+                  <label class="form-check-label" for="annual"> Paid annually</label> 
+
+                  <span class="badge badge-pill badge-success-soft ml-4">
+                    <span class="h6 text-uppercase">Best Value</span>
+                  </span>
+                </div>
+  
+              </div>
+              </div>             
+
+            </div>  
+
             <!--Lite-->
-            <div class="col-12 py-6">
+            <div class="col-12 py-6 plans lite">
 
               <!-- Preheading -->
               <div class="mb-3">
@@ -184,32 +213,12 @@
             </div>
 
             <!--Startup Annual-->
-            <div class="col-12 py-6">
+            <div class="col-12 py-6 plans startup timepick annually">
 
               <!-- Preheading -->
               <div class="mb-3">
-                  <span class="h3">Startup</span>
-              </div>
-      
-
-              <div class="mt-4 mb-4">
-
-              <!-- Paid monthly -->
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="defaultChecked" name="materialExampleRadios" checked="">
-                <label class="form-check-label" for="defaultChecked">Paid monthly</label>
-              </div> 
-              
-              <!-- Paid annually -->
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="defaultUnchecked" name="materialExampleRadios" checked="">
-                <label class="form-check-label" for="defaultUnchecked">Paid annually</label> 
-                <span class="badge badge-pill badge-primary-soft ml-4">
-                  <span class="h6 text-uppercase">Best</span>
-                </span>
-              </div>
-
-              </div>               
+                  <span class="h3">Startup Annual Plans</span>
+              </div>             
 
               <!-- Price -->
               <div class="d-flex">
@@ -281,7 +290,12 @@
             </div>            
 
             <!--Startup Monthly-->
-            <div class="col-12 py-6">          
+            <div class="col-12 py-6 plans timepick monthly">
+
+              <!-- Preheading -->
+              <div class="mb-3">
+                <span class="h3">Startup Month Plans</span>
+            </div> 
 
               <!-- Price -->
               <div class="d-flex">
@@ -353,7 +367,7 @@
             </div>
 
             <!--Pro-->
-            <div class="col-12 py-6">
+            <div class="col-12 py-6 plans pro">
 
               <!-- Preheading -->
               <div class="mb-3">
@@ -445,7 +459,7 @@
             </div>
             
             <!--XL-->
-            <div class="col-12 py-6">
+            <div class="col-12 py-6 plans xl">
 
               <!-- Preheading -->
               <div class="mb-3">
@@ -563,6 +577,8 @@
     <script src="./assets/libs/quill/dist/quill.min.js"></script>
     <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
     <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="./pickplan.js"></script>
+
 
     <!-- Map -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
