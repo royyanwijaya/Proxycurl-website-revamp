@@ -27,7 +27,7 @@
   </head>
   <body class="bg-light" data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
 
-    <!--MODAL-->
+    <!--PRICING MODAL-->
     <div class="modal fade" id="planModal" tabindex="-1" aria-labelledby="planModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 1440px;">
         <div class="modal-content">
@@ -430,6 +430,53 @@
           </div>
         </div>
       </div>
+    </div> 
+    
+    <!--CREDITS MODAL-->
+    <div class="modal fade" id="creditModal" tabindex="-1" aria-labelledby="creditModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+              <!--Lite-->
+              <div class="col-12">
+
+                  <h4>
+                  Top-up additional credits
+                  </h4>
+
+                  <div>
+      
+                    <div class="card-body bg-light border rounded mb-0"> 
+  
+                      <!-- Price -->
+                      <span class="p font-weight-bold text-info">
+                        1000 credits
+                      </span>    
+  
+                      <h5 class="mb-0">For October, 2020 usage only</h5>
+  
+                    </div>
+
+                    <p class="small text-muted mt-2">This additional credits will not recur monthly, it just covering the current month usage.</p>
+        
+                    </div>           
+    
+                    <!-- Button -->
+                    <button class="btn btn-block btn-primary mt-6 mb-0" type="submit">
+                      Top-up 1000 credits for $9.9
+                    </button>
+    
+              </div>
+
+          </div>
+        </div>
+      </div>
     </div>    
 
     <!-- HEADER
@@ -538,6 +585,7 @@
               </div>
             </div>
 
+            <!--Paid User-->
             <div class="card-body">
 
               <!-- Header -->
@@ -611,6 +659,18 @@
 
             </div>
 
+            <div class="col-12">
+              <button href="#!" class="btn btn-block btn-primary" data-toggle="modal" data-target="#planModal">
+              Switch Plan
+              </button>
+            </div>
+
+            <div class="col-12 mt-2">
+              <a href="#!">
+              <p class="small text-muted text-right mb-0"><u>Cancel Plan</u></p>
+              </a>
+            </div>            
+
             </div>
 
             <!--Trial User-->
@@ -628,7 +688,7 @@
                     <span class="h6 text-uppercase font-weight-bold">Trial</span>
                     </span>     
 
-                    <h5 class="mb-0">You are on a Free plan. <a href="#!" class="text-primary">Upgrade</a> plan to add more credits.</h5>
+                    <h5 class="mb-0">You are on a Free plan. <a href="#!" class="text-primary" data-toggle="modal" data-target="#planModal">Upgrade</a> plan to add more credits.</h5>
       
                     </div>
 
@@ -762,15 +822,13 @@
                   </div>
 
                   <div class="col-12">
-                    <button href="#!" class="btn btn-block btn-primary" data-toggle="modal" data-target="#planModal">
-                    Switch Plan
+                    <button href="#!" class="btn btn-block btn-primary" data-toggle="modal" data-target="#creditModal">
+                    Top-up 1000 credits for $9.9
                     </button>
                   </div>
 
                   <div class="col-12 mt-2">
-                    <a href="#!">
-                    <p class="small text-muted text-right mb-0"><u>Cancel Plan</u></p>
-                    </a>
+                    <p class="small text-muted text-left mb-0">The additional credits will not recur monthly, it just covering the current month usage.</p>
                   </div>                  
 
                 </div>
