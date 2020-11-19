@@ -522,7 +522,51 @@ WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electroni
 
             </div>
 
-        </div> <!-- / .row -->           
+        </div> <!-- / .row --> 
+        
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-6 text-center">
+
+            <!-- Icon -->
+            <div class="icon text-primary">
+              <i class="neu-achievement" style="font-size: 40px;"></i>
+            </div>            
+
+            <!-- Heading -->
+            <h3 class="mb-4">
+              "Employees of a company by name (Example: Electronic Arts)"
+            </h3>
+
+            <div class="highlight-block mb-8">
+            
+              <!-- Controls -->
+              <div class="d-flex">
+                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              </div>              
+
+              <pre class="text-left">
+                <code class="language-python">
+
+SELECT
+  id,
+  parsed_data->>'first_name' AS first_name,
+  parsed_data->'last_name' AS last_name,
+  jsonb_path_query_first(parsed_data, '$.experiences[*] ? (@.ends_at == null && @.company == "Electronic Arts (EA)").title') AS title
+FROM profile
+WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electronic Arts (EA)') -- general full text search
+AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Arts (EA)"}]}' -- confirm
+            
+                </code>
+              </pre>
+
+            </div>
+
+          </div>
+
+      </div> <!-- / .row -->         
 
       </div> <!-- / .container -->
     </section>    
