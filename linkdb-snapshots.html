@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons/css/neu.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>LinkDB Snapshots</title>
+
+  </head>
+
+  <body>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Linkedin API <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+                <div class="list-group list-group-flush">
+
+                  <a class="list-group-item" href="people-linkedin-profile.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-user-circle" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        People Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl people information
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                  <a class="list-group-item" href="company-linkedin-profile.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-company" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Company Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl company information
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                  <a class="list-group-item" href="jobs-linkedin-profile.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-bag" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Jobs Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl jobs information
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                  <a class="list-group-item" href="linkdb.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-db" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        LinkDB
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Database of Linkedin Profiles
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                  <a class="list-group-item" href="linkdb-snapshots.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-data-quality" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        LinkDB Snapshots
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Snapshot of our database
+                      </p>
+
+                    </div>
+
+                  </a>                  
+
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarPages" href="pricing.html">
+                Pricing
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Documentation
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="login.html">
+            Log in
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-light border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
+ 
+            <!-- Heading -->
+            <h1 class="display-2 font-weight-bold">
+              LinkDB Snapshots
+            </h1>
+
+            <p class="font-size-lg text-gray-700 mb-7 mb-md-9">
+              Have a snapshot of our database of 117M Linkedin profiles in your application
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <!-- Contents -->
+        <div class="row">
+
+          <div class="col-12 col-lg-6">
+            
+            <!-- Item -->
+            <div class="row align-items-center mb-8"data-aos="fade-up">
+              <div class="col-4 col-lg-5">
+                
+                <!-- Image -->
+                <img src="Illustration_placement.png" alt="more prospect illustration" class="img-fluid">
+
+              </div>
+              <div class="col-8 col-lg-7">
+                
+                <!-- Heading -->
+                <h3 class="font-weight-bold mb-2">
+                  People
+                </h3>
+                
+                <!-- Item -->
+                <div class="d-flex">
+  
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-info-soft mr-2">
+                    <i class="fe fe-check"></i>
+                  </div>
+                    
+                  <!-- Text -->
+                  <p>
+                    Singapore
+                  </p>
+  
+                </div>
+  
+                <!-- Item -->
+                <div class="d-flex">
+  
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-info-soft mr-2">
+                    <i class="fe fe-check"></i>
+                  </div>
+                    
+                  <p class="mb-lg-0">
+                    US
+                  </p>
+  
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <!-- Item -->
+            <div class="row align-items-center mb-8" data-aos="fade-up">
+              <div class="col-4 col-lg-5">
+                
+                <!-- Image -->
+                <img src="Illustration_placement.png" alt="csv export illustration" class="img-fluid">
+
+              </div>
+              <div class="col-8 col-lg-7">
+
+                <!-- Heading -->
+                <h3 class="font-weight-bold">
+                  Companies <span class="badge badge-pill badge-info-soft">
+                  <span class="h6 text-uppercase">Coming Q1 2021</span>
+                  </span>
+                </h3>                
+
+                <!-- Item -->
+                <div class="d-flex">
+  
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-info-soft mr-2">
+                    <i class="fe fe-check"></i>
+                  </div>
+                    
+                  <p class="mb-lg-6">
+                    Worldwide
+                  </p>
+  
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+
+        </div> <!-- / .row -->        
+
+      </div> <!-- / .container -->
+      
+    </section>
+
+    <!-- 2ND FOLD
+    ================================================== -->
+    <section class="py-8 pb-8 py-md-10 border-bottom" id="scroll">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12 text-center">
+            
+            <!-- Button -->
+            <a href="#scroll" class="btn btn-primary btn-rounded-circle shadow mt-md-n14" data-toggle="smooth-scroll">
+              <i class="fe fe-arrow-down"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->        
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="mb-10">
+              Proxycurl is the canonical source of data for other major data resellers
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row">
+          <div class="col-12 d-flex">
+            
+            <!-- Image -->
+            <img src="Illustration_landscape_placement.png" alt="more prospect illustration" class="img-fluid">
+
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Proxycurl
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  Pricing
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Developer
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="people-linkedin-profile.html" class="text-reset">
+                  People Linkedin Profile
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="company-linkedin-profile.html" class="text-reset">
+                  Company Linkedin Profile
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="jobs-linkedin-profile.html" class="text-reset">
+                  Jobs Linkedin Profile
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB
+                </a>
+              </li>              
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Company
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="https://nubela.co" class="text-reset">
+                  Nubela Pte Ltd
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Help
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@proxycurl.com" class="text-reset">
+                  Email us
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <hr class="mb-4">
+
+        <div class="text-center">
+          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+        </div>
+
+      </div> <!-- / .container -->
+    </footer>    
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+
+  </body>
+</html>
