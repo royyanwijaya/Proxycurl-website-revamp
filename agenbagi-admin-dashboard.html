@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Admin dashboard</title>
+
+  </head>
+  <body class="bg-light">
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Close -->
+            <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-6 font-weight-bold text-center" id="modalSignupVerticalTitle">
+                Invite Agen
+              </h2>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="sr-only" for="modalSignupVerticalEmail">
+                    Agen email
+                  </label>
+                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Agen email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <textarea id="applyMessage" rows="5" class="form-control" placeholder="Message to Agen" spellcheck="false"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Sent invitation
+                </button>
+
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>    
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="pt-8 py-md-11">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h1 class="display-4 mb-2">
+              Admin dashboard
+            </h1>
+
+          </div>
+          <div class="col-auto">
+
+            <a data-toggle="modal" href="#modalSignupVertical" class="btn btn-primary">
+              Invite an Agen
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row">
+          <div class="col-12">
+            
+            <!-- Divider -->
+            <hr class="my-6 my-md-8 border-gray-300">
+
+          </div>
+        </div> <!-- / .row -->
+
+      <!-- Single Table -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+
+          <div class="bd-example shadow">
+            <table class="table table-borderless table-responsive table-align-middle">
+      
+              <thead class="thead-dark">
+                <tr>
+    
+                  <th>
+                    <span class="h4 font-weight-bold">
+                      Name
+                    </span>
+                  </th>
+    
+                  <th>
+                    <span class="h4 font-weight-bold">
+                      Email
+                    </span>
+                  </th>
+    
+                  <th>
+                    <span class="h4 font-weight-bold">
+                      Total hours this month
+                    </span>
+                  </th>            
+    
+                </tr>
+              </thead>
+    
+              <tbody>
+                <tr>
+                  <td>
+                    
+                    <div class="d-flex">
+
+                      <p class="mb-0">
+                        John Doe
+                      </p>
+
+                    </div>
+
+    
+                  </td>
+                  <td>
+                    
+                      <p class="mb-0">
+                        johndoe@email.com
+                      </p>
+    
+                  </td>
+                  <td>
+    
+                    <p class="mb-0">
+                      1 hours
+                    </p>            
+    
+                  </td>              
+    
+                </tr>
+                <tr>
+                  <td>
+                    
+                    <p class="mb-0">
+                      Alex Turner
+                    </p>
+    
+                  </td>
+                  <td>
+    
+                    <p class="mb-0">
+                      alexturner@email.com
+                    </p>
+    
+                  </td>
+                  <td>
+    
+                    <p class="mb-0">
+                      5 hours
+                    </p>
+    
+                  </td>              
+    
+                </tr>
+                <tr>
+                  <td>
+                    
+                    <p class="mb-0">
+                      Son Goku
+                    </p>
+    
+                  </td>
+                  <td>
+
+                      <p class="mb-0">
+                        songoku@email.com
+                      </p>
+    
+                  </td>
+                  <td>
+    
+                    <p class="mb-0">
+                      24 hours
+                    </p>
+    
+                  </td>
+    
+                <tr>
+                  <td>
+                    
+                    <p class="mb-0">
+                      Levi Ackerman
+                    </p>
+    
+                  </td>
+                  <td>
+
+                      <p class="mb-0">
+                        leviackerman@email.com
+                      </p>
+    
+                  </td>
+                  <td>
+    
+                    <p class="mb-0">
+                      10 hours
+                    </p>
+    
+                  </td>
+    
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div> <!--row-->        
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>
