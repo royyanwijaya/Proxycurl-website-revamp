@@ -22,211 +22,357 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Admin dashboard</title>
+    <title>Agen dashboard</title>
 
   </head>
-  <body class="bg-light">  
+  <body class="bg-light">
 
-    <!-- CONTENT
+    <!-- HEADER
     ================================================== -->
-    <section class="pt-8 py-md-11">
-      <div class="container">
+    <header class="bg-dark pt-9 pb-11 d-none d-md-block">
+      <div class="container-md">
         <div class="row align-items-center">
-          <div class="col-12">
+          <div class="col">
 
             <!-- Heading -->
-            <h1 class="display-4 mb-2">
+            <h1 class="font-weight-bold text-white mb-2">
               Agen dashboard
             </h1>
 
+            <!-- Text -->
+            <p class="font-size-lg text-white-75 mb-0">
+              Dashboard for agen1@email.com
+            </p>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Button -->
+            <button class="btn btn-sm btn-gray-300-20">
+              Log Out
+            </button>
+
           </div>
         </div> <!-- / .row -->
-
-        <div class="row">
-          <div class="col-12">
-            
-            <!-- Divider -->
-            <hr class="my-4 mb-8 border-gray-300">
-
-          </div>
-        </div> <!-- / .row -->
-
-      <!-- Single Table -->
-      <div class="row justify-content-center">
-
-
-        <div class="col-12 mb-10">
-
-          <h2 class="display-5">Progress report</h2>
-          <p class="h4 mb-4 text-muted">Here's what you earned from activating the app that started on <span class="text-black font-weight-bold">1st March</span> up to the end of <span class="text-black font-weight-bold">31st March 2021</span>.</p>
-
-          <div class="row">
-            <div class="col text-left small text-muted mb-2">0 hours</div>
-            <div class="col text-right small text-muted mb-2">10 hours</div>
-          </div>
-
-          <div class="progress" style="height: 24px;">
-            <div class="progress-bar progress-bar-striped small" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">1 hour</div>
-          </div>
-        </div>
-
-        <div class="col-12">
-
-            <h2 class="display-5">Users report</h2>
-            <p class="h4 mb-6 text-muted">Here's the current data of how many hours of your invited users get by activating the app that started on <span class="text-black font-weight-bold">1st March</span> up to the end of <span class="text-black font-weight-bold">31st March 2021</span>.</p>        
-
-          <div class="table-responsive mb-7 mb-md-9">
-            <table class="table table-align-middle thead-dark">
-              <thead class="thead-dark">
-                <tr>
-                  <th>
-                    <span class="h6 text-uppercase font-weight-bold">
-                      name
-                    </span>
-                  </th>
-                  <th>
-                    <span class="h6 text-uppercase font-weight-bold">
-                      email
-                    </span>
-                  </th>
-                  <th>
-                    <span class="h6 text-uppercase font-weight-bold">
-                      total hours
-                    </span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-
-                    <p class="mb-1">
-                      Son Goku
-                    </p>
-
-                  </td>
-                  <td>
-                    
-                     <p class="font-size-sm mb-0">
-                      songoku@email.com
-                    </p>
-
-                  </td>
-                  <td>
-                    
-                    <p class="font-size-sm mb-0">
-                      2 hours
-                    </p>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    
-                    <p class="mb-1">
-                      Monke D Luffy
-                    </p>
-
-                  </td>
-                  <td>
-                    
-                    <p class="font-size-sm mb-0">
-                      mugiwara@email.com
-                    </p>
-
-                  </td>
-                  <td>
-                    
-                    <p class="font-size-sm mb-0">
-                      1 hour
-                    </p>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    
-                    <p class="mb-1">
-                      Morgan Freeman
-                    </p>
-
-                  </td>
-                  <td>
-                    
-                    <p class="font-size-sm mb-0">
-                      morganfreeman@email.com
-                    </p>
-
-                  </td>
-                  <td>
-                    
-                    <p class="font-size-sm mb-0">
-                      4 hours
-                    </p>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    
-                    <div class="d-flex">
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle badge-success mr-2">
-                        <i class="fe fe-check"></i>
-                      </div>
-                      <p class="mb-1 text-success">
-                        Slim Shady
-                      </p>
-                    </div>
-
-                  </td>
-                  <td>
-                    
-                    <p class="font-size-sm mb-0 text-success">
-                      slimshady@email.com
-                    </p>
-
-                  </td>
-                  <td>
-                    
-                    <p class="font-size-sm mb-0 text-success">
-                      10 hours
-                    </p>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    
-                    <p class="mb-1">
-                      Isaac Newton
-                    </p>
-
-                  </td>
-                  <td>
-                    
-                    <p class="font-size-sm mb-0">
-                      isaacnewton@email.com
-                    </p>
-
-                  </td>
-                  <td>
-                    
-                    <p class="font-size-sm mb-0">
-                      6 hours
-                    </p>
-
-                  </td>
-                </tr>                
-              </tbody>
-            </table>
-          </div>
-
-        </div>
-      </div> <!--row-->        
-
       </div> <!-- / .container -->
-    </section>
+    </header>    
+
+    <!-- CONTENT
+    ================================================== -->
+    <main class="pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+
+          <div class="col-12 col-md-3">
+
+            <!-- Card -->
+            <div class="card card-bleed border-bottom border-bottom-md-0 shadow-light-lg">
+
+              <!-- Collapse -->
+              <div class="collapse d-md-block" id="sidenavCollapse">
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <h6 class="font-weight-bold text-uppercase mb-3">
+                    General
+                  </h6>
+
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700">
+                    <li class="list-item active">
+                      <a class="list-link text-reset" href="account-general.html">
+                        Reports
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#!">
+                        How to install Chrome extension
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-9">
+            
+            <!-- Card -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h3 class="display-5">
+                  Progress report
+                </h3>
+
+              </div>
+
+              <div class="card-body">
+
+                <p class="mb-6 text-muted">Here's what you earned from activating the app that started on <span class="text-black font-weight-bold">1st March</span> up to the end of <span class="text-black font-weight-bold">31st March 2021</span>.</p>
+
+                <div class="row">
+                  <div class="col text-left small text-muted mb-2">0%</div>
+                  <div class="col text-right small text-muted mb-2">100%</div>
+                </div>
+      
+                <div class="progress" style="height: 24px;">
+                  <div class="progress-bar progress-bar-striped small" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">1 hour</div>
+                </div>
+
+              </div>
+
+            </div>
+            
+            <!-- Card -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h3 class="display-5">
+                  Users report
+                </h3>
+
+              </div>
+
+              <div class="card-body">
+
+                <p class="mb-6 text-muted">Here's the current data of how many hours of your invited users get by activating the app that started on <span class="text-black font-weight-bold">1st March</span> up to the end of <span class="text-black font-weight-bold">31st March 2021</span>.</p>
+
+                <div class="table-responsive mb-0">
+                  <table class="table table-align-middle thead-dark">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th class="h6 text-uppercase font-weight-bold">
+                          index
+                        </th>
+                        <th>
+                          <span class="h6 text-uppercase font-weight-bold">
+                            status
+                          </span>
+                        </th>
+                        <th>
+                          <span class="h6 text-uppercase font-weight-bold">
+                            name
+                          </span>
+                        </th>
+                        <th>
+                          <span class="h6 text-uppercase font-weight-bold">
+                            email
+                          </span>
+                        </th>
+                        <th>
+                          <span class="h6 text-uppercase font-weight-bold">
+                            total hours
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            1.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            Active
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            Son Goku
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                           <p class="font-size-sm mb-0">
+                            songoku@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0">
+                            2 hours
+                          </p>
+      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            2.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            Active
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="mb-1 font-size-sm">
+                            Monke D Luffy
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0">
+                            mugiwara@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0">
+                            1 hour
+                          </p>
+      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm text-muted">
+                            3.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="text-muted mb-1 font-size-sm">
+                            Invited
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="mb-1 text-muted font-size-sm">
+                            Morgan Freeman
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-muted">
+                            morganfreeman@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-muted">
+                            0 hours
+                          </p>
+      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            4.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm text-success">
+                            Completed
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="mb-1 text-success font-size-sm">
+                            Slim Shady
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-success">
+                            slimshady@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-success">
+                            10 hours
+                          </p>
+      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm text-muted">
+                            5.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="text-muted mb-1 font-size-sm">
+                            Invited
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="mb-1 text-muted font-size-sm">
+                            Isaac Newton
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-muted">
+                            isaacnewton@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-muted">
+                            0 hours
+                          </p>
+      
+                        </td>
+                      </tr>                
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+            </div>            
+
+          </div>
+
+        </div> <!-- row -->
+      </div> <!-- / .container -->
+    </main>
 
     <!-- JAVASCRIPT
     ================================================== -->
