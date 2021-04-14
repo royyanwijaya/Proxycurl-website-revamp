@@ -7,6 +7,7 @@
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
     <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Map -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -22,12 +24,12 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Proxycurl API Pricing - $0.01 per request</title>
+    <title>Proxycurl Pricing</title>
 
   </head>
-  <body class="pt-10 bg-light">
-    
-    <!-- NAVBAR
+  <body class="pt-10">
+
+     <!-- NAVBAR
     ================================================== -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
       <div class="container-fluid">
@@ -267,10 +269,9 @@
       </div>
     </nav>
 
-
     <!-- WELCOME
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+    <section class="pt-8 pt-md-11 pb-10 pb-md-15">
 
       <!-- Shape -->
       <div class="shape shape-blur-3 svg-shim text-white">
@@ -283,106 +284,420 @@
           <div class="col-12 col-md-10 col-lg-8 text-center">
             
             <!-- Heading -->
-            <h1 class="display-2 text-white">
+            <h1 class="display-2">
               Simple, fair pricing.
             </h1>
 
             <!-- Text -->
-            <p class="lead text-white-80 mb-6 mb-md-8">
+            <p class="lead text-muted-80 mb-6 mb-md-8">
               Companies of all sizes need access to Proxycurl, so we have a flexible pricing system for any size of project or company.
-            </p>
+            </p>            
 
           </div>
+          
         </div> <!-- / .row -->
       </div> <!-- / .container -->
 
     </section>
-
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
-      </div>
-    </div>
 
     <!-- PRICING
     ================================================== -->
     <section class="mt-n8 mt-md-n14">
-      <div class="container">
-        <div class="form-row">
+      <div class="container" style="max-width: 1440px;">
+        <div class="row">
 
-          <div class="col-12 col-md-6">
-            
-            <!-- Card -->
-            <div class="card shadow-lg mb-6 mb-md-0">
-              <div class="card-body">
+          <!--Lite-->
+          <div class="col-12 col-lg-3 col-md-6 py-6">
 
                 <!-- Preheading -->
-                <div class="text-center mb-3">
-                  <span class="badge badge-pill badge-primary-soft">
-                    <span class="h6 text-uppercase">Pay as you go</span>
-                  </span>
+                <div class="mb-3">
+                    <span class="h3">Lite</span>
                 </div>
 
                 <!-- Price -->
-                <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0">0.01</span>
-                  <span class="h2 align-self-end mb-1">/ credit</span>
+                <div class="d-flex" style="padding-bottom: 16px;">
+                  <span class="h3 mb-0 mt-2">$</span>
+                  <span class="h1 font-weight-bold mb-0">9.9</span>
+                  <span class="h3 mb-0 mt-2 text-muted">/mo</span>
                 </div>
 
-                <!-- Text -->
-                <p class="text-center text-muted mb-5">
-                  Do not expire
-                </p>
+                <!-- List -->
+                <div class="d-flex">
+
+                  <!-- Text -->
+                  <h5 class="font-weight-bold text-muted">
+                    Paid monthly
+                  </h5>
+                  
+                </div>                
+
+                <!-- List -->
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    1000 credits / $0.01 per request
+                  </p>
+                  
+                </div>
+
+                <!-- List -->
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    API access
+                  </p>
+                  
+                </div>                 
+
+                <!-- List -->
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p">
+                    Access to LinkDB
+                  </p>
+                  
+                </div>  
+
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">1 Credit</span>
+                per API request
+              </p>  
+              
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">2 Credits</span>
+                per row of data in LinkDB
+              </p>              
 
                 <!-- Button -->
-                <a href="#!" class="btn btn-block btn-primary">
-                  Start with 10 credits for free <i class="fe fe-arrow-right ml-3"></i>
+                <a href="pick-plan.html" class="btn btn-block btn-primary-soft mt-4">
+                  Select Plan <i class="fe fe-arrow-right ml-3"></i>
                 </a>
-                
-              </div>
+
+          </div>        
+
+          <!--Startup-->
+          <div class="col-12 col-lg-3 col-md-6 py-6">
+
+            <div class="card-body bg-primary rounded">
+
+            <!-- Preheading -->
+            <div class="mb-3">
+                <span class="h3 text-white">Startup</span>
             </div>
+
+            <!-- Price -->
+            <div class="d-flex" style="padding-bottom: 16px;">
+              <span class="h3 mb-0 mt-2 text-white">$</span>
+              <span class="h1 font-weight-bold mb-0 text-white">199</span>
+              <span class="h3 mb-0 mt-2 text-gray-400">/mo</span>
+            </div>
+
+                <!-- List -->
+                <div class="d-flex">
+
+                  <!-- Text -->
+                  <h5 class="font-weight-bold text-gray-400">
+                    Paid monthly
+                  </h5>
+                  
+                </div>             
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-white-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <p class="text-white">
+                20000 credits / $0.01 per request
+              </p>           
+              
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-white-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-white">
+                API access
+              </p>
+              
+            </div>                 
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-white-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-white">
+                Access to LinkDB
+              </p>
+              
+            </div>
+
+              <!-- Text --> 
+              <p class="text-gray-400 small mb-0"> 
+                <span class="text-white">1 Credit</span>
+                per API request
+              </p> 
+              
+              <!-- Text --> 
+              <p class="text-gray-400 small mb-0"> 
+                <span class="text-white">2 Credits</span>
+                per row of data in LinkDB
+              </p>              
+
+            <!-- Button -->
+            <a href="pick-plan.html" class="btn btn-block btn-white mt-4">
+              Select Plan <i class="fe fe-arrow-right ml-3"></i>
+            </a>
 
           </div>
 
-          <div class="col-12 col-md-6">
-            
-            <!-- Card -->
-            <div class="card shadow-lg mb-md-0">
-              <div class="card-body">
+          </div>
 
-                <!-- Preheading -->
-                <div class="text-center mb-3">
-                  <span class="badge badge-pill badge-primary-soft">
-                    <span class="h6 text-uppercase">Enterprise</span>
-                  </span>
-                </div>
+          <!--Enterprise-->
+          <div class="col-12 col-lg-3 col-md-6 py-6">
 
-                <!-- Price -->
-                <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2">Volume pricing available</span>
-                </div>
-
-                <!-- Text -->
-                <p class="text-center text-muted mb-7">
-                  Annual contracts
-                </p>
-
-                <!-- Button -->
-                <a href="#!" class="btn btn-block btn-primary-soft">
-                  Sent Email <i class="fe fe-arrow-right ml-3"></i>
-                </a>
-                
-              </div>
+            <!-- Preheading -->
+            <div class="mb-3">
+                <span class="h3">Enterprise</span>
             </div>
+
+            <!-- Price -->
+            <div class="d-flex" style="padding-bottom: 16px;">
+              <span class="h3 mb-0 mt-2">$</span>
+              <span class="h1 font-weight-bold mb-0">1499</span>
+              <span class="h3 mb-0 mt-2">/mo</span>
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+
+              <!-- Text -->
+              <h5 class="font-weight-bold text-muted">
+                Paid monthly
+              </h5>
+              
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="">
+                200000 credits / $0.0075 per request
+              </p>
+              
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="">
+                API access
+              </p>
+              
+            </div>                 
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="">
+                Access to LinkDB
+              </p>
+              
+            </div>  
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="">
+                No-question-asked first 30 days refund policy.
+              </p>
+              
+            </div>
+
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">1 Credit</span>
+                per API request
+              </p>   
+              
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">2 Credits</span>
+                per row of data in LinkDB
+              </p>                 
+
+            <!-- Button -->
+            <a href="pick-plan.html" class="btn btn-block btn-primary-soft mt-4">
+              Select Plan <i class="fe fe-arrow-right ml-3"></i>
+            </a>
+
+          </div>
+
+          <!--XL-->
+          <div class="col-12 col-lg-3 col-md-6 py-6">
+
+            <!-- Preheading -->
+            <div class="mb-3">
+                <span class="h3">XL</span>
+            </div>
+
+            <!-- Price -->
+            <div class="d-flex" style="padding-bottom: 16px;">
+              <span class="h3 mb-0 mt-2">$</span>
+              <span class="h1 font-weight-bold mb-0">7999</span>
+              <span class="h3 mb-0 mt-2 text-muted">/mo</span>
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+
+              <!-- Text -->
+              <h5 class="font-weight-bold text-muted">
+                Paid monthly
+              </h5>
+              
+            </div>                
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                1250000 credits / $0.0063 per request
+              </p>
+              
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                API access
+              </p>
+              
+            </div>                 
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                Access to LinkDB
+              </p>
+              
+            </div>  
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                No-question-asked first 30 days refund policy.
+              </p>
+              
+            </div>
+
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">1 Credit</span>
+                per API request
+              </p>   
+              
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">2 Credits</span>
+                per row of data in LinkDB
+              </p>             
+
+            <!-- Button -->
+            <a href="pick-plan.html" class="btn btn-block btn-primary-soft mt-4">
+              Select Plan <i class="fe fe-arrow-right ml-3"></i>
+            </a>
 
           </div>
 
         </div> <!-- / .row -->
       </div> <!-- / .container -->
-    </section>
+    </section>   
 
     <!-- OUR CUSTOMERS
     ================================================== -->
@@ -672,6 +987,34 @@
             </div> <!-- / .container -->
 
         </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>   
+
+    <!-- CTA
+    ================================================== -->
+    <section class="py-8 pt-md-11 pb-md-12 bg-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold text-white">
+              Try Proxycurl now with a trial API Key<br>
+              <br>
+            </h1>
+
+            <!-- Form -->
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
+              </div>
+
+            <!-- Buttons -->
+            <button type="button" class="btn btn-primary btn-md btn-block text-center">
+              Get trial API key
+            </button>
+            </form>            
+
       </div> <!-- / .container -->
     </section>
 
