@@ -329,9 +329,9 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- CONTENT
+    <!-- Second fold
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-8 pb-md-14">
+    <section class="pt-8 pt-md-11 pb-md-10">
       <div class="container">
 
         <div class="row justify-content-center">
@@ -359,8 +359,8 @@
               <div class="card-body position-relative">
 
                 <!-- Text -->
-                <h5 class="text-center font-weight-bold">
-                  Developer submits a list of Linkedin profile URLs
+                <h5 class="text-center font-size-lg">
+                  Get employee count
                 </h5>
 
               </div>
@@ -381,8 +381,8 @@
               <div class="card-body position-relative">
 
                 <!-- Text -->
-                <h5 class="text-center font-weight-bold">
-                  Our system will process it
+                <h5 class="text-center font-size-lg">
+                  Get current employees
                 </h5>
 
               </div>
@@ -403,8 +403,8 @@
               <div class="card-body position-relative">
 
                 <!-- Text -->
-                <h5 class="text-center font-weight-bold">
-                  Once it is ready, you will receive a notification via a webhook
+                <h5 class="text-center font-size-lg">
+                  Get past employees
                 </h5>
 
               </div>
@@ -418,16 +418,16 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- Job Posted
+    <!-- API EXAMPLE
     ================================================= -->
-    <section class="pt-8 pt-md-11 pb-8 pb-md-14 bg-gray-200">
+    <section class="pt-8 pt-md-11 pb-md-12 bg-gray-200">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
 
             <!-- Heading -->
             <h1 class="font-weight-bold">
-              Scrape Linkedin Jobs for structured data
+              API Example
             </h1>
 
             <!-- Text -->
@@ -438,91 +438,33 @@
           </div>
         </div> <!-- / .row -->
 
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6 col-lg-7">
-            
-            <!-- Screenshot -->
-            <div class="mb-8 mb-md-0">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
 
-              <!-- Image -->
-              <img src="./assets/img/photos/hiretual-jobs-highlight.png" alt="screenshot" class="screenshot img-fluid mw-md-110 float-right mr-md-6 mb-6 mb-md-0">
-              
-            </div>
-
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-5">
-            
-              <div class="highlight-block">
+            <div class="highlight-block">
 
               <!-- Controls -->
               <div class="d-flex">
                 <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
                 <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                 <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-              </div> 
+              </div>               
 
-              <pre style="height: 860px;"><code class="language-python">
-
-{'job': [{'company': 'Hiretual',
-        'company_url': 'https://www.linkedin.com/company/hiretual?trk=public_jobs_job-result-card_result-card_subtitle-click',
-        'job_title': 'Community Specialist',
-        'job_url': 'https://www.linkedin.com/jobs/view/community-specialist-at-hiretual-2003590557?refId=0557db74-2e77-43f1-a178-2a101af4012e&position=1&pageNum=0&trk=public_jobs_job-result-card_result-card_full-click',
-        'list_date': '2020-08-17',
-        'location': 'Mountain View, California, United States'},
-       {'company': 'Hiretual',
-        'company_url': 'https://www.linkedin.com/company/hiretual?trk=public_jobs_job-result-card_result-card_subtitle-click',
-        'job_title': 'Growth Manager',
-        'job_url': 'https://www.linkedin.com/jobs/view/growth-manager-at-hiretual-2007618216?refId=0557db74-2e77-43f1-a178-2a101af4012e&position=2&pageNum=0&trk=public_jobs_job-result-card_result-card_full-click',
-        'list_date': '2020-07-31',
-        'location': 'Mountain View, California, United States'},
-       {'company': 'Hiretual',
-        'company_url': 'https://www.linkedin.com/company/hiretual?trk=public_jobs_job-result-card_result-card_subtitle-click',
-        'job_title': 'Product Designer',
-        'job_url': 'https://www.linkedin.com/jobs/view/product-designer-at-hiretual-1928345369?refId=0557db74-2e77-43f1-a178-2a101af4012e&position=3&pageNum=0&trk=public_jobs_job-result-card_result-card_full-click',
-        'list_date': '2020-06-09',
-        'location': 'Mountain View, California, United States'},
-       {'company': 'Hiretual',
-        'company_url': 'https://www.linkedin.com/company/hiretual?trk=public_jobs_job-result-card_result-card_subtitle-click',
-        'job_title': 'Data Engineer',
-        'job_url': 'https://www.linkedin.com/jobs/view/data-engineer-at-hiretual-1997135614?refId=0557db74-2e77-43f1-a178-2a101af4012e&position=4&pageNum=0&trk=public_jobs_job-result-card_result-card_full-click',
-        'list_date': '2020-08-15',
-        'location': 'Mountain View, California, United States'},
-       {'company': 'Hiretual',
-        'company_url': 'https://www.linkedin.com/company/hiretual?trk=public_jobs_job-result-card_result-card_subtitle-click',
-        'job_title': 'Product Manager - Partnership And Integration',
-        'job_url': 'https://www.linkedin.com/jobs/view/product-manager-partnership-and-integration-at-hiretual-1913989084?refId=0557db74-2e77-43f1-a178-2a101af4012e&position=5&pageNum=0&trk=public_jobs_job-result-card_result-card_full-click',
-        'list_date': '2020-06-09',
-        'location': 'Mountain View, California, United States'},
-       {'company': 'Hiretual',
-        'company_url': 'https://www.linkedin.com/company/hiretual?trk=public_jobs_job-result-card_result-card_subtitle-click',
-        'job_title': 'Hrbp - Director',
-        'job_url': 'https://www.linkedin.com/jobs/view/hrbp-director-at-hiretual-2001807919?refId=0557db74-2e77-43f1-a178-2a101af4012e&position=6&pageNum=0&trk=public_jobs_job-result-card_result-card_full-click',
-        'list_date': '2020-08-18',
-        'location': 'Mountain View, California, United States'},
-       {'company': 'Hiretual',
-        'company_url': 'https://www.linkedin.com/company/hiretual?trk=public_jobs_job-result-card_result-card_subtitle-click',
-        'job_title': 'Senior Machine Learning Engineer',
-        'job_url': 'https://www.linkedin.com/jobs/view/senior-machine-learning-engineer-at-hiretual-2005440706?refId=0557db74-2e77-43f1-a178-2a101af4012e&position=7&pageNum=0&trk=public_jobs_job-result-card_result-card_full-click',
-        'list_date': '2020-07-29',
-        'location': 'Mountain View, California, United States'},
-       {'company': 'Hiretual',
-        'company_url': 'https://www.linkedin.com/company/hiretual?trk=public_jobs_job-result-card_result-card_subtitle-click',
-        'job_title': 'Security Architect: Enterprise Data And Service '
-                     'Integration',
-        'job_url': 'https://www.linkedin.com/jobs/view/security-architect-enterprise-data-and-service-integration-at-hiretual-1992890554?refId=0557db74-2e77-43f1-a178-2a101af4012e&position=8&pageNum=0&trk=public_jobs_job-result-card_result-card_full-click',
-        'list_date': '2020-07-22',
-        'location': 'Mountain View, California, United States'}],
-'next_page_api_url': 'http://nubela.co/proxycurl/api/linkedin/company/job?page=1&search_id=18312292',
-'next_page_no': 1,
-'previous_page_api_url': 'http://nubela.co/proxycurl/api/linkedin/company/job?page=0&search_id=18312292',
-'previous_page_no': 0}
-              </code></pre>
-              </div>
+            <pre><code class="language-python">
+<span class="text-hl">import</span> requests
+              
+api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
+api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
+header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
+payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
+              
+response = requests.get(api_endpoint,
+                        json=payload,
+                        headers=header_dic)</code></pre>
+            </div>
 
           </div>
-
-        </div> <!-- / .row -->
+        </div> <!-- / .row -->        
 
       </div> <!-- / .container -->
     </section>    
@@ -567,7 +509,7 @@
 
     <!-- PRICING
     ================================================== -->
-    <section class="mt-n8 mt-md-n14">
+    <section class="mt-n8 mt-md-n14 pb-12">
       <div class="container">
         <div class="form-row">
           <div class="col-12 col-md-6">
@@ -962,34 +904,6 @@
 
         </div> <!-- / .row -->
       </div> <!-- / .container -->
-    </section>     
-
-    <!-- CTA
-    ================================================== -->
-    <section class="py-8 pt-md-11 pb-md-12 bg-dark">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold text-white">
-              Try Proxycurl now with a trial API Key<br>
-              <br>
-            </h1>
-
-            <!-- Form -->
-            <form>
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
-              </div>
-
-            <!-- Buttons -->
-            <button type="button" class="btn btn-primary btn-md btn-block text-center">
-              Get trial API key
-            </button>
-            </form>            
-
-      </div> <!-- / .container -->
     </section>
 
     <!-- FOOTER
@@ -1073,7 +987,12 @@
                 <a href="linkedin-profile-email-enrichment.html" class="text-reset">
                   Linkedin Profile Email Enrichment
                 </a>
-              </li> 
+              </li>
+              <li class="mb-3">
+                <a href="list-employee-endpoint.html" class="text-reset">
+                  List Employee Endpoint
+                </a>
+              </li>
             </ul>
 
           </div>
