@@ -1,3 +1,14 @@
+.contact-img{
+  margin-bottom: -48px;
+}
+
+.bg-wave{
+  background-image: url(/assets/bg/waves.d598c38e.svg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
 
 table {
     border-collapse: separate !important;
