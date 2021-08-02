@@ -7,7 +7,6 @@
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
     <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
@@ -16,7 +15,9 @@
     <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons/css/neu.min.css">
     <link rel="stylesheet" href="./style.css" />
+    
 
     <!-- Map -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -24,10 +25,11 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Linkedin Profile Crawler API | Proxycurl</title>
+    <title>Email Lookup API Endpoint</title>
 
   </head>
-  <body class="pt-10">
+
+  <body>
 
      <!-- NAVBAR
     ================================================== -->
@@ -319,19 +321,25 @@
 
     <!-- WELCOME
     ================================================== -->
-    <section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-6 bg-light bg-between border-bottom" style="background-image: url(./assets/img/illustrations/people-linkedin-left.png), url(./assets/img/illustrations/people-linkedin-right.png);">
+    <section class="mt-8 pt-8 pb-11 pt-md-11 pb-md-12 py-lg-6 bg-light bg-between border-bottom" style="background-image: url(assets/img/illustrations/email\ finder-left.png), url(assets/img/illustrations/email\ finder-right.png);">
       <div class="container">
         <div class="row justify-content-center">
+
+          <div class="col-12 col-md-10 col-lg-7 text-center" style="padding-top: 96px;" data-aos="fade-up">
+            <span class="badge badge-pill badge-info-soft mb-3">
+              <span class="h6 text-uppercase">PRIVATE BETA</span>
+            </span>
+          </div>
+
           <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
-            
+
             <!-- Heading -->
-            <h1 class="display-3 pt-lg-10 font-weight-bold">
-              <span class="text-primary">Scrape 1M Linkedin profiles</span> in real-time
+            <h1 class="display-3 font-weight-bold mb-4">
+              <span class="text-primary">Get work email addresses</span> of Linkedin Profiles programmatically
             </h1>
 
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-6 mb-md-8">
-              Our Linkedin API takes a Linkedin Profile URL and returns scraped structured data of the profile
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              Proxycurl's Email Lookup API lets you retrieve 1M work email address that are verified and do not bounce
             </p>
 
             <!-- Form -->
@@ -341,166 +349,367 @@
               </div>
 
               <!-- Buttons -->
-              <button type="button" class="btn btn-primary btn-md btn-block text-center">
+              <button type="button" class="btn btn-primary btn-md btn-block text-center mb-4">
                 Get trial API key
               </button>
-            </form>
+
+
+              <!-- Buttons -->
+              <button type="button" class="btn btn-primary-soft btn-md btn-block text-center">
+                Read Email Lookup API Docs
+              </button>
+
+            </form>            
 
           </div>
         </div> <!-- / .row -->
+
+        <p class="small text-center text-muted" data-aos="fade-up">We guarantee a 95+% deliverability or your money back</p>
       </div> <!-- / .container -->
     </section>
 
-    <!-- CONTENT
+    <!-- 2ND FOLD
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-8 pb-md-14">
-      <div class="container">
+    <section class="py-8 pb-8 py-md-10 border-bottom">
+      <div class="container">  
 
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
+          <div class="col-12 col-md-10 col-lg-8">
 
             <!-- Heading -->
-            <h1 class="font-weight-bold pb-6">
-              Get structured data of profile
-            </h1>
-
-          </div>
-        </div> <!-- / .row -->
-
-        <div class="row">
-
-          <div class="col-12 col-md-6 col-lg-5">
-
-            <!-- Heading -->
-            <h4 class="font-weight-bold">
-              Request to scrape a Linkedin Profile
-            </h4>
-
-            <!-- Text -->
-            <p class="font-size-sm text-muted mb-6 mb-md-0">
-              With one (slightly-long) line of code
-            </p>
+            <h1 class="font-weight-bold pb-6 mb-6 text-center">
+              How it works
+            </h1>           
 
           </div>
 
-          <div class="col-12 col-md-6 col-lg-7">
-            
-            <div class="highlight-block">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+
+            <div class="col-12 col-md-6">
               
-              <!-- Controls -->
-              <div class="d-flex">
-                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-              </div>              
-
-              <pre>
-                <code class="language-python">
-
-response <span class="text-hl">=</span> requests.<span class="text-python-hl">get</span>('https://nubela.co/proxycurl/api/linkedin',
-              params<span class="text-hl">=</span>{'url': 'https://www.linkedin.com/in/williamhgates'},
-              headers<span class="text-hl">=</span>{'Autorization': 'Bearer '+ API_KEY})</code></pre>
+              <img class="img-fluid mb-4" src="icon placement.png">
+  
+              <h3>
+                Call the API
+              </h3>
+  
+              <p class="text-muted">
+                Developer makes a request to our API with the user's Linkedin Profile Endpoint
+              </p>
+  
             </div>
-
-            <br>
-            <br>
-
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-5">
-            
-            <!-- Heading -->
-            <h4 class="font-weight-bold">
-              Get back structured data
-            </h4>
-
-            <!-- Text -->
-            <p class="font-size-sm text-muted mb-6 mb-md-0">
-              This is 8M's Linkedin Company Profile in JSON format
-            </p>
-
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-7">
-            
-            <div class="highlight-block">
+  
+            <div class="col-12 col-md-6">
               
-              <!-- Controls -->
-              <div class="d-flex">
-                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-              </div>
-
-              <pre style="max-width: 1080px;">
-                <code class="language-python">
-                  
-{
-    "public_identifier": "williamhgates",
-    "profile_pic_url": '
-    '"https://media-exp1.licdn.com/dms/image/C5603AQHv9IK9Ts0dFA/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=jBkdpk23kJ5r9zxjndQ2LngYx13-iWZNyRai7MU1kmw", '
-    '"first_name": "Bill",
-    "last_name": "Gates",
-    "occupation": "Co-chair, Bill & '
-    'Melinda Gates Foundation", "headline": "Co-chair, Bill & Melinda Gates '
-    'Foundation", "summary": "Co-chair of the Bill & Melinda Gates Foundation. '
-    'Microsoft Co-founder. Voracious reader. Avid traveler. Active blogger.", '
-    '"country": "us",
-    "birth_date": {
-        "month": 10,
-        "day": 28
-    },
-    "address": null, '
-    '"wechat_contact_info": null,
-    "primary_twitter_handle": null, '
-    '"twitter_handles": [],
-    "phone_numbers": [],
-    "email_address": null, '
-    '"websites": [],
-    "experiences": [
-        {
-            "company": "Bill & Melinda Gates '
-    'Foundation", "title": "Co-chair", "starts_at": {"month": null, "year": '
-    '2000
-        },
-        "ends_at": null
-    },
-    {
-        "company": "Microsoft",
-        "title": "Co-founder", '
-    '"starts_at": {
-            "month": null,
-            "year": 1975
-        },
-        "ends_at": null
-    }
-],
-"education": '
-    '[
-    {
-        "school": null,
-        "degree_name": null,
-        "field_of_study": null
-    },
-    {
-        "school": '
-    '"Harvard University",
-        "degree_name": null,
-        "field_of_study": null
-    }
-], '
-    '"languages": [],
-"organisations": []
-}
-            </code></pre>
+              <img class="img-fluid mb-4" src="icon placement.png">
+  
+              <h3>
+                Do work to retrieve verified address
+              </h3>
+  
+              <p class="text-muted">
+                Our system will process the profile to retrieve the work email address and verify it's deliverability status
+              </p>
+  
             </div>
-
+  
           </div>
+        </div>
+
+        <h2 class="mb-8 mt-6">
+          OR
+        </h2>
+
+        <div class="container">
+          <div class="row justify-content-center text-center">
+
+            <div class="col-12 col-md-6">
+              
+              <img class="img-fluid mb-4" src="icon placement.png">
+  
+              <h3>
+                Poll our API for results
+              </h3>
+  
+              <p class="text-muted">
+                After processing, developer can make poll the API anytime within the next 24 hours to retrieve email address
+              </p>
+  
+            </div>
+  
+            <div class="col-12 col-md-6">
+              
+              <img class="img-fluid mb-4" src="icon placement.png">
+  
+              <h3>
+                Webhook notification
+              </h3>
+  
+              <p class="text-muted">
+                Our system will call your webhook to notify you the result
+              </p>
+  
+            </div>
+  
+          </div>
+        </div>
 
         </div> <!-- / .row -->
 
       </div> <!-- / .container -->
+    </section>    
+
+    <!-- 3RD FOLD
+    ================================================== -->
+    <section class="py-8 pb-8 py-md-10 bg-light">
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-12 col-md-7 col-lg-6" data-aos="fade-right">
+
+            <!-- Heading -->
+            <h2>
+              Verified emails
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-4">
+              95+% Deliverability or your money back
+            </p>
+
+            <!-- List -->
+            <div class="d-flex">
+
+              <!-- Check -->
+              <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-info">
+                Every email is validated to be deliverable in real-time
+              </p>
+
+            </div>
+
+            <div class="d-flex">
+
+              <!-- Check -->
+              <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-info">
+                No spam traps
+              </p>
+
+            </div>
+            
+            <div class="d-flex">
+
+              <!-- Check -->
+              <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-info">
+                No role-based emails
+              </p>
+
+            </div>            
+
+          </div>
+          <div class="col-12 col-md-5 col-lg-6">
+
+            <div class="w-md-150 w-lg-130 position-relative" data-aos="fade-left">
+
+              <!-- Image -->
+              <div class="img-skewed img-skewed-left">
+
+                <!-- Image -->
+                <img src="assets/img/illustrations/email finder_second fold_illustration.png" class="screenshot img-fluid img-skewed-item" alt="email deliver illustration">
+
+              </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
     </section>
+
+    <!-- 4TH FOLD
+    ================================================== -->
+    <section class="py-8 pb-8 py-md-10 border-bottom">
+      <div class="container">  
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8" data-aos="fade-up">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold pb-6 text-center">
+              Proxycurl Email Enrichment VS Clearbit Connect
+            </h1>           
+
+          </div>
+
+        </div> <!-- / .row -->
+
+      <!-- Single Table -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-10" data-aos="fade-up">
+
+          <div class="card shadow-lg">
+            <table class="table table-borderless table-responsive table-align-middle">
+      
+              <thead class="thead-dark">
+                <tr>
+    
+                  <th>
+    
+                  </th>
+    
+                  <th>
+                    <span class="h4 font-weight-bold">
+                      Proxycurl Email Enrichment
+                    </span>
+                  </th>
+    
+                  <th>
+                    <span class="h4 font-weight-bold">
+                      Clearbit Connect
+                    </span>
+                  </th>            
+    
+                </tr>
+              </thead>
+    
+              <tbody>
+                <tr>
+                  <td>
+                  
+                    <p class="h5 font-weight-bold mb-1">
+                      API access 
+                    </p>
+    
+                  </td>
+                  <td>
+                    
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle badge-success mr-2">
+                        <i class="fe fe-check"></i>
+                      </div>
+                      <p class="font-size-xl text-success">
+                        Yes
+                      </p>
+                    </div>
+    
+                  </td>
+                  <td>
+    
+                    <p class="font-size-sm text-danger">
+                      Yes (Requires Enterprise plan at 10+k / month)
+                    </p>            
+    
+                  </td>              
+    
+                </tr>
+                <tr>
+                  <td>
+                    
+                    <p class="h5 font-weight-bold mb-1">
+                      Privacy
+                    </p>
+    
+                  </td>
+                  <td>
+    
+                    <p class="font-size-xl text-success">
+                      Does not require any privacy permissions from you
+                    </p>
+    
+                  </td>
+                  <td>
+    
+                    <p class="font-size-sm text-danger">
+                      Reads your Contacts to enrich Clearbit's email database
+                    </p>
+    
+                  </td>              
+    
+                </tr>
+                <tr>
+                  <td>
+                    
+                    <p class="h5 font-weight-bold mb-1">
+                      Enrichment success rate
+                    </p>
+    
+                  </td>
+                  <td>
+                    
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle badge-success mr-2">
+                        <i class="fe fe-check"></i>
+                      </div>
+                      <p class="font-size-xl text-success">
+                        51%
+                      </p>
+                    </div>
+    
+                  </td>
+                  <td>
+    
+                    <p class="font-size-sm text-danger">
+                      13%
+                    </p>
+    
+                  </td>
+    
+                <tr>
+                  <td>
+                    
+                    <p class="h5 font-weight-bold mb-1">
+                      Deliverability
+                    </p>
+    
+                  </td>
+                  <td>
+                    
+                    <div class="d-flex">
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle badge-success mr-2">
+                        <i class="fe fe-check"></i>
+                      </div>
+                      <p class="font-size-xl text-success">
+                        95+%
+                      </p>
+                    </div>
+    
+                  </td>
+                  <td>
+    
+                    <p class="font-size-sm text-danger">
+                      60%
+                    </p>
+    
+                  </td>
+    
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div> <!--row-->
+
+      </div> <!-- / .container -->
+    </section>    
 
     <!-- PRICING
     ================================================== -->
@@ -518,13 +727,8 @@ response <span class="text-hl">=</span> requests.<span class="text-python-hl">ge
             
             <!-- Heading -->
             <h1 class="display-2 text-white">
-              Simple, fair pricing.
+              Pricing
             </h1>
-
-            <!-- Text -->
-            <p class="lead text-white-80 mb-6 mb-md-8">
-              Companies of all sizes need access to Proxycurl, so we have a flexible pricing system for any size of project or company.
-            </p>
 
           </div>
         </div> <!-- / .row -->
@@ -538,31 +742,29 @@ response <span class="text-hl">=</span> requests.<span class="text-python-hl">ge
       <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
       </div>
-    </div>    
+    </div>
 
     <!-- PRICING
     ================================================== -->
     <section class="mt-n8 mt-md-n14">
       <div class="container">
-        <div class="form-row">
-          <div class="col-12 col-md-6">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-6 mb-12">
 
             <!-- Card -->
             <div class="card shadow-lg mb-6 mb-md-0">
               <div class="card-body">
 
-                <!-- Preheading -->
-                <div class="text-center mb-3">
-                  <span class="badge badge-pill badge-primary-soft">
-                    <span class="h6 text-uppercase">Pas as you go</span>
-                  </span>
+                <!-- Price -->
+                <div class="d-flex justify-content-center">
+                  <span class="h2 mb-0 mt-2">US$</span>
+                  <span class="price display-2 mb-0">0.01</span>
                 </div>
 
-                <!-- Price -->
-                <div class="d-flex justify-content-center mb-3">
-                  <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-3 mb-0">0.01 / credit</span>
-                </div>
+                <p class="text-center text-muted mb-5">
+                  per credit
+                </p>
 
                 <!-- List -->
                 <div class="d-flex">
@@ -574,398 +776,25 @@ response <span class="text-hl">=</span> requests.<span class="text-python-hl">ge
 
                   <!-- Text -->
                   <p>
-                    0-150,000 requests<br>
-                    1 credit / request
+                    <span class="text-info">10 credits</span> per profile
                   </p>
                   
-                </div>
-                <div class="d-flex">
-                  
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="mb-5">
-                    150,001-1,000,000 requests<br>
-                    0.8 credit / request
-                  </p>
-                  
-                </div>
-
-                <div class="d-flex">
-                  <p class="caption">
-                  * Quota is counted on a rolling month basis
-                  </p>
-                  </div>
+                </div>              
 
                 <!-- Button -->
-                <a href="#!" class="btn btn-block btn-primary">
-                  Start with 10 credits for free<i class="fe fe-arrow-right ml-3"></i>
-                </a>
-                
-                  </div>
-            </div>
-
-          </div>
-
-          <div class="col-12 col-md-6">
-            
-            <!-- Card -->
-            <div class="card shadow-lg mb-6 mb-md-0">
-              <div class="card-body">
-
-                <!-- Preheading -->
-                <div class="text-center mb-3">
-                  <span class="badge badge-pill badge-primary-soft">
-                    <span class="h6 text-uppercase">Enterprise</span>
-                  </span>
-                </div>
-
-                <!-- Price -->
-                <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2">Custom</span>
-                </div>
-
-                <!-- Text -->
-                <p class="text-center text-muted mb-5">
-                  Contact us for volume pricing
-                </p>
-
-                <!-- Button -->
-                <a href="#!" class="btn btn-block btn-primary-soft">
-                  Send Email <i class="fe fe-arrow-right ml-3"></i>
+                <a href="#!" class="btn btn-block btn-primary mt-4">
+                  Get Trial API Key <i class="neu-right-md"></i>
                 </a>
                 
               </div>
             </div>
 
-          </div>
+          </div>    
 
         </div> <!-- / .row -->
 
       </div> <!-- / .container -->
-    </section> 
-
-    <!-- OUR CUSTOMERS
-    ================================================== -->
-    <section class="py-8 py-md-11 bg-light">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold">
-              Our customers
-            </h1>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-7 mb-md-9">
-              We partner with organizations large and small to transform their product with big data
-            </p>
-
-          </div>
-
-            <div class="container">
-              <div class="flickity-viewport-visible" data-flickity='{"imagesLoaded": true, "initialIndex": 6, "pageDots": false, "prevNextButtons": false, "contain": true}'>
-
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/aequitas.ventures_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/myamy.io_logo.svg">                    
-                  </div>                
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/apiiro.com_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/bravado.co_logo.svg">                    
-                  </div>                  
-      
-                </div>
-                
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/canddi.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/celential.ai_logo.svg">                    
-                  </div>                  
-      
-                </div>
-                
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/chattermill.io_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/alore.svg">                    
-                  </div>  
-
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/diffbot.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/vanhack.com_logo.svg">                    
-                  </div>              
-      
-                </div>                
-
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/draxexecutive.com_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/rightbound.com_logo.svg">                    
-                  </div>                  
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/idealscorp.com_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/intelligo.ai_logo.svg">                    
-                  </div>                  
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/landing.jobs_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/liquidity.capital_logo.svg">                    
-                  </div>                  
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/livedatatechnologies.com_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/meetfrank.com_logo.svg">                    
-                  </div>                  
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/springrole.com_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/pitchdrive.com_logo.svg">                    
-                  </div>                  
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/geekhunter.com.br_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/rockcontent.com_logo.svg">                    
-                  </div>                  
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/salesintellitent.com_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/sparklinecapital.com_logo.svg">                    
-                  </div>                  
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/usergems.com_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/dover.io_logo.svg">                    
-                  </div>                   
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/coffeemug.ai_logo.svg">                    
-                  </div>
-
-                  <div>
-                    <br>
-                  </div>                  
-
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/upenn.edu_logo.svg">                    
-                  </div>                  
-      
-                </div>
-
-                <div class="col-4 col-md-3 col-lg-2">
-      
-                  <!-- Brand -->
-                  <div class="img-fluid svg-shim text-white">
-                    <img src="./assets/img/Misc/whoknows.com_logo.svg">                    
-                  </div>
-      
-                </div>
-
-              </div>
-            </div> <!-- / .container -->
-
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>       
-
-    <!-- CTA
-    ================================================== -->
-    <section class="py-8 pt-md-11 pb-md-12 bg-dark">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold text-white">
-              Try Proxycurl now with a trial API Key<br>
-              <br>
-            </h1>
-
-            <!-- Form -->
-            <form>
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
-              </div>
-
-            <!-- Buttons -->
-            <button type="button" class="btn btn-primary btn-md btn-block text-center">
-              Get trial API key
-            </button>
-            </form>            
-
-      </div> <!-- / .container -->
-    </section>
+    </section>    
 
     <!-- FOOTER
     ================================================== -->
@@ -1142,6 +971,6 @@ response <span class="text-hl">=</span> requests.<span class="text-python-hl">ge
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
 
-      
+
   </body>
 </html>
