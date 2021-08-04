@@ -26,53 +26,213 @@
 
   </head>
   <body>
+
+     <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-light fixed-top bg-white border-bottom">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+      </div>
+    </nav>
     
     <!-- CONTENT
     ================================================== -->
-    <section class="section-border border-primary">
+    <section class="py-8 border-bottom">
       <div class="container d-flex flex-column">
         <div class="row align-items-center justify-content-center no-gutters min-vh-100">
-          <div class="col-12 col-md-5 col-lg-4 py-8 py-md-11">
+
+          <div class="col-8 col-md-6 col-lg-7 offset-md-1 order-md-2 mt-auto mt-md-0 pt-8 pb-4 py-md-11">
+            <img class="img-fluid" src="illustration_placement_portrait.png">
+          </div>
+
+          <div class="col-12 col-md-5 col-lg-4 order-md-1 mb-auto mb-md-0 pb-8 py-md-11">
             
             <!-- Heading -->
-            <h1 class="mb-0 font-weight-bold text-center">
-              Log into dashboard
+            <h1 class="mb-6 font-weight-bold">
+              Let's get you to the dashboard
             </h1>
 
-            <!-- Text -->
-            <p class="mb-6 text-center text-muted">
-              <br>
-            </p>
-
             <!-- Form -->
-            <form class="mb-6">
+            <form class="mb-4">
 
               <!-- Email -->
               <div class="form-group">
                 <label for="email">
                   Email Address
                 </label>
-                <input type="email" class="form-control" id="email" placeholder="name@address.com">
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
               </div>
 
               <!-- Submit -->
-              <button class="btn btn-block btn-primary" type="submit">
-                Get Magic Login Link
-              </button>
+              <a class="btn btn-block btn-primary" href="login-next.html" type="submit">
+                Next
+              </a>
 
             </form>
 
-            <!-- Link -->
-            <div class="text-center">
-              <a class="text-muted" href="index.html">
-                Back to homepage
-              </a>
-            </div>            
+            <!-- Sign Up text -->
+            <p class="mb-0 font-size-sm text-muted">
+              Don't have an account?
+              <a class="text-primary font-weight-bold" href="#">Sign up!</a>
+            </p>
 
           </div>
+
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Proxycurl
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  Pricing
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              API
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="people-linkedin-profile.html" class="text-reset">
+                  Person Profile Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="company-linkedin-profile.html" class="text-reset">
+                  Company Profile Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="jobs-linkedin-profile.html" class="text-reset">
+                  Job Profile Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb-snapshots.html" class="text-reset">
+                  LinkDB Snapshots
+                </a>
+              </li> 
+              <li class="mb-3">
+                <a href="email-lookup-api-endpoint.html" class="text-reset">
+                  Email Lookup API Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="list-employee-endpoint.html" class="text-reset">
+                  List Employee Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="reverse-email-lookup.html" class="text-reset">
+                  Reverse Email Lookup
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Company
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="https://nubela.co" class="text-reset">
+                  Nubela Pte Ltd
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co" class="text-reset">
+                  Other Projects by Nubela
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Help
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@proxycurl.com" class="text-reset">
+                  Email us
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+        <br>
+
+        <hr>
+        <br>
+
+        <div class="text-center">
+          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+        </div>
+
+      </div> <!-- / .container -->
+    </footer>
 
     <!-- JAVASCRIPT
     ================================================== -->
