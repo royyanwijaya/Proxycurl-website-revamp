@@ -56,6 +56,9 @@ table tr:last-child td:last-child {
 .text-hl{
     color: #f92672;
 }
+.text-hl-yellow{
+  color: #FBBF24;
+}
 .caption{
     color: #869ab8!important;
     font-size: 12px;
