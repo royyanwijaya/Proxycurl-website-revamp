@@ -7,7 +7,7 @@
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">    
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
     <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
@@ -359,12 +359,98 @@
           <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
             
             <!-- Heading -->
-            <h1 class="display-3 pt-lg-10 font-weight-bold">
-              <span class="text-primary">Scrape 1M webpages</span> without troubles from Recaptcha and bot detection            </h1>
+            <h1 class="display-2 pt-lg-10 mb-8 font-weight-bold">
+              Turn a <span class="text-primary">LinkedIn Profile into JSON</span> with just the <span class="text-primary">URL</span>
+            </h1>
 
-            <p class="font-size-lg text-muted mb-7 mb-md-9">
-              Proxycurl is a Web Crawling and Scraping API to scrape webpages in real-time with one-line of code
-            </p>
+            <!-- Linkedin Link -->
+            <fieldset disabled>
+
+              <span class="btn btn-white shadow-lg text-black mb-4" style="cursor: auto;">
+                <i class="neu-br-linkedin-sq text-primary"></i>
+                linkedin.com/in/williamhgates
+              </span>
+
+            </fieldset>
+
+            <!-- Arrow -->
+            <i class="fe fe-arrow-down text-primary" style="font-size: 48px;"></i>
+            
+
+            <div class="mt-4 mb-6 text-left">
+            
+              <div class="highlight-block">
+
+              <!-- Controls -->
+              <div class="d-flex">
+                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              </div>
+
+              <pre style="height: 320px;"><code class="language-python">
+
+('{
+    "public_identifier": "williamhgates",
+    "profile_pic_url": '
+    '"https://media-exp1.licdn.com/dms/image/C5603AQHv9IK9Ts0dFA/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=jBkdpk23kJ5r9zxjndQ2LngYx13-iWZNyRai7MU1kmw", '
+    '"first_name": "Bill",
+    "last_name": "Gates",
+    "occupation": "Co-chair, Bill & '
+    'Melinda Gates Foundation", "headline": "Co-chair, Bill & Melinda Gates '
+    'Foundation", "summary": "Co-chair of the Bill & Melinda Gates Foundation. '
+    'Microsoft Co-founder. Voracious reader. Avid traveler. Active blogger.", '
+    '"country": "us",
+    "birth_date": {
+        "month": 10,
+        "day": 28
+    },
+    "address": null, '
+    '"wechat_contact_info": null,
+    "primary_twitter_handle": null, '
+    '"twitter_handles": [],
+    "phone_numbers": [],
+    "email_address": null, '
+    '"websites": [],
+    "experiences": [
+        {
+            "company": "Bill & Melinda Gates '
+    'Foundation", "title": "Co-chair", "starts_at": {"month": null, "year": '
+    '2000
+        },
+        "ends_at": null
+    },
+    {
+        "company": "Microsoft",
+        "title": "Co-founder", '
+    '"starts_at": {
+            "month": null,
+            "year": 1975
+        },
+        "ends_at": null
+    }
+],
+"education": '
+    '[
+    {
+        "school": null,
+        "degree_name": null,
+        "field_of_study": null
+    },
+    {
+        "school": '
+    '"Harvard University",
+        "degree_name": null,
+        "field_of_study": null
+    }
+], '
+    '"languages": [],
+"organisations": []
+}')
+              </code></pre>
+              </div>
+
+          </div>
 
             <!-- Form -->
             <form class="pb-lg-10">
@@ -373,9 +459,14 @@
               </div>
 
             <!-- Buttons -->
-            <button type="button" class="btn btn-primary btn-md btn-block text-center">
+            <button type="button" class="mb-4 btn btn-primary btn-md btn-block text-center">
               Get trial API key
             </button>
+
+            <!-- Secondary Buttons -->
+            <button type="button" class="btn btn-primary-soft btn-md btn-block text-center">
+              Read API Docs
+            </button>            
             </form>
 
           </div>
