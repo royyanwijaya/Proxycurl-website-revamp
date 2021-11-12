@@ -515,11 +515,11 @@
               <!-- Body -->
               <div class="card-body my-auto">
 
-                <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/email.svg">
+                <img alt="user icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/man.svg">
 
                 <!-- Heading -->
                 <h3 class="mt-auto">
-                  Email Lookup Endpoint
+                  LinkedIn Person Profile Endpoint
                 </h3>
 
                 <div class="row justify-content-center">
@@ -532,7 +532,7 @@
 
                     <!-- Text -->
                     <p class="mb-0">
-                      Linkedin Profile URL
+                      LinkedIn (Person) Profile URL
                     </p>
                   </div>
 
@@ -544,7 +544,86 @@
 
                     <!-- Text -->
                     <p class="mb-0">
-                      Verified Work Email Address
+                      Profile data with profile picture, job history, etc
+                      <br>
+                      <br>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- Sample code -->
+              <div class="col-12 mb-5">
+      
+                <div class="highlight-block">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>               
+    
+                <pre><code class="language-python">
+<span class="text-hl">import</span> requests
+                  
+api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
+api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
+header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
+payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
+                  
+response = requests.get(api_endpoint,
+                        json=payload,
+                        headers=header_dic)</code></pre>
+                </div>
+    
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- API Card -->
+          <div class="col-12 col-lg-6 mb-6 d-flex">
+
+            <!-- Card -->
+            <div class="card shadow-light-lg lift lift-lg">
+
+              <!-- Body -->
+              <div class="card-body my-auto">
+
+                <img alt="company icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/company.svg">
+
+                <!-- Heading -->
+                <h3 class="mt-auto">
+                  LinkedIn Company Profile Endpoint
+                </h3>
+
+                <div class="row justify-content-center">
+
+                  <div class="col-6">
+                    <!-- Input -->
+                    <h4 class="mb-0 text-info">
+                      Input
+                    </h4>
+
+                    <!-- Text -->
+                    <p class="mb-0">
+                      LinkedIn (Company) Profile URL
+                    </p>
+                  </div>
+
+                  <div class="col-6">
+                    <!-- Input -->
+                    <h4 class="mb-0 text-info">
+                      Output
+                    </h4>
+
+                    <!-- Text -->
+                    <p class="mb-0">
+                      Profile data with profile picture, office locations, etc
                     </p>
                   </div>
 
@@ -596,7 +675,7 @@ response = requests.get(api_endpoint,
 
                 <!-- Heading -->
                 <h3 class="mt-auto">
-                  Email Lookup Endpoint
+                  Work Email Lookup Endpoint
                 </h3>
 
                 <div class="row justify-content-center">
@@ -609,7 +688,7 @@ response = requests.get(api_endpoint,
 
                     <!-- Text -->
                     <p class="mb-0">
-                      Linkedin Profile URL
+                      Work Email Address
                     </p>
                   </div>
 
@@ -621,161 +700,7 @@ response = requests.get(api_endpoint,
 
                     <!-- Text -->
                     <p class="mb-0">
-                      Verified Work Email Address
-                    </p>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- Sample code -->
-              <div class="col-12 mb-5">
-      
-                <div class="highlight-block">
-    
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>               
-    
-                <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-                  
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-                  
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
-                </div>
-    
-              </div>
-
-            </div>
-
-          </div>
-
-          <!-- API Card -->
-          <div class="col-12 col-lg-6 mb-6 d-flex">
-
-            <!-- Card -->
-            <div class="card shadow-light-lg lift lift-lg">
-
-              <!-- Body -->
-              <div class="card-body my-auto">
-
-                <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/email.svg">
-
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Email Lookup Endpoint
-                </h3>
-
-                <div class="row justify-content-center">
-
-                  <div class="col-6">
-                    <!-- Input -->
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-
-                    <!-- Text -->
-                    <p class="mb-0">
-                      Linkedin Profile URL
-                    </p>
-                  </div>
-
-                  <div class="col-6">
-                    <!-- Input -->
-                    <h4 class="mb-0 text-info">
-                      Output
-                    </h4>
-
-                    <!-- Text -->
-                    <p class="mb-0">
-                      Verified Work Email Address
-                    </p>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- Sample code -->
-              <div class="col-12 mb-5">
-      
-                <div class="highlight-block">
-    
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>               
-    
-                <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-                  
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-                  
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
-                </div>
-    
-              </div>
-
-            </div>
-
-          </div>
-          
-          <!-- API Card -->
-          <div class="col-12 col-lg-6 mb-6 d-flex">
-
-            <!-- Card -->
-            <div class="card shadow-light-lg lift lift-lg">
-
-              <!-- Body -->
-              <div class="card-body my-auto">
-
-                <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/email.svg">
-
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Email Lookup Endpoint
-                </h3>
-
-                <div class="row justify-content-center">
-
-                  <div class="col-6">
-                    <!-- Input -->
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-
-                    <!-- Text -->
-                    <p class="mb-0">
-                      Linkedin Profile URL
-                    </p>
-                  </div>
-
-                  <div class="col-6">
-                    <!-- Input -->
-                    <h4 class="mb-0 text-info">
-                      Output
-                    </h4>
-
-                    <!-- Text -->
-                    <p class="mb-0">
-                      Verified Work Email Address
+                      LinkedIn (Person) Profile URL
                     </p>
                   </div>
 
@@ -823,11 +748,11 @@ response = requests.get(api_endpoint,
               <!-- Body -->
               <div class="card-body my-auto">
 
-                <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/email.svg">
+                <img alt="woman icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/woman.svg">
 
                 <!-- Heading -->
                 <h3 class="mt-auto">
-                  Email Lookup Endpoint
+                  Personal Email Lookup Endpoint
                 </h3>
 
                 <div class="row justify-content-center">
@@ -840,7 +765,7 @@ response = requests.get(api_endpoint,
 
                     <!-- Text -->
                     <p class="mb-0">
-                      Linkedin Profile URL
+                      LinkedIn (Person) Profile URL
                     </p>
                   </div>
 
@@ -852,7 +777,7 @@ response = requests.get(api_endpoint,
 
                     <!-- Text -->
                     <p class="mb-0">
-                      Verified Work Email Address
+                      List of Personal Emails
                     </p>
                   </div>
 
@@ -900,11 +825,11 @@ response = requests.get(api_endpoint,
               <!-- Body -->
               <div class="card-body my-auto">
 
-                <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/email.svg">
+                <img alt="bag icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/bag.svg">
 
                 <!-- Heading -->
                 <h3 class="mt-auto">
-                  Email Lookup Endpoint
+                  Employee Listing Endpoint
                 </h3>
 
                 <div class="row justify-content-center">
@@ -917,7 +842,7 @@ response = requests.get(api_endpoint,
 
                     <!-- Text -->
                     <p class="mb-0">
-                      Linkedin Profile URL
+                      LinkedIn (Company) Profile URL
                     </p>
                   </div>
 
@@ -929,7 +854,84 @@ response = requests.get(api_endpoint,
 
                     <!-- Text -->
                     <p class="mb-0">
-                      Verified Work Email Address
+                      List of employees
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- Sample code -->
+              <div class="col-12 mb-5">
+      
+                <div class="highlight-block">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>               
+    
+                <pre><code class="language-python">
+<span class="text-hl">import</span> requests
+                  
+api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
+api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
+header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
+payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
+                  
+response = requests.get(api_endpoint,
+                        json=payload,
+                        headers=header_dic)</code></pre>
+                </div>
+    
+              </div>
+
+            </div>
+
+          </div>
+          
+          <!-- API Card -->
+          <div class="col-12 col-lg-6 mb-6 d-flex">
+
+            <!-- Card -->
+            <div class="card shadow-light-lg lift lift-lg">
+
+              <!-- Body -->
+              <div class="card-body my-auto">
+
+                <img alt="chart icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/chart.svg">
+
+                <!-- Heading -->
+                <h3 class="mt-auto">
+                  Role Lookup Endpoint
+                </h3>
+
+                <div class="row justify-content-center">
+
+                  <div class="col-6">
+                    <!-- Input -->
+                    <h4 class="mb-0 text-info">
+                      Input
+                    </h4>
+
+                    <!-- Text -->
+                    <p class="mb-0">
+                      Company Name and Role
+                    </p>
+                  </div>
+
+                  <div class="col-6">
+                    <!-- Input -->
+                    <h4 class="mb-0 text-info">
+                      Output
+                    </h4>
+
+                    <!-- Text -->
+                    <p class="mb-0">
+                      LinkedIn (Person) Profile URL
                     </p>
                   </div>
 
@@ -1127,7 +1129,7 @@ response = requests.get(api_endpoint,
 
             <!-- Text -->
             <p class="lead text-white-80 mb-6 mb-md-8">
-              Companies of all sizes need access to Proxycurl, so we have a flexible pricing system for any size of project or company.
+              Pay as you go with Proxycurl; no subscriptions needed.
             </p>
 
           </div>
@@ -1341,12 +1343,7 @@ response = requests.get(api_endpoint,
             </p>
 
             <!-- Image -->
-            <img src="./assets/img/illustrations/US Map.png" alt="map" class="img-fluid mb-6">         
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-4">
-              These countries are also available:
-            </p>
+            <img src="./assets/img/illustrations/US Map.png" alt="map" class="img-fluid mb-6">
             
           </div>
         </div> <!-- / .row -->        
@@ -1355,6 +1352,10 @@ response = requests.get(api_endpoint,
         <div class="row justify-content-center mb-6">
 
           <div class="col-12 col-md-4">
+
+            <h3 class="font-weight-bold font-size-lg mb-4">
+              Available countries:
+            </h3>
 
                 <!-- Item -->
                 <div class="d-flex">
@@ -1381,6 +1382,48 @@ response = requests.get(api_endpoint,
                   
                   <!-- Text -->
                   <p>
+                    Canada
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <!-- Text -->
+                  <p>
+                    United Kingdom
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <!-- Text -->
+                  <p>
+                    Israel
+                  </p>
+
+                </div>
+
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <!-- Text -->
+                  <p>
                     Singapore
                   </p>
 
@@ -1389,17 +1432,25 @@ response = requests.get(api_endpoint,
           </div>             
                 
           <!-- Item -->
-          <div class="col-12 col-md-4 d-flex">
+          <div class="col-12 col-md-4">
+
+            <h3 class="font-weight-bold font-size-lg mb-4">
+              Available companies:
+            </h3>
+
+            <div class="d-flex">
 
               <!-- Check -->
               <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
                 <i class="fe fe-check"></i>
               </div>
-                  
+              
               <!-- Text -->
               <p>
-                Other countries are per request only
+                17+M companies globally
               </p>
+
+            </div>
 
           </div>
 
