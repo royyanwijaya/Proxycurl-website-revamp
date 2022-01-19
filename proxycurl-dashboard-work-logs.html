@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Libs CSS -->    
+    <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
@@ -24,7 +24,7 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Proxycurl Dashboard - Invoices</title>
+    <title>Work Email Lookup Requests</title>
 
   </head>
   <body class="bg-light">
@@ -45,7 +45,7 @@
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 <span class="text-white">
-                  Invoices
+                  Work Email Lookup Lookup Logs
                 </span>
               </li>
             </ol>
@@ -122,7 +122,7 @@
                         Api Key and Billing
                       </a>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item active">
                       <a class="list-link text-reset" href="proxycurl-dashboard-work-logs.html">
                         Work Email Lookup Logs
                       </a>
@@ -137,7 +137,7 @@
                         Documentation
                       </a>
                     </li>
-                    <li class="list-item active">
+                    <li class="list-item">
                       <a class="list-link text-reset" href="proxycurl-dashboard-invoices.html">
                         Invoices
                       </a>
@@ -150,191 +150,89 @@
             </div>
 
           </div>
-
+          
           <div class="col-12 col-md-9">
 
-            <!-- Card -->
+            <!-- Quota -->
             <div class="card card-bleed shadow-light-lg mb-6">
-
               <div class="card-header">
 
                 <!-- Heading -->
                 <h4 class="mb-0">
-                  Invoice History
+                  Work Email Lookup Logs
                 </h4>
 
               </div>
 
               <div class="card-body">
 
-                <!-- List group -->
-                <div class="list-group list-group-flush">
+                <!-- Spreadsheet -->
+                <table class="table table-responsive table-sm table-bordered mb-6">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Date/Time requested</th>
+                      <td>19 Januari 2022, 15:32 UTC+7</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">LinkedIn Profile URL</th>
+                      <td>https://linkedin.com/araara</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Status - <span class="badge badge-primary-soft">email_found</span> / <span class="badge badge-danger-soft">email_not_found</span></th>
+                      <td><span class="badge badge-danger-soft">email_not_found</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Email address</th>
+                      <td colspan="2">yamet@kudasi.com</td>
+                    </tr>
+                  </tbody>
+                </table>
 
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col">
+                <div class="row justify-content-center">
 
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          <span class="text-info">Invoice #91244</span>
-                        </p>
+                  <!-- Paginatiaon -->
+                  <div class="col-12 col-md-6 text-left">
 
-                        <!-- Text -->
-                        <small class="text-gray-700">
-                          $2000, billed Apr, 24, 2020
-                        </small>
+                    <nav aria-label="Page navigation">
+                      <ul class="pagination pagination-sm justify-content-center">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
 
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-xs btn-outline-white">
-                          Download
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          <span class="text-info">Invoice #91243</span>
-                        </p>
-
-                        <!-- Text -->
-                        <small class="text-gray-700">
-                          $1200, billed Apr, 24, 2020
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-xs btn-outline-white">
-                          Download
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          <span class="text-info">Invoice #91242</span>
-                        </p>
-
-                        <!-- Text -->
-                        <small class="text-gray-700">
-                          $40, billed Apr, 24, 2020
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-xs btn-outline-white">
-                          Download
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          <span class="text-info">Invoice #91241</span>
-                        </p>
-
-                        <!-- Text -->
-                        <small class="text-gray-700">
-                          $15, billed Apr, 24, 2020
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-xs btn-outline-white">
-                          Download
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          <span class="text-info">Invoice #91240</span>
-                        </p>
-
-                        <!-- Text -->
-                        <small class="text-gray-700">
-                          $25, billed Apr, 24, 2020
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-xs btn-outline-white">
-                          Download
-                        </button>
-
-                      </div>
-                    </div>
                   </div>
 
                 </div>
 
+                <div class="row justify-content-center">
+                  <a href="#!" class="text-primary">
+                    Download as CSV
+                  </a>
+                </div>
+
               </div>
-              
             </div>
-
-            <!-- pagination -->
-            <nav aria-label="Page navigation">
-              <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1">Previous</a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">3</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">4</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">5</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
-
+            
           </div>
-
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </main>
