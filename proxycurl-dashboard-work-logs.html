@@ -69,7 +69,7 @@
     ================================================== -->
     <header class="bg-dark pt-9 pb-11 d-none d-md-block">
       <div class="container-md">
-        <div class="row align-items-center">
+        <div class="row align-items-center mb-4">
           <div class="col">
 
             <!-- Heading -->
@@ -92,6 +92,18 @@
 
           </div>
         </div> <!-- / .row -->
+
+        <!-- Tabs -->
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="proxycurl-dashboard.html">Api Key and Billing</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="proxycurl-dashboard-work-logs.html" tabindex="-1" aria-disabled="true">Work Email Lookup Logs</a>
+          </li>
+        </ul>
+
       </div> <!-- / .container -->
     </header>
 
@@ -100,98 +112,52 @@
     <main class="pb-8 pb-md-11 mt-md-n6">
       <div class="container-md">
         <div class="row">
-
-          <div class="col-12 col-md-3">
-
-            <!-- Card -->
-            <div class="card card-bleed border-bottom border-bottom-md-0 shadow-light-lg">
-
-              <!-- Collapse -->
-              <div class="collapse d-md-block" id="sidenavCollapse">
-                <div class="card-body">
-
-                  <!-- Heading -->
-                  <h6 class="font-weight-bold text-uppercase mb-3">
-                    Account
-                  </h6>
-
-                  <!-- List -->
-                  <ul class="card-list list text-gray-700">
-                    <li class="list-item">
-                      <a class="list-link text-reset" href="proxycurl-dashboard.html">
-                        Api Key and Billing
-                      </a>
-                    </li>
-                    <li class="list-item active">
-                      <a class="list-link text-reset" href="proxycurl-dashboard-work-logs.html">
-                        Work Email Lookup Logs
-                      </a>
-                    </li>
-                    <li class="list-item">
-                      <a class="list-link text-reset" href="proxycurl-dashboard-pricing-quota.html">
-                        Pricing and Quota
-                      </a>
-                    </li>
-                    <li class="list-item">
-                      <a class="list-link text-reset" href="#">
-                        Documentation
-                      </a>
-                    </li>
-                    <li class="list-item">
-                      <a class="list-link text-reset" href="proxycurl-dashboard-invoices.html">
-                        Invoices
-                      </a>
-                    </li>
-                  </ul>
-
-                </div>
-              </div>
-
-            </div>
-
-          </div>
           
-          <div class="col-12 col-md-9">
+          <div class="col-12">
 
             <!-- Quota -->
-            <div class="card card-bleed shadow-light-lg mb-6">
-              <div class="card-header">
-
-                <!-- Heading -->
-                <h4 class="mb-0">
-                  Work Email Lookup Logs
-                </h4>
-
-              </div>
+            <div class="card shadow-light-lg mb-6">
 
               <div class="card-body">
 
                 <!-- Spreadsheet -->
-                <table class="table table-responsive table-sm table-bordered mb-6">
-                  <tbody>
-                    <tr>
-                      <th scope="row">Date/Time requested</th>
-                      <td>19 Januari 2022, 15:32 UTC+7</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">LinkedIn Profile URL</th>
-                      <td>https://linkedin.com/araara</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Status - <span class="badge badge-primary-soft">email_found</span> / <span class="badge badge-danger-soft">email_not_found</span></th>
-                      <td><span class="badge badge-danger-soft">email_not_found</span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Email address</th>
-                      <td colspan="2">yamet@kudasi.com</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive mb-4">
+                  <table class="table table-bordered table-sm table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="">Date/Time requested</th>
+                        <th scope="col">LinkedIn Profile URL</th>
+                        <th scope="col">Status - <span class="badge badge-primary-soft">email_found</span> / <span class="badge badge-danger-soft">email_not_found</span></th>
+                        <th scope="col">Email address</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                      <tr>
+                        <td scope="row">20 Jan 2022, 14:42</th>
+                        <td>linkedin.com/billgates</td>
+                        <td><span class="badge badge-primary-soft">email_found</span></td>
+                        <td>gates@microsoft.com</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">20 Jan 2022, 14:50</th>
+                        <td>linkedin.com/gomugomuno</td>
+                        <td><span class="badge badge-danger-soft">email_not_found</span></td>
+                        <td>gomu@gomu.no</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">23 jan 2022, 08:22</th>
+                        <td>linkedin.com/anjaaaaaaaaayy</td>
+                        <td><span class="badge badge-danger-soft">email_not_found</span></td>
+                        <td>anjay@mabar.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
                 <div class="row justify-content-center">
 
                   <!-- Paginatiaon -->
-                  <div class="col-12 col-md-6 text-left">
+                  <div class="col-12 col-md-6">
 
                     <nav aria-label="Page navigation">
                       <ul class="pagination pagination-sm justify-content-center">
@@ -221,12 +187,12 @@
 
                   </div>
 
-                </div>
+                  <div class="col-12 col-md-6 text-center text-md-right">
+                    <button class="btn btn-primary btn-sm">
+                      Download as CSV
+                    </button>
+                  </div>
 
-                <div class="row justify-content-center">
-                  <a href="#!" class="text-primary">
-                    Download as CSV
-                  </a>
                 </div>
 
               </div>
