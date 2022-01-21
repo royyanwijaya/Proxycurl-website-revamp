@@ -94,13 +94,12 @@
         </div> <!-- / .row -->
 
         <!-- Tabs -->
-        <ul class="nav nav-pills">
+        <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link text-muted" href="proxycurl-dashboard.html">Api Key and Billing</a>
+            <a class="nav-link text-muted" href="proxycurl-dashboard.html">API Key and Billing</a>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link active" href="proxycurl-dashboard-work-logs.html" tabindex="-1" aria-disabled="true">Work Email Lookup Logs</a>
+            <a class="nav-link active" aria-current="page" href="#">Work Email Lookup Logs</a>
           </li>
         </ul>
 
@@ -112,8 +111,53 @@
     <main class="pb-8 pb-md-11 mt-md-n6">
       <div class="container-md">
         <div class="row">
+
+          <div class="col-12 col-md-3">
+
+            <!-- Card -->
+            <div class="card card-bleed border-bottom border-bottom-md-0 shadow-light-lg">
+
+              <!-- Collapse -->
+              <div class="collapse d-md-block" id="sidenavCollapse">
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <h6 class="font-weight-bold text-uppercase mb-3">
+                    Account
+                  </h6>
+
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700">
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="proxycurl-dashboard.html">
+                        Api Key and Billing
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="proxycurl-dashboard-pricing-quota.html">
+                        Pricing and Quota
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#">
+                        Documentation
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="proxycurl-dashboard-invoices.html">
+                        Invoices
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
           
-          <div class="col-12">
+          <div class="col-12 col-md-9">
 
             <!-- Quota -->
             <div class="card shadow-light-lg mb-6">
@@ -121,11 +165,11 @@
               <div class="card-body">
 
                 <!-- Spreadsheet -->
-                <div class="table-responsive mb-4">
+                <div class="table-responsive mb-2">
                   <table class="table table-bordered table-sm table-hover">
                     <thead>
                       <tr>
-                        <th scope="col" class="">Date/Time requested</th>
+                        <th scope="col">Date/Time requested</th>
                         <th scope="col">LinkedIn Profile URL</th>
                         <th scope="col">Status - <span class="badge badge-primary-soft">email_found</span> / <span class="badge badge-danger-soft">email_not_found</span></th>
                         <th scope="col">Email address</th>
@@ -154,36 +198,28 @@
                   </table>
                 </div>
 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center mb-0">
 
                   <!-- Paginatiaon -->
                   <div class="col-12 col-md-6">
 
-                    <nav aria-label="Page navigation">
-                      <ul class="pagination pagination-sm justify-content-center">
-                        <li class="page-item disabled">
-                          <a class="page-link" href="#" tabindex="-1">Previous</a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">4</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">5</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">Next</a>
-                        </li>
-                      </ul>
-                    </nav>
+                    <ul class="pagination pagination-sm justify-content-md-start justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
 
                   </div>
 
