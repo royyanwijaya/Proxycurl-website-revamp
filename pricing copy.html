@@ -1,0 +1,1188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Proxycurl Pricing</title>
+
+  </head>
+  <body class="pt-10">
+
+     <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Linkedin API <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+                <div class="list-group list-group-flush">
+
+                  <a class="list-group-item" href="people-linkedin-profile.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-user-circle" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Person Profile Endpoint
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Scrape Linkedin Profiles
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                  <a class="list-group-item" href="company-linkedin-profile.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-company" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Company Profile Endpoint
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Scrape Linkedin Companies
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                  <a class="list-group-item" href="jobs-linkedin-profile.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-bag" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Job Profile Endpoint
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Scrape Linkedin Jobs
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                  <a class="list-group-item" href="linkdb.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-db" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        LinkDB
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Database of Linkedin Profiles
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                  <a class="list-group-item" href="linkdb-snapshots.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-data-quality" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        LinkDB Snapshots
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Snapshot of our database
+                      </p>
+
+                    </div>
+
+                  </a> 
+                  
+                  <a class="list-group-item" href="linkedin-profile-email-enrichment.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-email" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Linkedin Profile Email Enrichment
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Work email from Linkedin profiles
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Free Tools <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+                <div class="list-group list-group-flush">
+                  
+                  <a class="list-group-item" href="identify.html" target="_blank">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-search" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Decision maker finder
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Identify decision makers of prospect
+                      </p>
+
+                    </div>
+
+                  </a>
+
+                </div>
+              </div>
+            </li>            
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarPages" href="pricing.html">
+                Pricing
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Documentation
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="login.html">
+            Log in
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-10 pb-md-15">
+
+      <!-- Shape -->
+      <div class="shape shape-blur-3 svg-shim text-white">
+        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor" stop-opacity=".075"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs></svg>
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2">
+              Simple, fair pricing.
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-muted-80 mb-6 mb-md-8">
+              Companies of all sizes need access to Proxycurl, so we have a flexible pricing system for any size of project or company.
+            </p>            
+
+          </div>
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- PRICING
+    ================================================== -->
+    <section class="mt-n8 mt-md-n14">
+      <div class="container" style="max-width: 1440px;">
+        <div class="row">
+
+          <!--Lite-->
+          <div class="col-12 col-lg-3 col-md-6 py-6">
+
+                <!-- Preheading -->
+                <div class="mb-3">
+                    <span class="h3">Lite</span>
+                </div>
+
+                <!-- Price -->
+                <div class="d-flex" style="padding-bottom: 16px;">
+                  <span class="h3 mb-0 mt-2">$</span>
+                  <span class="h1 font-weight-bold mb-0">9.9</span>
+                  <span class="h3 mb-0 mt-2 text-muted">/mo</span>
+                </div>
+
+                <!-- List -->
+                <div class="d-flex">
+
+                  <!-- Text -->
+                  <h5 class="font-weight-bold text-muted">
+                    Paid monthly
+                  </h5>
+                  
+                </div>                
+
+                <!-- List -->
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    1000 credits / $0.01 per request
+                  </p>
+                  
+                </div>
+
+                <!-- List -->
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    API access
+                  </p>
+                  
+                </div>                 
+
+                <!-- List -->
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p">
+                    Access to LinkDB
+                  </p>
+                  
+                </div>  
+
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">1 Credit</span>
+                per API request
+              </p>  
+              
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">2 Credits</span>
+                per row of data in LinkDB
+              </p>              
+
+                <!-- Button -->
+                <a href="pick-plan.html" class="btn btn-block btn-primary-soft mt-4">
+                  Select Plan <i class="fe fe-arrow-right ml-3"></i>
+                </a>
+
+          </div>        
+
+          <!--Startup-->
+          <div class="col-12 col-lg-3 col-md-6 py-6">
+
+            <div class="card-body bg-primary rounded">
+
+            <!-- Preheading -->
+            <div class="mb-3">
+                <span class="h3 text-white">Startup</span>
+            </div>
+
+            <!-- Price -->
+            <div class="d-flex" style="padding-bottom: 16px;">
+              <span class="h3 mb-0 mt-2 text-white">$</span>
+              <span class="h1 font-weight-bold mb-0 text-white">199</span>
+              <span class="h3 mb-0 mt-2 text-gray-400">/mo</span>
+            </div>
+
+                <!-- List -->
+                <div class="d-flex">
+
+                  <!-- Text -->
+                  <h5 class="font-weight-bold text-gray-400">
+                    Paid monthly
+                  </h5>
+                  
+                </div>             
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-white-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <p class="text-white">
+                20000 credits / $0.01 per request
+              </p>           
+              
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-white-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-white">
+                API access
+              </p>
+              
+            </div>                 
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-white-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-white">
+                Access to LinkDB
+              </p>
+              
+            </div>
+
+              <!-- Text --> 
+              <p class="text-gray-400 small mb-0"> 
+                <span class="text-white">1 Credit</span>
+                per API request
+              </p> 
+              
+              <!-- Text --> 
+              <p class="text-gray-400 small mb-0"> 
+                <span class="text-white">2 Credits</span>
+                per row of data in LinkDB
+              </p>              
+
+            <!-- Button -->
+            <a href="pick-plan.html" class="btn btn-block btn-white mt-4">
+              Select Plan <i class="fe fe-arrow-right ml-3"></i>
+            </a>
+
+          </div>
+
+          </div>
+
+          <!--Enterprise-->
+          <div class="col-12 col-lg-3 col-md-6 py-6">
+
+            <!-- Preheading -->
+            <div class="mb-3">
+                <span class="h3">Enterprise</span>
+            </div>
+
+            <!-- Price -->
+            <div class="d-flex" style="padding-bottom: 16px;">
+              <span class="h3 mb-0 mt-2">$</span>
+              <span class="h1 font-weight-bold mb-0">1499</span>
+              <span class="h3 mb-0 mt-2">/mo</span>
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+
+              <!-- Text -->
+              <h5 class="font-weight-bold text-muted">
+                Paid monthly
+              </h5>
+              
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="">
+                200000 credits / $0.0075 per request
+              </p>
+              
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="">
+                API access
+              </p>
+              
+            </div>                 
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="">
+                Access to LinkDB
+              </p>
+              
+            </div>  
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="">
+                No-question-asked first 30 days refund policy.
+              </p>
+              
+            </div>
+
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">1 Credit</span>
+                per API request
+              </p>   
+              
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">2 Credits</span>
+                per row of data in LinkDB
+              </p>                 
+
+            <!-- Button -->
+            <a href="pick-plan.html" class="btn btn-block btn-primary-soft mt-4">
+              Select Plan <i class="fe fe-arrow-right ml-3"></i>
+            </a>
+
+          </div>
+
+          <!--XL-->
+          <div class="col-12 col-lg-3 col-md-6 py-6">
+
+            <!-- Preheading -->
+            <div class="mb-3">
+                <span class="h3">XL</span>
+            </div>
+
+            <!-- Price -->
+            <div class="d-flex" style="padding-bottom: 16px;">
+              <span class="h3 mb-0 mt-2">$</span>
+              <span class="h1 font-weight-bold mb-0">7999</span>
+              <span class="h3 mb-0 mt-2 text-muted">/mo</span>
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+
+              <!-- Text -->
+              <h5 class="font-weight-bold text-muted">
+                Paid monthly
+              </h5>
+              
+            </div>                
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                1250000 credits / $0.0063 per request
+              </p>
+              
+            </div>
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                API access
+              </p>
+              
+            </div>                 
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                Access to LinkDB
+              </p>
+              
+            </div>  
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                No-question-asked first 30 days refund policy.
+              </p>
+              
+            </div>
+
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">1 Credit</span>
+                per API request
+              </p>   
+              
+              <!-- Text --> 
+              <p class="small mb-0"> 
+                <span class="text-info">2 Credits</span>
+                per row of data in LinkDB
+              </p>             
+
+            <!-- Button -->
+            <a href="pick-plan.html" class="btn btn-block btn-primary-soft mt-4">
+              Select Plan <i class="fe fe-arrow-right ml-3"></i>
+            </a>
+
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>   
+
+    <!-- OUR CUSTOMERS
+    ================================================== -->
+    <section class="py-8 py-md-11 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold">
+              Our customers
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              We partner with organizations large and small to transform their product with big data
+            </p>
+
+          </div>
+
+            <div class="container">
+              <div class="flickity-viewport-visible" data-flickity='{"imagesLoaded": true, "initialIndex": 6, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/aequitas.ventures_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/myamy.io_logo.svg">                    
+                  </div>                
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/apiiro.com_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/bravado.co_logo.svg">                    
+                  </div>                  
+      
+                </div>
+                
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/canddi.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/celential.ai_logo.svg">                    
+                  </div>                  
+      
+                </div>
+                
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/chattermill.io_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/alore.svg">                    
+                  </div>  
+
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/diffbot.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/vanhack.com_logo.svg">                    
+                  </div>              
+      
+                </div>                
+
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/draxexecutive.com_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/rightbound.com_logo.svg">                    
+                  </div>                  
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/idealscorp.com_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/intelligo.ai_logo.svg">                    
+                  </div>                  
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/landing.jobs_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/liquidity.capital_logo.svg">                    
+                  </div>                  
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/livedatatechnologies.com_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/meetfrank.com_logo.svg">                    
+                  </div>                  
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/springrole.com_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/pitchdrive.com_logo.svg">                    
+                  </div>                  
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/geekhunter.com.br_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/rockcontent.com_logo.svg">                    
+                  </div>                  
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/salesintellitent.com_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/sparklinecapital.com_logo.svg">                    
+                  </div>                  
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/usergems.com_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/dover.io_logo.svg">                    
+                  </div>                   
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/coffeemug.ai_logo.svg">                    
+                  </div>
+
+                  <div>
+                    <br>
+                  </div>                  
+
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/upenn.edu_logo.svg">                    
+                  </div>                  
+      
+                </div>
+
+                <div class="col-4 col-md-3 col-lg-2">
+      
+                  <!-- Brand -->
+                  <div class="img-fluid svg-shim text-white">
+                    <img src="./assets/img/Misc/whoknows.com_logo.svg">                    
+                  </div>
+      
+                </div>
+
+              </div>
+            </div> <!-- / .container -->
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>   
+
+    <!-- CTA
+    ================================================== -->
+    <section class="py-8 pt-md-11 pb-md-12 bg-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold text-white">
+              Try Proxycurl now with a trial API Key<br>
+              <br>
+            </h1>
+
+            <!-- Form -->
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
+              </div>
+
+            <!-- Buttons -->
+            <button type="button" class="btn btn-primary btn-md btn-block text-center">
+              Get trial API key
+            </button>
+            </form>            
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Proxycurl
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  Pricing
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              API
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="people-linkedin-profile.html" class="text-reset">
+                  Person Profile Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="company-linkedin-profile.html" class="text-reset">
+                  Company Profile Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="jobs-linkedin-profile.html" class="text-reset">
+                  Job Profile Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb-snapshots.html" class="text-reset">
+                  LinkDB Snapshots
+                </a>
+              </li> 
+              <li class="mb-3">
+                <a href="linkedin-profile-email-enrichment.html" class="text-reset">
+                  Linkedin Profile Email Enrichment
+                </a>
+              </li> 
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Company
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="https://nubela.co" class="text-reset">
+                  Nubela Pte Ltd
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co" class="text-reset">
+                  Other Projects by Nubela
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Help
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@proxycurl.com" class="text-reset">
+                  Email us
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+        <br>
+
+        <hr>
+        <br>
+
+        <div class="text-center">
+          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+        </div>
+
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>
