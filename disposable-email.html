@@ -260,7 +260,7 @@
     <section class="pt-4 pt-md-9">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-9 text-center" data-aos="fade-up">
+          <div class="col-12 text-center" data-aos="fade-up">
  
             <!-- Heading -->
             <h1 class="display-3 font-weight-bold" style="padding-top: 96px;">
@@ -320,7 +320,7 @@
     ================================================== -->
     <section class="py-8 py-md-11 border-bottom">
       <div class="container">
-        <div class="row">
+        <div class="row text-center">
           <div class="col-12 col-md-4" data-aos="fade-up">
 
             <!-- Icon -->
@@ -388,7 +388,7 @@
 
             <!-- Heading -->
             <h1 class="font-weight-bold mb-10">
-              Code Example
+              Code Examples
             </h1>
 
           </div>
@@ -396,9 +396,13 @@
 
         <div class="row justify-content-center px-10">
 
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-7">
 
-            <div class="highlight-block">
+            <h4 class="text-center font-weight-bold lead mb-2">
+              Check if an email is a <span class="text-danger">disposable email</span>
+            </h4>
+
+            <div class="highlight-block mb-10">
 
               <!-- Controls -->
               <div class="d-flex">
@@ -407,28 +411,23 @@
                 <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
               </div>               
 
-            <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-              
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-              
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
+              <pre>
+                <code class="language-python">
+{
+  <span class="text-info">"is_disposable_email"</span>: <span class="text-danger">true</span>,
+  <span class="text-info">"is_free_email"</span>: <span class="text-danger">true</span>
+}</code></pre>
             </div>
-
-            <h4 class="text-center lead mb-10 mt-3">
-              Check if an email is a <span class="text-primary font-weight-bold">disposable email</span>
-            </h4>
 
           </div>
 
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-7">
 
-            <div class="highlight-block">
+            <h4 class="text-center font-weight-bold lead mb-2 mt-md-4">
+              Check if an email is a <span class="text-danger">free email</span>
+            </h4>
+
+            <div class="highlight-block mb-10">
 
               <!-- Controls -->
               <div class="d-flex">
@@ -438,25 +437,19 @@ response = requests.get(api_endpoint,
               </div>               
 
             <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-              
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-              
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
+{
+  <span class="text-info">"is_disposable_email"</span>: <span class="text-success">false</span>,
+  <span class="text-info">"is_free_email"</span>: <span class="text-danger">true</span>
+}</code></pre>
             </div>
-
-            <h4 class="text-center lead mb-10 mt-4">
-              Check if an email is a <span class="text-primary font-weight-bold">free email</span>
-            </h4>
 
           </div>
           
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-7">
+
+            <h4 class="text-center font-weight-bold lead mb-2 mt-md-4">
+              Check if an email is a <span class="text-success">work email</span>
+            </h4>
 
             <div class="highlight-block">
 
@@ -468,21 +461,11 @@ response = requests.get(api_endpoint,
               </div>               
 
             <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-              
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-              
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
+{
+  <span class="text-info">"is_disposable_email"</span>: <span class="text-success">false</span>,
+  <span class="text-info">"is_free_email"</span>: <span class="text-success">false</span>
+}</code></pre>
             </div>
-
-            <h4 class="text-center lead mb-4 mt-4">
-              Check if an email is a <span class="text-primary font-weight-bold">work email</span>
-            </h4>
 
           </div>
 
