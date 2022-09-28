@@ -260,22 +260,44 @@
     <section class="pt-8 pb-11 pt-md-9 pb-md-12 bg-light bg-between border-bottom" style="background-image: url(./assets/img/illustrations/linkdb-left.png), url(./assets/img/illustrations/linkdb-right.png);">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
+          <div class="col-12 col-md-10 col-lg-7" data-aos="fade-up">
  
             <!-- Heading -->
-            <h1 class="display-3 pt-lg-12 font-weight-bold" style="padding-top: 96px;">
+            <h1 class="display-3 pt-lg-12 font-weight-bold text-center" style="padding-top: 96px;">
               LinkDB<sup>
               <span class="h3 text-uppercase text-info">BETA</span>                
               </sup> is a Postgresql database of <span class="text-primary">117M public Linkedin profiles</span>
             </h1>
 
-            <p class="font-size-lg text-muted mb-6">
+            <p class="font-size-lg text-muted mb-6 text-center">
               LinkDB is a fully managed and updated database of public Linkedin profiles
             </p>
 
             <div class="row justify-content-center">
 
-              <img class="img-fluid" src="./assets/img/photos/spreadsheet.png">
+              <div class="col-12">
+
+                <div class="highlight-block mb-8">
+
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>               
+    
+                  <pre>
+                    <code class="language-python">
+[
+  {<span class="text-info">"profile_id"</span>: <span class="text-warning">"Bill Gates"</span>, <span class="text-warning">"Microsoft"</span>, <span class="text-warning">"US"</span>}
+  {<span class="text-info">"profile_id"</span>: <span class="text-warning">"Herald Man"</span>, <span class="text-warning">"Acme Inc"</span>, <span class="text-warning">"Canada"</span>}
+  {<span class="text-info">"profile_id"</span>: <span class="text-warning">"John Doe"</span>, <span class="text-warning">"Lorem Inc"</span>, <span class="text-warning">"UK"</span>}
+  {<span class="text-info">"profile_id"</span>: <span class="text-warning">"Fejj Zebos"</span>, <span class="text-warning">"Omazan"</span>, <span class="text-warning">"Singapore"</span>}
+]
+</code></pre>
+
+                </div>
+              </div>
 
             </div>
 
