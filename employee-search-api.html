@@ -24,6 +24,7 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
 
     <title>LinkedIn Employee Search API | Proxycurl</title>
 
@@ -91,21 +92,9 @@
               <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
                 <div class="row no-gutters">
                   <div class="col-12">
-                    <div class="row no-gutters">
-                      <div class="col-12 col-lg-6">
+                    <div class="row g-0">
 
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon" width="24" alt="Dwarf Forms logo" src="assets/img/logos/dwarf forms logo blue.svg"> Dwarf Forms
-                        </h6>
-
-                        <!-- List -->
-                        <a class="dropdown-item" href="dwarf-forms.html">
-                          Dwarf Forms
-                        </a>
-                        <a class="dropdown-item mb-5" href="#!">
-                          API Documentation
-                        </a>
+                      <div class="col-12 col-lg-6 pl-4">
 
                         <!-- Heading -->
                         <h6 class="dropdown-header">
@@ -114,7 +103,7 @@
 
                         <!-- List -->
                         <a class="dropdown-item mb-5" href="linkdb.html">
-                          Database of public <br>
+                          Database of public<br>
                           LinkedIn profiles
                         </a>
 
@@ -129,6 +118,7 @@
                         </a>
 
                       </div>
+
                       <div class="col-12 col-lg-6">
 
                         <!-- Heading -->
@@ -152,11 +142,15 @@
                         <a class="dropdown-item" href="#!">
                           Reverse Email Lookup API
                         </a>
+                        <a class="dropdown-item" href="employee-search-api.html">
+                          Employee Search API Endpoint
+                        </a>
                         <a class="dropdown-item mb-5" href="#!">
                           API Documentation
                         </a>
 
                       </div>
+
                     </div>
                   </div>
                 </div>
@@ -260,29 +254,31 @@
     <section class="pt-8 pb-11 pt-md-9 pb-md-12 bg-light bg-between border-bottom" style="background-image: url(assets/img/illustrations/employee-api-left.png), url(assets/img/illustrations/employee-api-right.png);">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-9" data-aos="fade-up">
+          <div class="col-12 col-md-10 col-lg-9 text-center" data-aos="fade-up">
  
             <!-- Heading -->
-            <h1 class="display-2 pt-lg-12 font-weight-bold text-center">
+            <h1 class="display-2 pt-lg-12 font-weight-bold">
               Search employees by their<br>
               <span class="text-primary">job title on LinkedIn</span>
             </h1>
 
-            <p class="font-size-lg text-muted mb-6 text-center">
+            <p class="font-size-lg text-muted mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
 
             <div class="row justify-content-center">
 
-              <!-- Buttons -->
-              <button type="button" class="btn btn-primary-soft text-center mr-lg-4 mb-2">
-                View API Docs
-              </button>  
-                
-              <!-- Buttons -->
-              <a class="btn btn-primary text-center mb-2" href="register.html">
-                Get Trial API Key
-              </a>             
+              <div class="col-12 text-center">
+
+                <button type="button" class="btn btn-primary-soft text-center mr-lg-4 mb-2">
+                  View API Docs
+                </button>  
+                  
+                <a class="btn btn-primary text-center mb-2" href="register.html">
+                  Get Trial API Key
+                </a>
+
+              </div>            
     
             </div> <!-- row -->
 
@@ -322,7 +318,7 @@
           <!-- Item -->
           <div class="col-12 col-md-6">
 
-            <img alt="..." class="img img-fluid" src="Illustration_landscape_placement.png">
+            <img alt="finding talents illustration" class="img img-fluid" src="assets/img/illustrations/Employee_search_api_2_2_.png">
 
             <p class="lead mt-4 mb-8 text-center">
               Use case 2: "Finding talents"
@@ -391,7 +387,13 @@
 
                 <p class="text-center text-muted mb-5">
                   per employee returned
-                </p>              
+                </p>
+
+                <form>
+                  <div class="form-group mb-4">
+                    <input type="range" class="form-range" min="1" max="5" id="formControlRange">
+                  </div>
+                </form>
 
                 <!-- Button -->
                 <a href="#!" class="btn btn-block btn-primary">
@@ -748,6 +750,11 @@
               <li class="mb-3">
                 <a href="reverse-email-lookup.html" class="text-reset">
                   Reverse Email Lookup
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="employee-search-api.html" class="text-reset">
+                  Employee Search API Endpoint
                 </a>
               </li>
             </ul>
