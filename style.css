@@ -1,3 +1,16 @@
+.hoverp-txt:hover{
+  color: #335EEA !important;
+}
+
+.hoverp-bg:hover{
+  background: rgba(51,94,234,.1) !important;
+  color: #335EEA;
+}
+
+.hoverp:hover{
+  background: #335EEA !important;
+}
+
 .contact-img{
   margin-bottom: -48px;
 }
