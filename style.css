@@ -1,14 +1,17 @@
-.hoverp-txt:hover{
-  color: #335EEA !important;
+.hover{
+  opacity: 0.5;
 }
 
-.hoverp-bg:hover{
-  background: rgba(51,94,234,.1) !important;
-  color: #335EEA;
+.hover:hover{
+  opacity: 1;
 }
 
-.hoverp:hover{
-  background: #335EEA !important;
+.hover-parent:hover > .hover{
+  opacity: 1;
+}
+
+.hover-active:hover > .hover{
+  opacity: 1;
 }
 
 .contact-img{
