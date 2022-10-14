@@ -10,7 +10,7 @@
   opacity: 1;
 }
 
-.hover-active:hover > .hover{
+.hover-active .hover{
   opacity: 1;
 }
 
