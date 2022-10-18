@@ -144,6 +144,12 @@
                         <a class="dropdown-item" href="employee-search-api.html">
                           Employee Search API Endpoint
                         </a>
+                        <a class="dropdown-item" href="contact-api.html">
+                          Contact API Endpoint
+                        </a>
+                        <a class="dropdown-item" href="jobs-api.html">
+                          Jobs API Endpoint
+                        </a>
                         <a class="dropdown-item mb-5" href="#!">
                           API Documentation
                         </a>
@@ -413,7 +419,7 @@
       </div> <!-- / .container -->
     </section>
 
-    <!--ENTIRE-->
+    <!--SECOND FOLD-->
     <section class="py-8 py-md-11 border-bottom">
       <div class="container">
 
@@ -455,7 +461,7 @@ curl -X GET -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Authorizati
 
             <!--arrow-->
             <div class="text-center mt-n2">
-              <span class="badge badge-lg badge-rounded-circle bg-success text-white">
+              <span class="badge badge-lg badge-rounded-circle bg-primary text-white">
                 <i class="fe fe-arrow-down"></i>
               </span>
             </div>
@@ -480,16 +486,82 @@ curl -X GET -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Authorizati
 
           </div>
 
-          <div class="col-12 text-center">
-            <a class="btn btn-primary" href="#!">
-              Personal Number Lookup API Docs
-            </a>
+        </div>
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!--THIRD FOLD-->
+    <section class="py-8 py-md-11 border-bottom bg-light">
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold">
+              Get job details
+            </h1>
+            
+            <p class="text-muted lead mb-6 mb-md-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+
+          </div>
+
+
+        </div> <!-- / .row -->        
+
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-7">
+
+            <div class="highlight-block">
+
+              <!-- Controls -->
+              <div class="d-flex">
+                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              </div>               
+
+              <pre>
+                <code class="language-python">
+curl -X GET -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Authorization: Bearer &lt;API_KEY&gt;' -H 'Connection: keep-alive' 'https://nubela.co/proxycurl/api/v2/linkedin?url=<span class="text-warning">https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftimferriss</span></code></pre>
+            </div>
+
+            <!--arrow-->
+            <div class="text-center mt-n2">
+              <span class="badge badge-lg badge-rounded-circle bg-primary text-white">
+                <i class="fe fe-arrow-down"></i>
+              </span>
+            </div>
+
+            <div class="highlight-block mt-n2 mb-6">
+
+              <!-- Controls -->
+              <div class="d-flex">
+                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              </div>               
+
+              <pre>
+                <code class="language-python">
+{
+  <span class="text-info">"id"</span>: <span class="text-danger">110</span>,
+  <span class="text-info">"language"</span>: <span class="text-danger">"Python"</span>,
+  <span class="text-info">"price"</span>: <span class="text-danger">1900</span>,
+}</code></pre>
+            </div>
+
           </div>
 
         </div>
 
       </div> <!-- / .container -->
-    </section> 
+    </section>
 
     <!-- PRICING
     ================================================== -->
@@ -538,22 +610,12 @@ curl -X GET -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Authorizati
 
                 <!-- Price -->
                 <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2">10 credits + 6 credits</span>
+                  <span class="h2 mb-8 mt-2">2 credits / API call</span>
                 </div>
 
-                <p class="text-center text-muted mb-5">
-                  per employee returned
-                </p>
-
-                <form>
-                  <div class="form-group mb-4">
-                    <input type="range" class="form-range" min="1" max="5" id="formControlRange">
-                  </div>
-                </form>
-
                 <!-- Button -->
-                <a href="#!" class="btn btn-block btn-primary">
-                  Get Postgresql Connection String <i class="fe fe-arrow-right ml-3"></i>
+                <a href="pricing.html" class="btn btn-block btn-primary">
+                  Go to pricing page to see cost of credits <i class="fe fe-arrow-right ml-3"></i>
                 </a>
                 
               </div>
@@ -911,6 +973,16 @@ curl -X GET -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Authorizati
               <li class="mb-3">
                 <a href="employee-search-api.html" class="text-reset">
                   Employee Search API Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="contact-api.html" class="text-reset">
+                  Contact API Endpoint
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="jobs-api.html" class="text-reset">
+                  Jobs API Endpoint
                 </a>
               </li>
             </ul>
