@@ -229,10 +229,10 @@
 
     <!-- COMPANY DIRECTORY
     ================================================== -->
-    <section class="py-lg-4 py-2">
-      <div class="container pt-12 pb-8 pb-md-11">
+    <section class="pt-2 pt-lg-4">
+      <div class="container pt-12">
 
-        <div class="row justify-content-center align-items-center mb-8">
+        <div class="row justify-content-center align-items-center mb-4">
 
           <div class="col-12 col-md-2">
 
@@ -260,12 +260,28 @@
 
           </div>
 
+          <div class="col-12 mt-12">
+
+            <ul class="nav nav-pills" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="company-tab" data-toggle="tab" href="#company" role="tab" aria-controls="company" aria-selected="true">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="employee-tab" data-toggle="tab" href="#employee" role="tab" aria-controls="employee" aria-selected="false">Employees</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="loremipsum-tab" data-toggle="tab" href="#loremipsum" role="tab" aria-controls="loremipsum" aria-selected="false">Lorem Ipsum</a>
+              </li>
+            </ul>
+
+          </div>
+
         </div> <!-- / .row -->
 
       </div> <!-- / .container -->
     </section>
 
-    <section class="pt-8 py-6 py-lg-10 bg-light">
+    <section class="py-6 py-lg-8 bg-light">
 
       <div class="container">
 
@@ -273,277 +289,337 @@
 
           <div class="col-12 col-md-8">
 
-            <!-- Card -->
-            <div class="card card-bleed shadow-light-lg">
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-  
-                    <!-- Heading -->
-                    <h4 class="mb-0">
-                      Employees
-                    </h4>
-  
+            <div class="tab-content" id="myTabContent">
+
+              <!--Company-->
+              <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="home-tab">
+                
+                <div class="card card-bleed shadow-light-lg">
+
+                  <div class="card-header">
+                    <div class="row align-items-center">
+                      <div class="col">
+      
+                        <!-- Heading -->
+                        <h4 class="mb-0">
+                          Company details
+                        </h4>
+      
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+      
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!--Employees-->
+              <div class="tab-pane fade" id="employee" role="tabpanel" aria-labelledby="employee-tab">
+
+                <div class="card card-bleed shadow-light-lg">
+                  <div class="card-header">
+                    <div class="row align-items-center">
+                      <div class="col">
+      
+                        <!-- Heading -->
+                        <h4 class="mb-0">
+                          Employees
+                        </h4>
+      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+      
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              Ab Hadley
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-truncate text-gray-700">
+                              Software engineer
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              Adolfo Hess
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-truncate text-gray-700">
+                              Head of design
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-3.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              Dianna Smiley
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-truncate text-gray-700">
+                              CFO
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-4.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              Daniela Dewitt
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-truncate text-gray-700">
+                              Marketing strategist
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-5.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              Miyah Myles
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-truncate text-gray-700">
+                              Mobile developer
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group-item blur">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              William Son
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-gray-700">
+                              Lead designer
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group-item blur">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              Franc Abundance
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-truncate text-gray-700">
+                              Software engineer
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group-item blur">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-5.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              Sarah Can
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-truncate text-gray-700">
+                              Head of people
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group-item blur">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-4.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              Mia Wong
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-truncate text-gray-700">
+                              HR
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group-item blur">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+      
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-5.jpg" alt="...">
+                            </div>
+      
+                          </div>
+                          <div class="col-6 ms-n5">
+      
+                            <!-- Heading -->
+                            <p class="mb-0">
+                              Sabana Fori
+                            </p>
+      
+                            <!-- Text -->
+                            <a class="d-block small text-truncate text-gray-700">
+                              Software engineer
+                            </a>
+      
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
                   </div>
                 </div>
+
               </div>
-              <div class="card-body">
-  
-                <!-- List group -->
-                <div class="list-group list-group-flush">
-                  <div class="list-group-item">
+
+              <!--Lorem Ipsum-->
+              <div class="tab-pane fade" id="loremipsum" role="tabpanel" aria-labelledby="loremipsum-tab">
+
+                <div class="card card-bleed shadow-light-lg">
+
+                  <div class="card-header">
                     <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
+                      <div class="col">
+      
                         <!-- Heading -->
-                        <p class="mb-0">
-                          Ab Hadley
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-truncate text-gray-700">
-                          Software engineer
-                        </a>
-  
+                        <h4 class="mb-0">
+                          Lorem ipsum
+                        </h4>
+      
                       </div>
                     </div>
                   </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          Adolfo Hess
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-truncate text-gray-700">
-                          Head of design
-                        </a>
-  
-                      </div>
-                    </div>
+
+                  <div class="card-body">
+      
                   </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-3.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          Dianna Smiley
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-truncate text-gray-700">
-                          CFO
-                        </a>
-  
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-4.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          Daniela Dewitt
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-truncate text-gray-700">
-                          Marketing strategist
-                        </a>
-  
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-5.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          Miyah Myles
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-truncate text-gray-700">
-                          Mobile developer
-                        </a>
-  
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item blur">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          William Son
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-gray-700">
-                          Lead designer
-                        </a>
-  
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item blur">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          Franc Abundance
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-truncate text-gray-700">
-                          Software engineer
-                        </a>
-  
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item blur">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-5.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          Sarah Can
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-truncate text-gray-700">
-                          Head of people
-                        </a>
-  
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item blur">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-4.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          Mia Wong
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-truncate text-gray-700">
-                          HR
-                        </a>
-  
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item blur">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-  
-                        <!-- Avatar -->
-                        <div class="avatar avatar-xl">
-                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-5.jpg" alt="...">
-                        </div>
-  
-                      </div>
-                      <div class="col-6 ms-n5">
-  
-                        <!-- Heading -->
-                        <p class="mb-0">
-                          Sabana Fori
-                        </p>
-  
-                        <!-- Text -->
-                        <a class="d-block small text-truncate text-gray-700">
-                          Software engineer
-                        </a>
-  
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
-  
+
               </div>
+
             </div>
   
           </div>
