@@ -30,6 +30,64 @@
 
   <body>
 
+    <!--Modal-->
+    <div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="moreModalLabel" aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered" role="document">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="font-weight-bold h3" id="moreModalLabel">
+              Get the list of employees for Google
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+
+            <h2 class="font-weight-bold h3">
+              Get the list of employees for Google
+            </h2>
+
+            <p class="text-muted mb-6">
+              Proxycurl is a developer's tool to integrate People/Company related data into their applcations
+            </p>
+
+            <div class="highlight-block mb-4">
+              <div class="d-flex">
+                <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+              </div>
+            <pre><code class="language-python">
+<span class="text-hl">import</span> requests
+api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
+api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
+header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
+payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
+response = requests.get(api_endpoint,
+                json=payload,
+                headers=header_dic)
+</code>
+</pre>
+            </div>
+
+          </div>
+
+          <div class="modal-footer py-4">
+
+            <button type="button" class="btn btn-secondary-soft mr-2" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Get API Key and run code</button>
+            
+          </div>
+
+      </div>
+
+    </div>
+
      <!-- NAVBAR
     ================================================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
@@ -266,12 +324,9 @@
                       <p class="text-muted">
                         A problem isn't truly solved until it's solved for all. 
                         Googlers build products that help create opportunities for everyone, whether down the street or across the globe. 
-                        Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you<span class="text-muted collapse" id="collapseText"> unique. Together, we can build for everyone.<br>
-                        <br>
-                        Check out our career opportunities at <a class="text-primary" href="https://careers.google.com" target="_blank">careers.google.com</a>.
-                        </span>
+                        Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you
 
-                        <a class="text-black font-weight-bold" data-toggle="collapse" href="#collapseText" role="button" aria-expanded="true" aria-controls="collapseText">
+                        <a type="button" class="text-black font-weight-bold" data-toggle="modal" data-target="#moreModal">
                           ...more
                         </a>
 
