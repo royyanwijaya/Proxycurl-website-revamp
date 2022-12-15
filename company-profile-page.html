@@ -7,7 +7,7 @@
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">    
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
     <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
@@ -287,7 +287,7 @@ response = requests.get(api_endpoint,
         <div class="row justify-content-center align-items-top mb-4">
 
           <!--Company-->
-          <div class="col-12 col-lg-8 text-center text-md-left">
+          <div class="col-12 col-lg-7 text-center text-md-left d-flex">
 
             <div class="card shadow-light-lg">
 
@@ -367,17 +367,24 @@ response = requests.get(api_endpoint,
           </div>
 
           <!--Similar companies-->
-          <div class="col-12 col-md-4 d-flex">
+          <div class="col-12 col-md-5">
 
             <div class="card shadow-light-lg">
 
-              <div class="card-header">
-                <h2 class="lead font-weight-bold pb-0 mb-0">
+              <div class="card-body">
+
+                <h2 class="lead font-weight-bold mb-6">
                   Similar Companies
                 </h2>
-              </div>
 
-              <div class="card-body">
+                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link small active" id="similar-company-tab" data-toggle="tab" href="#similarcompany" role="tab" aria-controls="similarcompany" aria-selected="false">Similar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary small" data-toggle="modal" data-target="#moreModal">Affiliated Companies</a>
+                  </li>
+                </ul>
 
                 <div class="row align-items-top">
                   <div class="col-12 col-md-3">
@@ -477,6 +484,9 @@ response = requests.get(api_endpoint,
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="employee-tab" data-toggle="tab" href="#employee" role="tab" aria-controls="employee" aria-selected="false">Employees (10,001+)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews (3.8/5)</a>
               </li>
             </ul>
 
@@ -738,13 +748,296 @@ response = requests.get(api_endpoint,
                         <a class="page-link" href="#" tabindex="-1">Previous</a>
                       </li>
                       <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" type="button" data-target="#moreModal" data-toggle="modal">2</a></li>
+                      <li class="page-item"><a class="page-link" type="button" data-target="#moreModal" data-toggle="modal">3</a></li>
                       <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
+                        <a class="page-link" type="button" data-target="#moreModal" data-toggle="modal">Next</a>
                       </li>
                     </ul>
                   </nav>
+
+                </div>
+
+              </div>
+
+              <!--Employees-->
+              <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+
+                <div class="mt-6">
+
+                  <div class="row align-items-top border-bottom pb-8">
+
+                    <div class="col-12 col-md-1">
+                      <img class="rounded-circle" width="48" src="assets/img/logos/Google__G__Logo.svg" alt="microsoft logo">
+                    </div>
+  
+                    <div class="col-12 col-md-11 pl-8">
+                      <h2 class="h3 font-weight-bold mb-0">
+                        Give a rating to Google
+                      </h2>
+  
+                      <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+
+                      <form>
+
+                        <textarea class="form-control" id="textarea" placeholder="Write a review" rows="5" maxlength="500"></textarea>
+
+                        <div class="row">
+
+                          <div class="col-6">  
+                            <button class="btn btn-sm btn-primary mt-4" disabled>
+                              Post a review
+                            </button>
+                          </div>
+                          
+                          <div class="col-6">
+                            <h6 class="text-muted text-right mt-2">
+                              0/500
+                            </h6>
+                          </div>
+                          
+                        </div>
+                        
+                      </form>
+
+                    </div>
+
+                  </div>
+
+                  <div class="row align-items-top mt-6">
+  
+                    <div class="col-12">
+                      <h2 class="h3 font-weight-bold mb-4">
+                        Ratings and reviews
+                      </h2>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                      <div class="row align-items-end">
+
+                        <div class="col-6">
+                          <h3 class="display-2 font-weight-bold">
+                            3.8 <span class="h4 text-gray-700 font-weight-normal">out of 5</span>
+                          </h3>
+                        </div>
+  
+                        <div class="col-6">
+                          <p class="text-gray-700 text-right">
+                            420 total ratings
+                          </p>
+                        </div>
+  
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            magewati
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 4/5
+                            <span class="ml-2 font-weight-bold text-muted small">15 December 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Anak rock bangun pagi, bersiap untuk nikmati hari<br>
+                            Anak rock bangun pagi dan tetap berjuang, sampai hari ini
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              7 out of 11 found this helpful. Was this review helpful?
+                            </span>
+
+                            <div class="btn-group ml-2">
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                Yes
+                              </button>
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                No
+                              </button>
+      
+                            </div>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            happydentwhitegaenak
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 3/5
+                            <span class="ml-2 font-weight-bold text-muted small">10 November 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              Thank you! Your vote will be counted and appear on this site shortly.
+                            </span>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            indracirebon
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 3/5
+                            <span class="ml-2 font-weight-bold text-muted small">10 November 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              0 found this helpful. Was this review helpful?
+                            </span>
+
+                            <div class="btn-group ml-2">
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                Yes
+                              </button>
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                No
+                              </button>
+      
+                            </div>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            batagorwareg
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 3/5
+                            <span class="ml-2 font-weight-bold text-muted small">10 November 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              7 out of 11 found this helpful. Was this review helpful?
+                            </span>
+
+                            <div class="btn-group ml-2">
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                Yes
+                              </button>
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                No
+                              </button>
+      
+                            </div>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            langitkesembilan
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 3/5
+                            <span class="ml-2 font-weight-bold text-muted small">10 November 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              7 out of 11 found this helpful. Was this review helpful?
+                            </span>
+
+                            <div class="btn-group ml-2">
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                Yes
+                              </button>
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                No
+                              </button>
+      
+                            </div>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
 
                 </div>
 
