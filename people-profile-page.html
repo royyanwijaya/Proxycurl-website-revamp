@@ -24,7 +24,7 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Company profile page</title>
+    <title>People profile page</title>
 
   </head>
 
@@ -286,78 +286,45 @@ response = requests.get(api_endpoint,
 
         <div class="row justify-content-center align-items-top mb-4">
 
-          <!--Company-->
-          <div class="col-12 col-lg-7 text-center text-md-left d-flex">
+          <!--People-->
+          <div class="col-12 col-lg-7">
 
             <div class="card shadow-light-lg">
 
               <div class="card-body">
                 
-                <!--Company name and logo-->
-                <div class="d-flex align-items-center">
-                  <div class="mr-2">
-                    <img class="rounded-circle" width="112" alt="google logo" src="assets/img/logos/google logo.jpeg">
-                  </div>
-    
-                  <h1 class="display-3 font-weight-bold mb-0">
-                    Google
-                  </h1>
+                <!--People information-->
+                <div class="avatar avatar-xxl mr-2">
+                  <img class="avatar-img rounded-circle" width="112" alt="people profile" src="assets/img/Agents/agen_6.jpeg">
                 </div>
+  
+                <div class="row align-items-top">
 
-                <!--Company description-->
-                <div class="mt-4">
+                  <div class="col-12 col-md-8">
+                    <h1 class="h2 font-weight-bold mt-4 mb-0">
+                      Yan Mar Sofyandi
+                    </h1>
+                    <p class="h4 text-gray-700">
+                      Founder & CTO at McGyver International, ex Apple Software Engineer
+                    </p>
+                    <p class="mt-4 text-gray-700">
+                      <i class="neu-gps"></i> Indonesia
+                    </p>
+                  </div>
+                  
+                  <div class="col-12 col-md-4">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-md-3">
+                        <img class="rounded-circle" width="48" src="assets/img/logos/apple logo.jpeg" alt="apple logo">
+                      </div>
     
-                  <div class="row align-items-top mb-4">
-
-                    <div class="col-12">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        About
-                      </h3>
-      
-                      <p class="text-muted">
-                        A problem isn't truly solved until it's solved for all. 
-                        Googlers build products that help create opportunities for everyone, whether down the street or across the globe. 
-                        Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you
-
-                        <a type="button" class="text-black font-weight-bold" data-toggle="modal" data-target="#moreModal">
-                          ...more
+                      <div class="col-12 col-md-9">
+                        <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                          Apple
                         </a>
-
-                      </p>
+                      </div>
                     </div>
-      
                   </div>
-      
-      
-                  <div class="row align-items-top mb-4">
-      
-                    <div class="col-11">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        Total employees
-                      </h3>
-      
-                      <p class="text-info">
-                        10,001+ employees
-                      </p>
-                    </div>
-      
-                  </div>
-      
-      
-                  <div class="row align-items-top mb-6">
-      
-                    <div class="col-11">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        Country
-                      </h3>
-      
-                      <a class="text-info" href="#!">
-                        United States
-                      </a>
-                    </div>
-      
-                  </div>
-    
                 </div>
 
               </div>
