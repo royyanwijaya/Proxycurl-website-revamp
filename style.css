@@ -2,10 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.boder-dotted {
-  border-style: dotted !important;
-}
-
 .rating {
   display: flex;
   flex-direction: row-reverse;
