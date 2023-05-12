@@ -1,0 +1,22 @@
+.cube {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  perspective: 600px;
+  transform-style: preserve-3d;
+}
+
+.cube-face {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: red;
+  opacity: 0.5;
+}
+
+.cube-face-front {
+	color: blue;
+	transform: translate3d(0, 0, 20px);
+	transform: rotateY(40deg);
+	transform: translate3d(0, 0, 600px/2);
+}
