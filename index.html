@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./style-cube.css" type="text/css" />
+    <link rel="stylesheet" href="qube.css" type="text/css" />
 
     <!-- Map -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -1024,19 +1024,21 @@
             </div>
 
             <div class="row">
-              <div class="cube">
-                <div class="cube-face  cube-face-front"></div>
-                <div class="cube-face  cube-face-back"></div>
-                <div class="cube-face  cube-face-left"></div>
-                <div class="cube-face  cube-face-right"></div>
-                <div class="cube-face  cube-face-top"></div>
-                <div class="cube-face  cube-face-bottom"></div>
-             </div>
+              <div class="qube-perspective">
+                <ul id="cube1" class="qube">
+                  <li class="front"></li>
+                  <li class="left"></li>
+                  <li class="back"></li>
+                  <li class="right"></li>
+                  <li class="top"></li>
+                  <li class="bottom"></li>
+                </ul>
+              </div>
             </div>
 
             <div class="row mt-8" style="background-image: url(assets/bg/API\ Box.png);">
 
-              <div class="col-12 py-8 px-8">
+              <div class="col-12 mb-6">
                 <div class="highlight-block">
 
                   <!-- Controls -->
@@ -1054,6 +1056,30 @@
   {<span class="text-info">"profile_id"</span>: <span class="text-warning">"Fejj Zebos"</span>, <span class="text-warning">"Omazan"</span>, <span class="text-warning">"Singapore"</span>}
   ]</code></pre>
                 </div>
+              </div>
+
+              <div class="col-4">
+                <button class="btn btn-primary w-100">
+                  <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z" fill="#fff"/></svg>
+                  <br>
+                  Person Profile
+                </button>
+              </div>
+
+              <div class="col-4">
+                <button class="btn btn-outline-primary shadow-light-lg lift w-100">
+                  <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m3.5,7c0-2.7614,2.2386-5,5-5s5,2.2386,5,5-2.2386,5-5,5-5-2.2386-5-5Zm8,9h-6c-2.2092,0-4,1.7908-4,4v1c0,.5522.4477,1,1,1h12c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4Zm9.293-6.707l-3.293,3.293-1.293-1.293c-.3906-.3906-1.0234-.3906-1.4141,0s-.3906,1.0234,0,1.4141l2,2c.1953.1953.4512.293.707.293s.5117-.0977.707-.293l4-4c.3906-.3906.3906-1.0234,0-1.4141s-1.0234-.3906-1.4141,0Z" fill="#335EEA"/></svg>
+                  <br>
+                  Person Lookup
+                </button>
+              </div>
+
+              <div class="col-4">
+                <button class="btn btn-outline-primary shadow-light-lg lift w-100">
+                  <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14,7c0,2.7614-2.2386,5-5,5s-5-2.2386-5-5,2.2386-5,5-5,5,2.2386,5,5ZM2,20v1c0,.5522.4477,1,1,1h12c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4h-6c-2.2092,0-4,1.7908-4,4Zm11.9944-8.1044c.3251.0665.6608.1044,1.0056.1044,2.7614,0,5-2.2386,5-5s-2.2386-5-5-5c-.3448,0-.6805.038-1.0056.1044,1.2386,1.2634,2.0056,2.991,2.0056,4.8956s-.767,3.6321-2.0056,4.8956Zm4.0056,4.1044h-1.5405c.9543,1.0628,1.5405,2.4625,1.5405,4v2h3c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4Z" fill="#335EEA"/></svg>
+                  <br>
+                  Role Lookup
+                </button>
               </div>
 
             </div>
@@ -1179,7 +1205,7 @@
 
             <div class="row mt-8" style="background-image: url(assets/bg/API\ Box.png);">
 
-              <div class="col-12 py-8 px-8">
+              <div class="col-12 mb-6">
                 <div class="highlight-block">
 
                   <!-- Controls -->
@@ -1197,6 +1223,30 @@
   {<span class="text-info">"profile_id"</span>: <span class="text-warning">"Fejj Zebos"</span>, <span class="text-warning">"Omazan"</span>, <span class="text-warning">"Singapore"</span>}
   ]</code></pre>
                 </div>
+              </div>
+
+              <div class="col-4">
+                <button class="btn btn-primary w-100">
+                  <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z" fill="#fff"/></svg>
+                  <br>
+                  Person Profile
+                </button>
+              </div>
+
+              <div class="col-4">
+                <button class="btn btn-outline-primary shadow-light-lg lift w-100">
+                  <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m3.5,7c0-2.7614,2.2386-5,5-5s5,2.2386,5,5-2.2386,5-5,5-5-2.2386-5-5Zm8,9h-6c-2.2092,0-4,1.7908-4,4v1c0,.5522.4477,1,1,1h12c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4Zm9.293-6.707l-3.293,3.293-1.293-1.293c-.3906-.3906-1.0234-.3906-1.4141,0s-.3906,1.0234,0,1.4141l2,2c.1953.1953.4512.293.707.293s.5117-.0977.707-.293l4-4c.3906-.3906.3906-1.0234,0-1.4141s-1.0234-.3906-1.4141,0Z" fill="#335EEA"/></svg>
+                  <br>
+                  Person Lookup
+                </button>
+              </div>
+
+              <div class="col-4">
+                <button class="btn btn-outline-primary shadow-light-lg lift w-100">
+                  <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14,7c0,2.7614-2.2386,5-5,5s-5-2.2386-5-5,2.2386-5,5-5,5,2.2386,5,5ZM2,20v1c0,.5522.4477,1,1,1h12c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4h-6c-2.2092,0-4,1.7908-4,4Zm11.9944-8.1044c.3251.0665.6608.1044,1.0056.1044,2.7614,0,5-2.2386,5-5s-2.2386-5-5-5c-.3448,0-.6805.038-1.0056.1044,1.2386,1.2634,2.0056,2.991,2.0056,4.8956s-.767,3.6321-2.0056,4.8956Zm4.0056,4.1044h-1.5405c.9543,1.0628,1.5405,2.4625,1.5405,4v2h3c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4Z" fill="#335EEA"/></svg>
+                  <br>
+                  Role Lookup
+                </button>
               </div>
 
             </div>
