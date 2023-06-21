@@ -24,7 +24,7 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Proxycurl</title>
+    <title>Proxycurl is a LinkedIn Scraping API</title>
 
   </head>
 
@@ -271,7 +271,7 @@
             </h1>
 
             <p class="lead text-gray-700 mb-8">
-              Enrich people and company profiles, get contact information, list jobs, list employees, etc, with Proxycurl API
+              Scrape LinkedIn member and company profiles. Scrape LinkedIn Jobs. Get insights on employee count and trends. And more!
             </p>
 
             <!-- Linkedin Link -->
@@ -386,306 +386,251 @@
 
     <!-- POWERED BY PROXYCURL -->
     <div class="section pt-12 bg-light pt-md-12 pb-8 pb-md-11 border-bottom">
+
       <div class="container">
+
         <div class="row justify-content-between align-items-center mb-5">
+
           <div class="col-12 col-md-4 order-md-2 text-center">
-
-            <!-- Image -->
-            <img class="img-fluid w-75 w-md-100 mb-6 mb-md-0" src="assets/dwarf forms/df-data-driven illustration.svg" alt="Data-driven illustration" data-aos="fade-up" data-aos-delay="100">
-
+            <img src="assets/dwarf forms/df-data-driven illustration.svg" alt="Data-driven illustration" data-aos="fade-up" data-aos-delay="100" class="img-fluid w-75 w-md-100 mb-6 mb-md-0 aos-init aos-animate">
           </div>
-          <div class="col-12 col-md-7 order-md-1 mb-6">
 
-            <!-- Heading -->
+          <div class="col-12 col-md-7 order-md-1 mb-6">
             <h6 class="text-uppercase text-info mb-6">
               Powered by Proxycurl
             </h6>
-
-            <!-- Heading -->
             <h2 style="max-width: 450px;">
               Build data-driven applications with Proxycurl API
             </h2>
-
-            <!-- Text -->
             <div class="lead text-muted-80 mb-4">
               Scrape LinkedIn profiles; get contact Information; get venture funding data; list jobs
             </div>
-
           </div>
-        </div> <!-- / .row -->
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
+        </div>
 
-          <!-- API Card -->
+        <div data-aos="fade-up" data-aos-delay="100" class="row aos-init aos-animate">
+          
           <div class="col-12 col-lg-6 mb-6 d-flex">
 
-            <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
 
-              <!-- Body -->
               <div class="card-body my-auto">
 
-                <img alt="user icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/man.svg">
-
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  LinkedIn Person Profile Endpoint
+                <img alt="user icon" src="assets/dwarf forms/man.svg" class="img-fluid mb-4" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-0">
+                  Person Profile Endpoint
                 </h3>
 
-                <div class="row justify-content-center">
+                <p class="text-muted">
+                  Scrape a LinkedIn member profile
+                </p>
 
+                <div style="min-height: 120px;" class="row justify-content-center">
+                  
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
-                      LinkedIn (Person) Profile URL
+                      Person Profile URL
                     </p>
                   </div>
 
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Output
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
-                      Profile data with profile picture, job history, etc
-                      <br>
-                      <br>
+                      Profile data with profile picture, job history, etc.
                     </p>
                   </div>
 
                 </div>
 
-              </div>
+                <div class="row justify-content-center">
 
-              <!-- Sample code -->
-              <div class="col-12 mb-5">
-      
-                <div class="highlight-block">
-    
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>               
-    
-                <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-                  
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-                  
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
+                  <div class="col-12 mb-5">
+
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
+                    </div>
+
+                  </div>
+
                 </div>
-    
+
               </div>
 
             </div>
 
           </div>
 
-          <!-- API Card -->
           <div class="col-12 col-lg-6 mb-6 d-flex">
 
-            <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
 
-              <!-- Body -->
               <div class="card-body my-auto">
 
-                <img alt="company icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/company.svg">
-
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  LinkedIn Company Profile Endpoint
+                <img alt="company icon" src="assets/dwarf forms/company.svg" class="img-fluid mb-4" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-0">
+                  Company Profile Endpoint
                 </h3>
 
-                <div class="row justify-content-center">
+                <p class="text-muted">
+                  Scrape a LinkedIn company profile
+                </p>
 
+                <div style="min-height: 120px;" class="row justify-content-center">
+                  
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
-                      LinkedIn (Company) Profile URL
+                      Company Profile URL
                     </p>
                   </div>
 
                   <div class="col-6">
-                    <!-- Input -->
+
                     <h4 class="mb-0 text-info">
                       Output
                     </h4>
 
-                    <!-- Text -->
                     <p class="mb-0">
-                      Profile data with profile picture, office locations, etc
+                      Profile data with profile picture, office locations, etc.
                     </p>
+
                   </div>
 
                 </div>
 
-              </div>
-
-              <!-- Sample code -->
-              <div class="col-12 mb-5">
-      
-                <div class="highlight-block">
-    
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>               
-    
-                <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-                  
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-                  
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
+                <div class="row justify-content-center">
+                  <div class="col-12 mb-5">
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/company?categories=include&amp;funding_data=include&amp;extra=include&amp;exit_data=include&amp;acquisitions=include&amp;url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fapple%2F&amp;use_cache=if-present</code></pre>
+                      </div>
+                  </div>
                 </div>
-    
+
               </div>
 
             </div>
 
           </div>
 
-          <!-- API Card -->
           <div class="col-12 col-lg-6 mb-6 d-flex">
 
-            <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
-
-              <!-- Body -->
               <div class="card-body my-auto">
 
-                <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/email.svg">
-
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Work Email Lookup Endpoint
+                <img alt="email icon" src="assets/dwarf forms/email.svg" class="img-fluid mb-4" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-0">
+                  Job Listing Endpoint
                 </h3>
 
-                <div class="row justify-content-center">
+                <p class="text-muted">
+                  Scrape LinkedIn job listings
+                </p>
+
+                <div style="min-height: 120px;" class="row justify-content-center">
 
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
                       Work Email Address
                     </p>
                   </div>
 
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
-                      Output
+                    Output
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
-                      LinkedIn (Person) Profile URL
+                    LinkedIn (Person) Profile URL
                     </p>
                   </div>
 
                 </div>
 
-              </div>
-
-              <!-- Sample code -->
-              <div class="col-12 mb-5">
-      
-                <div class="highlight-block">
-    
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>               
-    
-                <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-                  
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-                  
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
+                <div class="row justify-content-center">
+                  <div class="col-12 mb-5">
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/profile/email?linkedin_profile_url=https%3A%2F%2Fsg.linkedin.com%2Fin%2Fsteven-goh-6738131b&amp;cache=no-cache&amp;callback_url=https%3A%2F%2Fwebhook.site%2F29e12f17-d5a2-400a-9d08-42ee9d83600a</code></pre>
+                    </div>
+                  </div>
                 </div>
-    
-              </div>
 
+              </div>
             </div>
 
           </div>
-          
-          <!-- API Card -->
+
           <div class="col-12 col-lg-6 mb-6 d-flex">
 
-            <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
 
-              <!-- Body -->
               <div class="card-body my-auto">
 
-                <img alt="woman icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/woman.svg">
-
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Personal Email Lookup Endpoint
+                <img alt="user icon" src="assets/dwarf forms/woman.svg" class="img-fluid mb-4" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-0">
+                  Job Profile Endpoint
                 </h3>
 
-                <div class="row justify-content-center">
+                <p class="text-muted">
+                  Scrape LinkedIn job profile
+                </p>
 
+                <div style="min-height: 120px;" class="row justify-content-center">
+                  
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
                       LinkedIn (Person) Profile URL
                     </p>
                   </div>
 
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Output
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
                       List of Personal Emails
                     </p>
@@ -693,76 +638,65 @@ response = requests.get(api_endpoint,
 
                 </div>
 
-              </div>
+                <div class="row justify-content-center">
 
-              <!-- Sample code -->
-              <div class="col-12 mb-5">
-      
-                <div class="highlight-block">
-    
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>               
-    
-                <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-                  
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-                  
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
+                  <div class="col-12 mb-5">
+
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
+                    </div>
+
+                  </div>
+
                 </div>
-    
+
               </div>
 
             </div>
 
           </div>
-          
-          <!-- API Card -->
+
           <div class="col-12 col-lg-6 mb-6 d-flex">
 
-            <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
 
-              <!-- Body -->
               <div class="card-body my-auto">
 
-                <img alt="bag icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/bag.svg">
-
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Employee Listing Endpoint
+                <img alt="user icon" src="assets/dwarf forms/bag.svg" class="img-fluid mb-4" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-0">
+                  Employee Count Endpoint
                 </h3>
 
-                <div class="row justify-content-center">
+                <p class="text-muted">
+                  Scrape employee count of any company on LinkedIn
+                </p>
 
+                <div style="min-height: 120px;" class="row justify-content-center">
+                  
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
-                      LinkedIn (Company) Profile URL
+                      Company Profile URL
                     </p>
                   </div>
 
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Output
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
                       List of employees
                     </p>
@@ -770,140 +704,128 @@ response = requests.get(api_endpoint,
 
                 </div>
 
-              </div>
+                <div class="row justify-content-center">
 
-              <!-- Sample code -->
-              <div class="col-12 mb-5">
-      
-                <div class="highlight-block">
-    
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>               
-    
-                <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-                  
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-                  
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
+                  <div class="col-12 mb-5">
+
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
+                    </div>
+
+                  </div>
+
                 </div>
-    
+
               </div>
 
             </div>
 
           </div>
-          
-          <!-- API Card -->
+
           <div class="col-12 col-lg-6 mb-6 d-flex">
 
-            <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
 
-              <!-- Body -->
               <div class="card-body my-auto">
 
-                <img alt="chart icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/chart.svg">
-
-                <!-- Heading -->
+                <img alt="user icon" src="assets/dwarf forms/chart.svg" class="img-fluid mb-4" width="56">
+                
                 <h3 class="mt-auto">
                   Role Lookup Endpoint
                 </h3>
 
-                <div class="row justify-content-center">
-
+                <div style="min-height: 120px;" class="row justify-content-center">
+                  
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
                       Company Name and Role
                     </p>
                   </div>
 
                   <div class="col-6">
-                    <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Output
                     </h4>
-
-                    <!-- Text -->
                     <p class="mb-0">
-                      LinkedIn (Person) Profile URL
+                      Person Profile URL
                     </p>
+                  </div>
+
+                </div>
+
+                <div class="row justify-content-center">
+
+                  <div class="col-12 mb-5">
+
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
+                    </div>
+
                   </div>
 
                 </div>
 
               </div>
 
-              <!-- Sample code -->
-              <div class="col-12 mb-5">
-      
-                <div class="highlight-block">
-    
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>               
-    
-                <pre><code class="language-python">
-<span class="text-hl">import</span> requests
-                  
-api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
-api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
-header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
-payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
-                  
-response = requests.get(api_endpoint,
-                        json=payload,
-                        headers=header_dic)</code></pre>
-                </div>
-    
-              </div>
-
             </div>
 
           </div>
 
-        </div> <!-- / .row -->
+        </div>
 
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6">
-            <a class="btn btn-block btn-primary shadow-lg" href="">
+        <div class="row justify-content-center mt-md-8">
+          <div class="col-12 text-center">
+            <a href="#!" class="btn mr-md-4 mr-2 lift btn-primary shadow-lg">
+              Get Trial API Key
+            </a>
+            <a href="#!" class="btn lift btn-outline-primary shadow-lg">
               See API Cheatsheet
             </a>
           </div>
         </div>
 
-      </div> <!-- / .container-->
-    </div>    
+      </div>
+
+    </div> 
 
     <!-- DEVELOPERS FOR DEVELOPERS
     ================================================== -->
     <section class="pt-4 pt-md-11">
+
       <div class="container">
+
         <div class="row align-items-center">
+
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
 
             <!-- Image -->
             <img src="assets/img/illustrations/developer illustration.svg" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
 
           </div>
+
           <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
 
             <!-- Heading -->
@@ -917,8 +839,11 @@ response = requests.get(api_endpoint,
             </p>
 
           </div>
+
         </div> <!-- / .row -->
+
       </div> <!-- / .container -->
+
     </section>
 
     <!-- KEY POINTS
