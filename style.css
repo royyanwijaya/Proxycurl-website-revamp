@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+  display:block !important;
+}
+
 .rating {
   display: flex;
   flex-direction: row-reverse;
