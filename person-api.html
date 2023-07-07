@@ -266,11 +266,11 @@
     <section class="pt-8 pt-md-10 pb-10 pb-md-12 border-bottom">
 
       <div class="container">
+
         <div class="row justify-content-center">
 
           <div class="col-12 col-md-9 text-center">
-            
-            <!-- Heading -->
+
             <h1 class="display-2 font-weight-bold">
               <span class="text-primary">Find and Enrich Profiles on People</span> with Person API
             </h1>
@@ -278,51 +278,221 @@
             <h4 class="h3 text-muted mb-6 mb-md-9">
               Enrich LinkedIn profiles; identify people from emails or names; search for prospects; get profile pictures.
             </h4>
+
           </div>
 
           <div class="col-12 col-md-12 text-center">
+
             <img class="img img-fluid rounded mb-6" alt="ooo" src="Illustration_landscape_placement.png">
 
             <div>
-            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
-              Get Trial API Key
-            </a>
 
-            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="#!">
-              Read API Docs for Person API
-            </a>
+              <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+                Get Trial API Key
+              </a>
+  
+              <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="#!">
+                Read API Docs for Person API
+              </a>
+
             </div>
 
           </div>
 
         </div> <!-- / .row -->
+
       </div> <!-- container heading--> 
 
     </section>
 
     <!-- SECOND FOLD
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-8 pb-md-12 bg-light border-bottom">
+    <section class="pt-8 pt-md-11 pb-8 pb-md-12 bg-light">
 
-    <div class="container pb-11 pb-md-14">
-
+      <div class="container">
+  
         <div class="row justify-content-center mb-md-8 mb-6">
-    
-            <div class="col-12 col-md-8 col-lg-10">
-    
-                <h2 class="display-4 mb-2 text-center">
-                  Person Lookup Endpoint
-                </h2>
-    
-                <p class="text-muted lead text-center">
-                  Identify a person with a name and company information.
-                </p>
-    
+      
+          <div class="col-12 col-md-8 col-lg-10">
+  
+              <h2 class="display-4 mb-2 text-center">
+                Person Lookup Endpoint
+              </h2>
+  
+              <p class="text-muted lead text-center">
+                Identify a person with a name and company information.
+              </p>
+  
+          </div>
+          
+        </div>
+      
+        <div class="row justify-content-center">
+          
+        <div class="col-12 col-md-5">
+
+          <div class="card shadow-light">
+
+            <div class="card-body">
+
+              <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase">
+                Input
+              </span>
+
+              <div class="py-3 px-4 border border-primary rounded shadow-lg">
+                bill, gates, gatesfoundation
+              </div>
+      
+              <!--arrow-->
+              <div class="text-center mt-n2">
+                <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                  <i class="fe fe-arrow-down"></i>
+                </span>
+              </div>
+      
+              <!-- Code block -->
+              <div class="highlight-block text-left mt-n2">
+      
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+      
+                <pre>
+<code class="language-python">
+curl \
+  -G \
+  -H "Authorization: Bearer ${YOUR_API_KEY}" \
+  'https://nubela.co/proxycurl/api/linkedin/profile/resolve' \
+  --data-urlencode 'company_domain=gatesfoundation.org' \
+  --data-urlencode 'first_name=Bill' \
+  --data-urlencode 'similarity_checks=include' \
+  --data-urlencode 'enrich_profile=enrich' \
+  --data-urlencode 'location=Seattle' \
+  --data-urlencode 'title=Co-chair' \
+  --data-urlencode 'last_name=Gates'
+</code></pre>
+      
+              </div>
             </div>
+
+          </div>
+
+        </div>
+
+        <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
+          
+          <h1 class="display-3 mb-0">
+            <i class="fe fe-arrow-right"></i>
+          </h1>
+
+        </div>
+
+        <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4">
+          
+          <h1 class="display-3 mb-0">
+            <i class="fe fe-arrow-down"></i>
+          </h1>
+
+        </div>
+      
+        <div class="col-12 col-md-6">
+
+          <div class="card shadow-light">
+
+            <div class="card-body">
+        
+              <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase">
+                Output
+              </span>
+              
+              <div class="row mb-0">
+                
+                <div class="col-1">
+                  <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM8.078,18.737H5.085v-9H8.078ZM6.582,8.5h-.02A1.56,1.56,0,1,1,6.6,5.393,1.56,1.56,0,1,1,6.582,8.5ZM18.87,18.737H15.877V13.921c0-1.211-.433-2.036-1.516-2.036a1.637,1.637,0,0,0-1.535,1.094,2.032,2.032,0,0,0-.1.731v5.027H9.734s.04-8.16,0-9h2.992V11.01a2.97,2.97,0,0,1,2.7-1.488c1.969,0,3.446,1.287,3.446,4.053Z"/></svg>
+                </div>
+                
+                <div class="col-10 pl-3 h5 font-weight-bold">
+                  LinkedIn URL
+                </div>
+
+              </div>
+
+              <div class="py-3 px-4 mb-4 border border-primary rounded shadow-lg">
+                https://linkedin.com/in/williamhgates
+              </div>
+
+              <!-- Code block -->
+              <div class="highlight-block text-left">
+        
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+        
+                <pre>
+<code class="language-python">                        
+{
+"url": "https://linkedin.com/in/williamhgates"
+}</code></pre>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      
+        </div>
+  
+        <div class="row justify-content-center">
+
+          <div class="col-12 text-center mt-6">
+
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+  
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="https://nubela.co/proxycurl/docs?shell#people-api-person-lookup-endpoint" target="_blank">
+              Read API Docs for Person Lookup Endpoint
+            </a>
+
+          </div>
+  
+        </div>
+  
+      </div>
+
+    </section>
+
+    <!-- THIRD FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-12 bg-light">
+
+      <div class="container">
+  
+        <div class="row justify-content-center mb-md-8 md-8">
+    
+          <div class="col-12 col-md-8 col-lg-10">
+    
+            <h2 class="display-4 mb-2 text-center">
+              Person Profile Endpoint
+            </h2>
+
+            <p class="text-muted lead text-center">
+              Enrich a personal profile with structured data
+            </p>
+
+          </div>
             
         </div>
         
-        <div class="row justify-content-between">
+        <div class="row justify-content-between mt-6">
             
           <div class="col-12 col-md-5">
 
@@ -330,15 +500,11 @@
 
               <div class="card-body">
 
-                <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase">
-                  Input
-                </span>
-
-                <fieldset disabled>
-                  <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-gray-700 text-left">
-                    john, doe, apple
-                  </span>
-                </fieldset>
+                <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+        
+                <div class="py-3 px-4 border border-primary rounded shadow-lg">
+                  linkedin.com/in/williamhgates
+                </div>
         
                 <!--arrow-->
                 <div class="text-center mt-n2">
@@ -348,7 +514,7 @@
                 </div>
         
                 <!-- Code block -->
-                <div class="highlight-block text-left mt-n2 mb-3">
+                <div class="highlight-block text-left mt-n2">
         
                   <!-- Controls -->
                   <div class="d-flex">
@@ -358,34 +524,40 @@
                   </div>
         
                   <pre>
-                                <code class="language-python">
-curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company/resolve' \ --data-urlencode 'company_domain=http://apple.com' \    
-
-</code></pre>
+  <code class="language-python">
+  curl \
+      -G \
+      -H "Authorization: Bearer ${YOUR_API_KEY}" \
+      'https://nubela.co/proxycurl/api/linkedin/profile/resolve' \
+      --data-urlencode 'company_domain=gatesfoundation.org' \
+      --data-urlencode 'first_name=Bill' \
+      --data-urlencode 'similarity_checks=include' \
+      --data-urlencode 'enrich_profile=enrich' \
+      --data-urlencode 'location=Seattle' \
+      --data-urlencode 'title=Co-chair' \
+      --data-urlencode 'last_name=Gates'
+  </code></pre>
         
                 </div>
+  
               </div>
-
+              
             </div>
 
           </div>
-
-
+  
           <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
-            
             <h1 class="display-3 mb-0">
               <i class="fe fe-arrow-right"></i>
             </h1>
-
           </div>
-
+  
           <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4">
-            
             <h1 class="display-3 mb-0">
               <i class="fe fe-arrow-down"></i>
             </h1>
-
           </div>
+        
         
           <div class="col-12 col-md-6">
 
@@ -396,37 +568,145 @@ curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/prox
                 <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase">
                   Output
                 </span>
-                
-                <div class="row mb-0">
-                  
-                  <div class="col-1">
-                    <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM8.078,18.737H5.085v-9H8.078ZM6.582,8.5h-.02A1.56,1.56,0,1,1,6.6,5.393,1.56,1.56,0,1,1,6.582,8.5ZM18.87,18.737H15.877V13.921c0-1.211-.433-2.036-1.516-2.036a1.637,1.637,0,0,0-1.535,1.094,2.032,2.032,0,0,0-.1.731v5.027H9.734s.04-8.16,0-9h2.992V11.01a2.97,2.97,0,0,1,2.7-1.488c1.969,0,3.446,1.287,3.446,4.053Z"/></svg>
-                  </div>
-                  
-                  <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
-                    LinkedIn URL
-                  </div>
 
+                <p class="lead font-weight-bold text-primary">
+                  <i class="neu-data-quality"></i> Rich data awroafjnaawdata
+                </p>
+
+                <div class="pt-4 px-4 mb-4 border border-primary rounded">
+  
+                  <table class="table table-borderless table-hover table-sm">
+  
+                    <thead>
+                      <tr class="font-weight-bold">
+                        <th scope="col">Parameter</th>
+                        <th scope="col">Required</th>
+                        <th scope="col">Example</th>
+                      </tr>
+                    </thead>
+  
+                    <tbody>
+  
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            company_domain
+                          </span>
+                        </th>
+                        <td>
+                          yes
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            gatesfoundation.org
+                          </span>
+                        </td>
+                      </tr>
+  
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            first_name
+                          </span>
+                        </th>
+                        <td>
+                          yes
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            Bill
+                          </span>
+                        </td>
+                      </tr>
+  
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            similarity_checks
+                          </span>
+                        </th>
+                        <td class="text-muted">
+                          no
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            include
+                          </span>
+                        </td>
+                      </tr>
+  
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            enrich_profile
+                          </span>
+                        </th>
+                        <td class="text-muted">
+                          no
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            enrich
+                          </span>
+                        </td>
+                      </tr>
+  
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            location
+                          </span>
+                        </th>
+                        <td class="text-muted">
+                          no
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            Seattle
+                          </span>
+                        </td>
+                      </tr>
+  
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            title
+                          </span>
+                        </th>
+                        <td class="text-muted">
+                          no
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            Co-chair
+                          </span>
+                        </td>
+                      </tr>
+  
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            last_name
+                          </span>
+                        </th>
+                        <td class="text-muted">
+                          no
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            Gates
+                          </span>
+                        </td>
+                      </tr>
+  
+                    </tbody>
+                    
+                  </table>
+  
                 </div>
-
-                <fieldset disabled>
-                  
-                  <span style="cursor: auto;" class="btn btn-outline-primary btn-white btn-block shadow-lg text-black text-left mb-5">
           
-                    <div class="row align-items-center">
-          
-                      <div class="col-12">
-                        linkedin.com/in/johndoe
-                      </div>
-          
-                    </div>
-
-                  </span>
-
-                </fieldset>
-
                 <!-- Code block -->
-                <div class="highlight-block text-left mb-3">
+                <div class="highlight-block text-left">
           
                   <!-- Controls -->
                   <div class="d-flex">
@@ -436,13 +716,175 @@ curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/prox
                   </div>
           
                   <pre>
-<code class="language-python">                        
-{
-  "url": "https://linkedin.com/in/johndoe"
-}</code></pre>
-
+  <code class="language-python">                        
+  {
+      'company_domain': 'gatesfoundation.org',
+      'first_name': 'Bill',
+      'similarity_checks': 'include',
+      'enrich_profile': 'enrich',
+      'location': 'Seattle',
+      'title': 'Co-chair',
+      'last_name': 'Gates',
+  }
+  </code></pre>
+          
                 </div>
+              </div>
 
+            </div>
+
+          </div>
+        
+        </div>
+
+        <div class="row justify-content-center">
+  
+          <div class="col-12 text-center mt-6">
+
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+  
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="https://nubela.co/proxycurl/docs?shell#people-api-person-profile-endpoint" target="_blank">
+              Read API Docs for Person Profile Endpoint
+            </a>
+
+          </div>
+  
+        </div>
+  
+      </div>
+
+    </section>
+
+    <!-- FOURTH FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-12 bg-light">
+
+      <div class="container">
+  
+        <div class="row justify-content-center mb-md-8 md-8">
+    
+          <div class="col-12 col-md-8 col-lg-10">
+    
+            <h2 class="display-4 mb-2 text-center">
+              Role Lookup Endpoint
+            </h2>
+
+            <p class="text-muted lead text-center">
+              Identify the decision maker of a given role in a target company
+            </p>
+
+          </div>
+            
+        </div>
+        
+        <div class="row justify-content-between mt-6">
+            
+          <div class="col-12 col-md-5">
+
+            <div class="card shadow-light">
+
+              <div class="card-body">
+
+                <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+        
+                <div class="py-3 px-4 border border-primary rounded shadow-lg">
+                  ceo, nubela
+                </div>
+        
+                <!--arrow-->
+                <div class="text-center mt-n2">
+                  <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                    <i class="fe fe-arrow-down"></i>
+                  </span>
+                </div>
+        
+                <!-- Code block -->
+                <div class="highlight-block text-left mt-n2">
+        
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+        
+                  <pre>
+  <code class="language-python">
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/find/company/role/' \
+    --data-urlencode 'role=ceo' \
+    --data-urlencode 'company_name=nubela' \
+    --data-urlencode 'enrich_profile=enrich'
+  </code></pre>
+        
+                </div>
+  
+              </div>
+              
+            </div>
+
+          </div>
+  
+          <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-right"></i>
+            </h1>
+          </div>
+  
+          <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-down"></i>
+            </h1>
+          </div>
+        
+        
+          <div class="col-12 col-md-6">
+
+            <div class="card shadow-light">
+
+              <div class="card-body">
+          
+                <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase">
+                  Output
+                </span>
+
+                <div class="row mb-0">
+                
+                  <div class="col-1">
+                    <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM8.078,18.737H5.085v-9H8.078ZM6.582,8.5h-.02A1.56,1.56,0,1,1,6.6,5.393,1.56,1.56,0,1,1,6.582,8.5ZM18.87,18.737H15.877V13.921c0-1.211-.433-2.036-1.516-2.036a1.637,1.637,0,0,0-1.535,1.094,2.032,2.032,0,0,0-.1.731v5.027H9.734s.04-8.16,0-9h2.992V11.01a2.97,2.97,0,0,1,2.7-1.488c1.969,0,3.446,1.287,3.446,4.053Z"/></svg>
+                  </div>
+                  
+                  <div class="col-10 pl-3 h5 font-weight-bold">
+                    LinkedIn URL
+                  </div>
+  
+                </div>
+  
+                <div class="py-3 px-4 mb-4 border border-primary rounded shadow-lg">
+                  https://linkedin.com/in/stevengoh
+                </div>
+          
+                <!-- Code block -->
+                <div class="highlight-block text-left">
+          
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+          
+                  <pre>
+  <code class="language-python">                        
+{
+"url": "https://linkedin.com/in/stevengoh"
+}</code></pre>
+          
+                </div>
               </div>
 
             </div>
@@ -451,1498 +893,25 @@ curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/prox
         
         </div>
             
-    
         <div class="row justify-content-center">
+  
+          <div class="col-12 text-center mt-6">
 
-            <div class="col-12 text-center mt-6">
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+  
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="https://nubela.co/proxycurl/docs?shell#people-api-role-lookup-endpoint" target="_blank">
+              Read API Docs for Role Lookup Endpoint
+            </a>
 
-              <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
-                Get Trial API Key
-              </a>
-    
-              <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="#!">
-                Read API Docs for Person Lookup Endpoint
-              </a>
-
-            </div>
-    
+          </div>
+  
         </div>
-
-    </div> <!-- container Company Lookup Endpoint-->
-
-    <div class="container pb-11 pb-md-14">
-      <div class="row justify-content-center mb-md-8 md-8">
-  
-          <div class="col-12 col-md-8 col-lg-10">
-  
-              <h2 class="display-4 mb-2 text-center">
-                Company Profile Endpoint
-              </h2>
-  
-              <p class="text-muted lead text-center">
-                Enrich a company profile with structured data
-              </p>
-  
-          </div>
-          
-      </div>
-      
-          <div class="row justify-content-between mt-6">
-          
-            <div class="col-12 col-md-5">
-              <div class="card shadow-light">
-                <div class="card-body">
-                  <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
-          
-                  <fieldset disabled>
-                    <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-gray-700 text-left">
-                      linkedin.com/in/apple
-                    </span>
-                  </fieldset>
-          
-                  <!--arrow-->
-                  <div class="text-center mt-n2">
-                    <span class="badge badge-lg badge-rounded-circle bg-info text-white">
-                      <i class="fe fe-arrow-down"></i>
-                    </span>
-                  </div>
-          
-                  <!-- Code block -->
-                  <div class="highlight-block text-left mt-n2 mb-3">
-          
-                    <!-- Controls -->
-                    <div class="d-flex">
-                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    </div>
-          
-                    <pre>
-                                  <code class="language-python">
-  curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company' \ --data-urlencode 'url=https://www.linkedin.com/company/apple/' \ --data-urlencode 'resolve_numeric_id=true' \ --data-urlencode 'categories=include' \ --data-urlencode 'funding_data=include' \ --data-urlencode 'extra=include' \ --data-urlencode 'exit_data=include' \ --data-urlencode 'acquisitions=include' \ --data-urlencode 'use_cache=if-present'   
-                              </code></pre>
-          
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
-              <h1 class="display-3 mb-0">
-                <i class="fe fe-arrow-right"></i>
-              </h1>
-            </div>
-
-            <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4">
-              <h1 class="display-3 mb-0">
-                <i class="fe fe-arrow-down"></i>
-              </h1>
-            </div>
-          
-          
-            <div class="col-12 col-md-6">
-              <div class="card shadow-light">
-                <div class="card-body">
-            
-                  <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
-
-                  <div class="row mb-0">
-                  
-                    <div class="col-1">
-                      <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M10,10H3V4A1,1,0,0,1,4,3h6ZM21,4a1,1,0,0,0-1-1H14v7h7ZM4,21h6V14H3v6A1,1,0,0,0,4,21Zm17-1V14H14v7h6A1,1,0,0,0,21,20Z"/></svg>
-                    </div>
-                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
-                      Categories
-                    </div>
-                    </div>
-                    <fieldset disabled>
-                      <span style="cursor: auto;"
-                        class="btn btn-outline-primary btn-white btn-block text-black text-left shadow-light mb-4">
-                  
-                      <div class="row align-items-center">
-                  
-                  
-                        <div class="col-12">
-                          <div class="row">
-                  
-                            <div class="col-12">
-                              Consumer-electronics, electronics, hardware, ...
-                            </div>
-                          </div>
-                        </div>
-                  
-                      </div> <!-- row-->
-                    </span>
-                  </fieldset>
-                  
-                  <div class="row mb-0">
-                  
-                    <div class="col-1">
-                      <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M21,5H3A1,1,0,0,0,2,6V18a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V6A1,1,0,0,0,21,5ZM4,17V14a3,3,0,0,1,3,3Zm0-7V7H7A3,3,0,0,1,4,10Zm8,4.5A2.5,2.5,0,1,1,14.5,12,2.5,2.5,0,0,1,12,14.5ZM20,17H17a3,3,0,0,1,3-3Zm0-7a3,3,0,0,1-3-3h3Z"/></svg>
-                    </div>
-                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
-                      Funding data
-                    </div>
-                    </div>
-                    <fieldset disabled>
-                      <span style="cursor: auto;"
-                        class="btn btn-outline-primary btn-white btn-block text-black text-left shadow-light mb-4">
-                  
-                      <div class="row align-items-center">
-                  
-                  
-                        <div class="col-12">
-                          <div class="row">
-                  
-                            <div class="col-12 pb-2 border-bottom">
-                              <span class="badge text-uppercase badge-secondary-soft mr-2">funding_type</span> Post-IPO Debt
-                            </div>
-
-                            <div class="col-12 pb-2 pt-2 border-bottom">
-                              <span class="badge text-uppercase badge-secondary-soft mr-2">money_raised</span> $5,000,000,000,-
-                            </div>
-
-                            <div class="col-12 pb-2 pt-2 border-bottom">
-                              <span class="badge text-uppercase badge-secondary-soft mr-2">number_of_investor</span> 1
-                            </div>
-
-                            <div class="col-12 pt-2">
-                              <span class="badge text-uppercase badge-secondary-soft mr-2">and more!</span> 
-                            </div>
-
-                          </div>
-                        </div>
-                  
-                      </div> <!-- row-->
-                    </span>
-                  </fieldset>
-
-                  <div class="row mb-0">
-                  
-                    <div class="col-1">
-                      <svg class="" width="28" height="32" viewBox="0 3 24 24"><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></svg>
-                    </div>
-                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
-                      Extra
-                    </div>
-                    </div>
-                    <fieldset disabled>
-                      <span style="cursor: auto;"
-                        class="btn btn-outline-primary btn-white btn-block text-black text-left shadow-light mb-6">
-                  
-                      <div class="row align-items-center">
-                  
-                  
-                        <div class="col-12">
-                          <div class="row">
-                  
-                            <div class="col-12 pb-2 border-bottom">
-                              <span class="badge text-uppercase badge-secondary-soft mr-2">ipo_status</span> Public
-                            </div>
-
-                            <div class="col-12 pb-2 pt-2 border-bottom">
-                              <span class="badge text-uppercase badge-secondary-soft mr-2">crunchbase_rank</span> 23
-                            </div>
-
-                            <div class="col-12 pb-2 pt-2 border-bottom">
-                              <span class="badge text-uppercase badge-secondary-soft mr-2">company_type</span> For profit
-                            </div>
-
-                            <div class="col-12 pt-2">
-                              <span class="badge text-uppercase badge-secondary-soft mr-2">and more!</span> 
-                            </div>
-
-                          </div>
-                        </div>
-                  
-                      </div> <!-- row-->
-                    </span>
-                  </fieldset>
-            
-            
-                  <!-- Code block -->
-                  <div class="highlight-block text-left mb-3">
-            
-                    <!-- Controls -->
-                    <div class="d-flex">
-                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    </div>
-            
-                    <pre style="height: 280px;">
-<code class="language-python">                        
-  {
-    "linkedin_internal_id": "162479",
-    "description": "We’re a diverse collective of thinkers and doers, continually reimagining what’s possible to help us all do what we love in new ways. And the same innovation that goes into our products also applies to our practices — strengthening our commitment to leave the world better than we found it. This is where your work can make a difference in people’s lives. Including your own.Apple is an equal opportunity employer that is committed to inclusion and diversity. Visit apple.com/careers to learn more.",
-    "website": "http://www.apple.com/careers",
-    "industry": "Consumer Electronics",
-    "company_size": [
-      10001,
-      null
-    ],
-    "company_size_on_linkedin": 567686,
-    "hq": {
-      "country": "US",
-      "city": "Cupertino",
-      "postal_code": "95014",
-      "line_1": "1 Apple Park Way",
-      "is_hq": true,
-      "state": "California"
-    },
-    "company_type": "PUBLIC_COMPANY",
-    "founded_year": 1976,
-    "specialities": [
-      "Innovative Product Development",
-      "World-Class Operations",
-      "Retail",
-      "Telephone Support"
-    ],
-    "locations": [
-      {
-        "country": "US",
-        "city": "Cupertino",
-        "postal_code": "95014",
-        "line_1": "1 Apple Park Way",
-        "is_hq": true,
-        "state": "California"
-      }
-    ],
-    "name": "Apple",
-    "tagline": null,
-    "universal_name_id": "apple",
-    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a306840fe781fc10965efd0a7d9b483b5fa56d71f8322547d8703ff636685da5",
-    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b0080adf94bb4eac3dbb1e24669809f95b8b61e6f18326be14e524174b731acc",
-    "search_id": "162479",
-    "similar_companies": [],
-    "updates": [],
-    "follower_count": 17494129,
-    "acquisitions": {
-      "acquired": [
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/ai-music",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/ai-music",
-          "announced_date": {
-            "day": 7,
-            "month": 2,
-            "year": 2022
-          },
-          "price": null
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/credit-kudos",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/credit-kudos",
-          "announced_date": {
-            "day": 23,
-            "month": 3,
-            "year": 2022
-          },
-          "price": 150000000
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/fleetsmith",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/fleetsmith",
-          "announced_date": {
-            "day": 24,
-            "month": 6,
-            "year": 2020
-          },
-          "price": null
-        },
-        {
-          "linkedin_profile_url": null,
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/inductiv",
-          "announced_date": {
-            "day": 27,
-            "month": 5,
-            "year": 2020
-          },
-          "price": null
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/joby-aviation",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/joby-aviation",
-          "announced_date": {
-            "day": 1,
-            "month": 4,
-            "year": 2022
-          },
-          "price": null
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/mobeewave",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/mobeewave",
-          "announced_date": {
-            "day": 1,
-            "month": 8,
-            "year": 2020
-          },
-          "price": 100000000
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/nextvr",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/nextvr",
-          "announced_date": {
-            "day": 4,
-            "month": 4,
-            "year": 2020
-          },
-          "price": 100000000
-        },
-        {
-          "linkedin_profile_url": null,
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/paws-inc",
-          "announced_date": {
-            "day": 30,
-            "month": 8,
-            "year": 2021
-          },
-          "price": null
-        },
-        {
-          "linkedin_profile_url": null,
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/scout-fm",
-          "announced_date": {
-            "day": 24,
-            "month": 9,
-            "year": 2020
-          },
-          "price": null
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/sourcedna",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/sourcedna",
-          "announced_date": {
-            "day": 6,
-            "month": 5,
-            "year": 2021
-          },
-          "price": null
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/7943613",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/spaces-6",
-          "announced_date": {
-            "day": 24,
-            "month": 8,
-            "year": 2020
-          },
-          "price": null
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/the-dark-sky-company",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/the-dark-sky-company",
-          "announced_date": {
-            "day": 31,
-            "month": 3,
-            "year": 2020
-          },
-          "price": null
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/vilynx",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/vilynx",
-          "announced_date": {
-            "day": 27,
-            "month": 10,
-            "year": 2020
-          },
-          "price": 50000000
-        },
-        {
-          "linkedin_profile_url": "https://www.linkedin.com/company/scream-technologies",
-          "crunchbase_profile_url": "https://www.crunchbase.com/organization/voysis",
-          "announced_date": {
-            "day": 3,
-            "month": 4,
-            "year": 2020
-          },
-          "price": null
-        }
-      ],
-      "acquired_by": null
-    },
-    "exit_data": [
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/adobe",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/adobe-systems",
-        "name": "Adobe"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/apple",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/apple",
-        "name": "Apple"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/3678",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/corning",
-        "name": "Corning"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/didiglobal",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/didi-dache",
-        "name": "Didi"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/elan-microelectronics",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/elan-microelectronics",
-        "name": "ELAN Microelectronics"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/1328664",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/emagin",
-        "name": "eMagin"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/163813",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/finisar",
-        "name": "Finisar"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/global-online-devices",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/global-online-devices",
-        "name": "God-i"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/ii-vi-incorporated",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/ii-vi",
-        "name": "II-VI"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/imagination-technologies",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/imagination-technologies",
-        "name": "Imagination Technologies"
-      },
-      {
-        "linkedin_profile_url": null,
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/kanisa-inc",
-        "name": "Kanisa"
-      },
-      {
-        "linkedin_profile_url": "https://www.linkedin.com/company/zomato",
-        "crunchbase_profile_url": "https://www.crunchbase.com/organization/zomato",
-        "name": "Zomato"
-      }
-    ],
-    "extra": {
-      "ipo_status": "Public",
-      "crunchbase_rank": 23,
-      "founding_date": {
-        "day": 1,
-        "month": 4,
-        "year": 1976
-      },
-      "operating_status": "Active",
-      "company_type": "For Profit",
-      "contact_email": null,
-      "phone_number": "408-996-1010",
-      "facebook_id": "apple",
-      "twitter_id": "apple",
-      "number_of_funding_rounds": null,
-      "total_funding_amount": 6200000000,
-      "stock_symbol": "NASDAQ:AAPL",
-      "ipo_date": null,
-      "number_of_lead_investors": 3,
-      "number_of_investors": 7,
-      "total_fund_raised": 375000000,
-      "number_of_investments": null,
-      "number_of_lead_investments": null,
-      "number_of_exits": null,
-      "number_of_acquisitions": null
-    },
-    "funding_data": [
-      {
-        "funding_type": "Post-IPO Debt",
-        "money_raised": 5000000000,
-        "announced_date": {
-          "day": 6,
-          "month": 9,
-          "year": 2017
-        },
-        "number_of_investor": null,
-        "investor_list": []
-      },
-      {
-        "funding_type": "Post-IPO Equity",
-        "money_raised": 1000000000,
-        "announced_date": {
-          "day": 16,
-          "month": 5,
-          "year": 2016
-        },
-        "number_of_investor": 1,
-        "investor_list": [
-          {
-            "linkedin_profile_url": "https://www.linkedin.com/company/berkshire-hathaway",
-            "name": "Berkshire Hathaway",
-            "type": "organization"
-          }
-        ]
-      },
-      {
-        "funding_type": "Post-IPO Equity",
-        "money_raised": 150000000,
-        "announced_date": {
-          "day": 1,
-          "month": 8,
-          "year": 1997
-        },
-        "number_of_investor": 1,
-        "investor_list": [
-          {
-            "linkedin_profile_url": "https://www.linkedin.com/company/microsoft",
-            "name": "Microsoft",
-            "type": "organization"
-          }
-        ]
-      },
-      {
-        "funding_type": "Pre Seed Round",
-        "money_raised": 150000,
-        "announced_date": {
-          "day": 1,
-          "month": 1,
-          "year": 2022
-        },
-        "number_of_investor": 2,
-        "investor_list": [
-          {
-            "linkedin_profile_url": "https://www.linkedin.com/company/apple",
-            "name": "Apple",
-            "type": "organization"
-          },
-          {
-            "linkedin_profile_url": null,
-            "name": "Confidential Confidential",
-            "type": "person"
-          }
-        ]
-      },
-      {
-        "funding_type": "Private Equity Round",
-        "money_raised": 30000000,
-        "announced_date": {
-          "day": 15,
-          "month": 6,
-          "year": 2022
-        },
-        "number_of_investor": 1,
-        "investor_list": [
-          {
-            "linkedin_profile_url": "https://www.linkedin.com/company/interscoperecords",
-            "name": "Interscope Records",
-            "type": "organization"
-          }
-        ]
-      },
-      {
-        "funding_type": "Private Equity Round",
-        "money_raised": null,
-        "announced_date": {
-          "day": 12,
-          "month": 7,
-          "year": 2017
-        },
-        "number_of_investor": null,
-        "investor_list": []
-      },
-      {
-        "funding_type": "Seed Round",
-        "money_raised": 80000,
-        "announced_date": {
-          "day": 15,
-          "month": 5,
-          "year": 1977
-        },
-        "number_of_investor": 2,
-        "investor_list": [
-          {
-            "linkedin_profile_url": "https://www.linkedin.com/company/matrix-partners",
-            "name": "Matrix Partners",
-            "type": "organization"
-          },
-          {
-            "linkedin_profile_url": null,
-            "name": "Mike Markkula",
-            "type": "person"
-          }
-        ]
-      },
-      {
-        "funding_type": "Seed Round",
-        "money_raised": 150000,
-        "announced_date": {
-          "day": 4,
-          "month": 5,
-          "year": 1978
-        },
-        "number_of_investor": 2,
-        "investor_list": [
-          {
-            "linkedin_profile_url": "https://www.linkedin.com/company/sequoia",
-            "name": "Sequoia Capital",
-            "type": "organization"
-          },
-          {
-            "linkedin_profile_url": "https://www.linkedin.com/company/venrock",
-            "name": "Venrock",
-            "type": "organization"
-          }
-        ]
-      }
-    ],
-    "categories": [
-      "consumer-electronics",
-      "electronics",
-      "hardware",
-      "mobile-devices",
-      "operating-systems",
-      "retail",
-      "software",
-      "wearables"
-    ]
-  }
-              
-                                </code></pre>
-            
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-          </div>
-          
-  
-      <div class="row justify-content-center">
-          <div class="col-12 text-center mt-6">
-            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
-                  Get Trial API Key
-            </a>
-  
-              <a class="btn btn-primary-soft lift" href="#!">
-                  Read API Docs for Company Profile Endpoint
-              </a>
-          </div>
   
       </div>
-
-    </div> <!-- container Company Profile Endpoint-->
-
-    <div class="container pb-11 pb-md-14">
-      <div class="row justify-content-center mb-6 mb-md-8">
-  
-          <div class="col-12 col-md-8 col-lg-10">
-  
-              <h2 class="display-4 mb-2 text-center">
-                Employee Listing Endpoint
-              </h2>
-  
-              <p class="text-muted lead text-center">
-                List past or present employees of any target company
-              </p>
-  
-          </div>
-          
-      </div>
-      
-          <div class="row justify-content-between">
-          
-            <div class="col-12 col-md-5">
-              <div class="card shadow-light">
-                <div class="card-body">
-                  <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
-          
-                  <fieldset disabled>
-                    <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-gray-700 text-left">
-                      linkedin.com/company/apple
-                    </span>
-                  </fieldset>
-          
-                  <!--arrow-->
-                  <div class="text-center mt-n2">
-                    <span class="badge badge-lg badge-rounded-circle bg-info text-white">
-                      <i class="fe fe-arrow-down"></i>
-                    </span>
-                  </div>
-          
-                  <!-- Code block -->
-                  <div class="highlight-block text-left mt-n2 mb-3">
-          
-                    <!-- Controls -->
-                    <div class="d-flex">
-                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    </div>
-          
-                    <pre>
-                                  <code class="language-python">
-  curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company' \ --data-urlencode 'url=https://www.linkedin.com/company/apple/' \ --data-urlencode 'resolve_numeric_id=true' \ --data-urlencode 'categories=include' \ --data-urlencode 'funding_data=include' \ --data-urlencode 'extra=include' \ --data-urlencode 'exit_data=include' \ --data-urlencode 'acquisitions=include' \ --data-urlencode 'use_cache=if-present'   
-                              </code></pre>
-          
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
-              <h1 class="display-3 mb-0">
-                <i class="fe fe-arrow-right"></i>
-              </h1>
-            </div>
-
-            <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4">
-              <h1 class="display-3 mb-0">
-                <i class="fe fe-arrow-down"></i>
-              </h1>
-            </div>
-          
-          
-            <div class="col-12 col-md-6">
-              <div class="card shadow-light">
-                <div class="card-body">
-            
-                  <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
-
-                  <div class="row mb-2">
-                  
-                    <div class="col-1">
-                      <svg class="" width="24" height="32" viewBox="0 3 24 24">
-                        <path fill="#335eea"
-                          d="M7,11a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,7,11Zm0,6a5,5,0,0,0-5,5H12A5,5,0,0,0,7,17Zm10-1a2.5,2.5,0,1,0-2.5-2.5A2.5,2.5,0,0,0,17,16Zm0,1a5,5,0,0,0-5,5H22A5,5,0,0,0,17,17ZM14.5,4.5A2.5,2.5,0,1,0,12,7,2.5,2.5,0,0,0,14.5,4.5ZM11.449,13h1.1A4.488,4.488,0,0,1,15.36,9.32a4.936,4.936,0,0,0-6.72,0A4.488,4.488,0,0,1,11.449,13Z" />
-                      </svg>
-                    </div>
-                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
-                      List of employee
-                    </div>
-                  </div>
-                  
-
-                  <div class="">
-                    <fieldset disabled>
-                      <span style="cursor: auto;" class="btn btn-outline-secondary btn-white btn-block text-black text-left shadow-light">
-                  
-                        <div class="row align-items-center">
-                                
-                  
-                              <div class="col-1 ">
-                                <svg class="d-none d-lg-block" width="16" height="16" viewBox="0 2 24 24">
-                                  <path fill="#506690"
-                                    d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z">
-                                  </path>
-                                </svg>
-                  
-                              </div>
-                              <div class="col-md-10 col-12 pl-md-1 pl-4">
-                                <p class="mb-0 text-gray-700">linkedin.com/in/evitiello</p>
-                              </div>
-
-                  
-                        </div> <!-- row-->
-                      </span>
-                    </fieldset>
-                  </div> <!-- list 4-->
-
-                  <div class="mt-n3">
-                    <fieldset disabled>
-                      <span style="cursor: auto;" class="btn btn-outline-secondary btn-white btn-block text-black text-left shadow-light">
-                  
-                        <div class="row align-items-center">
-                  
-                  
-                              <div class="col-1">
-                                <svg class="d-none d-lg-block" width="16" height="16" viewBox="0 2 24 24">
-                                  <path fill="#506690"
-                                    d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z">
-                                  </path>
-                                </svg>
-                  
-                              </div>
-                              <div class="col-12 col-md-10 pl-md-1 pl-4">
-                                <p class="mb-0 text-gray-700">linkedin.com/in/qibinzhu</p>
-                              </div>
-                  
-                        </div> <!-- row-->
-                      </span>
-                    </fieldset>
-                  </div> <!-- list 3-->
-
-                  <div class="mt-n3">
-                    <fieldset disabled>
-                      <span style="cursor: auto;" class="btn btn-outline-secondary btn-white btn-block text-black text-left shadow-light">
-                  
-                        <div class="row align-items-center">
-                  
-                  
-                              <div class="col-1">
-                                <svg class="d-none d-lg-block" width="16" height="16" viewBox="0 2 24 24">
-                                  <path fill="#506690"
-                                    d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z">
-                                  </path>
-                                </svg>
-                  
-                              </div>
-                              <div class="col-md-10 col-12 pl-md-1 pl-4">
-                                <p class="mb-0 text-gray-700">linkedin.com/in/williampli</p>
-                              </div>
-
-                  
-                        </div> <!-- row-->
-                      </span>
-                    </fieldset>
-                  </div> <!--list 2-->
-
-                  <div class="mt-n3 mb-4">
-                    <fieldset disabled>
-                      <span style="cursor: auto;" class="btn btn-outline-primary btn-white btn-block text-black text-left shadow-light">
-                  
-                        <div class="row align-items-center">
-
-                  
-                              <div class="col-1">
-                                <svg class="d-none d-lg-block" width="16" height="16" viewBox="0 2 24 24">
-                                  <path fill="black"
-                                    d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z">
-                                  </path>
-                                </svg>
-                  
-                              </div>
-                              <div class="col-md-10 col-12 pl-md-1 pl-4">
-                                <p class="mb-0">linkedin.com/in/pdking</p>
-                              </div>
-                  
-                        </div> <!-- row-->
-                      </span>
-                    </fieldset>
-                  </div> <!--list 1-->
-                
-                  <div class="text-left mb-6">
-                    <span class="badge text-uppercase badge-secondary-soft badge-lg"> 287,725 more</span>
-                  </div> 
-            
-            
-                  <!-- Code block -->
-                  <div class="highlight-block text-left mb-3">
-            
-                    <!-- Controls -->
-                    <div class="d-flex">
-                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    </div>
-            
-                    <pre style="height: 280px;">
-<code class="language-python">                        
-  {
-    "employees": [
-      {
-        "profile_url": "https://www.linkedin.com/in/amanda-chew-jia-ying-9aa06426",
-        "profile": null
-      },
-      {
-        "profile_url": "https://www.linkedin.com/in/cathy-tan-883197b6",
-        "profile": null
-      },
-      {
-        "profile_url": "https://www.linkedin.com/in/charmaine-wee-hospitality-director",
-        "profile": null
-      },
-      {
-        "profile_url": "https://www.linkedin.com/in/jacky-n-24713822",
-        "profile": null
-      },
-      {
-        "profile_url": "https://www.linkedin.com/in/joven-sim-976721a1",
-        "profile": null
-      }
-    ],
-    "next_page": "https://nubela.co/proxycurl/api/linkedin/company/employees/?url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F8m-real-estate-singapore%2F&use_cache=if-present&page_size=5&employment_status=current&resolve_numeric_id=false&after=lautianwei"
-  }         
-              
-                                </code></pre>
-            
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-          </div>
-          
-  
-      <div class="row justify-content-center">
-          <div class="col-12 text-center mt-6">
-            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
-                  Get Trial API Key
-            </a>
-  
-            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
-                Read API Docs for Employee Listing Endpoint
-              </a>
-              <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="#!">
-                Read API Docs for Employee Search Endpoint
-              </a>
-          </div>
-  
-      </div>
-
-    </div> <!-- container Employee Listing Endpoint-->
-
-    <div class="container pb-11 pb-md-14">
-      <div class="row justify-content-center mb-6 mb-md-8">
-  
-          <div class="col-9 col-md-8 col-lg-10">
-  
-              <p class="h2 mb-2 text-center">
-                <span class="display-3 pr-3">Company Profile Picture Endpoint</span> <span class="badge badge-pill badge-success badge-float">FREE</span>
-              </p>
-  
-              <p class="text-muted lead text-center">
-                Get the logo of a company
-              </p>
-  
-          </div>
-          
-      </div>
-      
-          <div class="row justify-content-between">
-          
-            <div class="col-12 col-md-5">
-              <div class="card shadow-light">
-                <div class="card-body">
-                  <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
-          
-                  <fieldset disabled>
-                    <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-gray-700 text-left">
-                      linkedin.com/company/apple
-                    </span>
-                  </fieldset>
-          
-                  <!--arrow-->
-                  <div class="text-center mt-n2">
-                    <span class="badge badge-lg badge-rounded-circle bg-info text-white">
-                      <i class="fe fe-arrow-down"></i>
-                    </span>
-                  </div>
-          
-                  <!-- Code block -->
-                  <div class="highlight-block text-left mt-n2 mb-3">
-          
-                    <!-- Controls -->
-                    <div class="d-flex">
-                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    </div>
-          
-                    <pre>
-                                  <code class="language-python">
-curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company/resolve' \ --data-urlencode 'company_domain=http://apple.com' \    
-                              </code></pre>
-          
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
-              <h1 class="display-3 mb-0">
-                <i class="fe fe-arrow-right"></i>
-              </h1>
-            </div>
-
-            <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4">
-              <h1 class="display-3 mb-0">
-                <i class="fe fe-arrow-down"></i>
-              </h1>
-            </div> <!-- input-->
-          
-          
-            <div class="col-12 col-md-6">
-              <div class="card shadow-light">
-                <div class="card-body">
-            
-                  <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
-                  <div class="row mb-0">
-                    
-                  <div class="col-1">
-                    <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M20,3H4A1,1,0,0,0,3,4V20a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V4A1,1,0,0,0,20,3ZM8,6A2,2,0,1,1,6,8,2,2,0,0,1,8,6ZM19,19H5V15.4L8,13l3,3,5-5,3,2.4Z"/></svg>
-                  </div>
-                  <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
-                    Profile picture of a company
-                  </div>
-                  </div>
-
-                  <div class="col-md-4 col-8 pl-0">
-                  <fieldset disabled>
-                    <span style="cursor: auto;"
-                      class="btn btn-outline-primary btn-white btn-block shadow-lg text-black text-left mb-5">
-            
-                      <div class="row align-items-center">
-
-            
-                        <div class="col-12 text-center">
-                          <div class="row">
-                        
-                            <div class="col-12">
-                              <img src="assets/img/Misc/apple-linkedin.jpeg" width="82px" class="pl-0 pr-1 py-1">
-                            </div>
-                          </div>
-                        </div>
-            
-                      </div> <!-- row-->
-                    </span>
-                  </fieldset>
-                  </div>
-            
-            
-                  <!-- Code block -->
-                  <div class="highlight-block text-left mb-3">
-            
-                    <!-- Controls -->
-                    <div class="d-flex">
-                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    </div>
-            
-                    <pre>
-<code class="language-python">                        
-  {
-    "tmp_profile_pic_url": "http://localhost:4566/proxycurl-web-dev/company/apple/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=%2F20220912%2F%2Fs3%2Faws4_request\u0026X-Amz-Date=20220912T065816Z\u0026X-Amz-Expires=1800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=40e484b7b1a9c4fd712d99b658d68efb115d8b20be227c8d5c49fc62dfd4d480"
-  }
-                                </code></pre>
-            
-                  </div>
-                </div>
-              </div>
-            </div> <!-- output-->
-          
-          </div>
-          
-  
-      <div class="row justify-content-center">
-          <div class="col-12 text-center mt-6">
-            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
-                  Get Trial API Key
-            </a>
-  
-            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="#!">
-                Read API Docs for Company Profile Picture Endpoint
-              </a>
-          </div>
-  
-      </div>
-
-    </div> <!-- container Company Profile Picture Endpoint-->
-
-    <div class="container pb-4 pb-md-8">
-      <div class="row justify-content-center mb-6 mb-md-8">
-  
-          <div class="col-12 col-md-8 col-lg-10">
-  
-              <h2 class="display-4 mb-2 text-center">
-                  Employee Count Endpoint
-              </h2>
-  
-              <p class="text-muted lead text-center">
-                Get the number of total employees of a company
-              </p>
-  
-          </div>
-          
-      </div>
-      
-          <div class="row justify-content-between">
-          
-            <div class="col-12 col-md-5">
-              <div class="card shadow-light">
-                <div class="card-body">
-                  <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
-          
-                  <fieldset disabled>
-                    <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-gray-700 text-left">
-                      linkedin.com/company/apple
-                    </span>
-                  </fieldset>
-          
-                  <!--arrow-->
-                  <div class="text-center mt-n2">
-                    <span class="badge badge-lg badge-rounded-circle bg-info text-white">
-                      <i class="fe fe-arrow-down"></i>
-                    </span>
-                  </div>
-          
-                  <!-- Code block -->
-                  <div class="highlight-block text-left mt-n2 mb-3">
-          
-                    <!-- Controls -->
-                    <div class="d-flex">
-                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    </div>
-          
-                    <pre>
-                                  <code class="language-python">
-curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company/resolve' \ --data-urlencode 'company_domain=http://apple.com' \    
-                              </code></pre>
-          
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
-              <h1 class="display-3 mb-0">
-                <i class="fe fe-arrow-right"></i>
-              </h1>
-            </div>
-
-            <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4">
-              <h1 class="display-3 mb-0">
-                <i class="fe fe-arrow-down"></i>
-              </h1>
-            </div> <!-- input-->
-          
-          
-            <div class="col-12 col-md-6">
-              <div class="card shadow-light">
-                <div class="card-body">
-            
-                  <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
-                  <div class="row mb-0">
-                    
-                  <div class="col-1">
-                    <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM8.078,18.737H5.085v-9H8.078ZM6.582,8.5h-.02A1.56,1.56,0,1,1,6.6,5.393,1.56,1.56,0,1,1,6.582,8.5ZM18.87,18.737H15.877V13.921c0-1.211-.433-2.036-1.516-2.036a1.637,1.637,0,0,0-1.535,1.094,2.032,2.032,0,0,0-.1.731v5.027H9.734s.04-8.16,0-9h2.992V11.01a2.97,2.97,0,0,1,2.7-1.488c1.969,0,3.446,1.287,3.446,4.053Z"/></svg>
-                  </div>
-                  <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
-                    LinkedIn's employee Count
-                  </div>
-                  </div>
-                  <fieldset disabled>
-                    <span style="cursor: auto;"
-                      class="btn btn-outline-primary btn-white btn-block shadow-light text-black text-left mb-4">
-            
-                      <div class="row align-items-center">
-
-            
-                        <div class="col-12">
-                          <div class="row">
-                        
-                            <div class="col-12">
-                              289,515
-                            </div>
-                          </div>
-                        </div>
-            
-                      </div> <!-- row-->
-                    </span>
-                  </fieldset>
-
-                  <div class="row mb-0">
-                    
-                    <div class="col-1">
-                      <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="m20,7.79236v-2.79236c0-1.65686-3.58173-3-8-3s-8,1.34314-8,3v2.79236c.59277.44537,3.38721,1.20764,8,1.20764s7.40723-.76227,8-1.20764Zm-13.5-.79236c-.27612,0-.5-.22388-.5-.5,0-.27618.22388-.5.5-.5s.5.22382.5.5c0,.27612-.22388.5-.5.5Zm-2.5,6.79236c.59277.44537,3.38721,1.20764,8,1.20764s7.40723-.76227,8-1.20764v-3.80975c-2.43536.91565-6.41943,1.0174-8,1.0174s-5.56464-.10175-8-1.0174v3.80975Zm2.5-1.79236c.27612,0,.5.22382.5.5,0,.27612-.22388.5-.5.5s-.5-.22388-.5-.5c0-.27618.22388-.5.5-.5Zm-2.5,8c0,1.10455,3.58173,2,8,2s8-.89545,8-2v-4.0174c-2.43536.91565-6.41943,1.0174-8,1.0174s-5.56464-.10175-8-1.0174v4.0174Zm2.5-2c.27612,0,.5.22382.5.5,0,.27612-.22388.5-.5.5s-.5-.22388-.5-.5c0-.27618.22388-.5.5-.5Z"></path></svg>
-                    </div>
-                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
-                      LinkDB's employee Count
-                    </div>
-                    </div>
-                    <fieldset disabled>
-                      <span style="cursor: auto;"
-                        class="btn btn-outline-primary btn-white btn-block shadow-light text-black text-left mb-6">
-              
-                        <div class="row align-items-center">
-  
-              
-                          <div class="col-12">
-                            <div class="row">
-                          
-                              <div class="col-12">
-                                145,212 
-                              </div>
-                            </div>
-                          </div>
-              
-                        </div> <!-- row-->
-                      </span>
-                    </fieldset>
-            
-            
-                  <!-- Code block -->
-                  <div class="highlight-block text-left mb-3">
-            
-                    <!-- Controls -->
-                    <div class="d-flex">
-                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    </div>
-            
-                    <pre>
-<code class="language-python">                        
-  {
-    "total_employee": 145212,
-    "linkedin_employee_count": 289515,
-    "linkdb_employee_count": 145212,
-  }
-                                </code></pre>
-            
-                  </div>
-                </div>
-              </div>
-            </div> <!-- output-->
-          
-          </div>
-          
-  
-      <div class="row justify-content-center">
-          <div class="col-12 text-center mt-6">
-            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
-                  Get Trial API Key
-            </a>
-  
-            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-md-2" href="#!">
-                  Read API Docs for Employee Count Endpoint
-              </a>
-          </div>
-  
-      </div>
-
-    </div> <!-- container Employee Count Endpoint-->
 
     </section>
-
-    <!-- THIRD FOLD
-    ================================================== -->
-    <section class="pt-8 pt-md-12 pb-8 pb-md-12 border-bottom">
-
-      <div class="container">
-        <div class="row justify-content-center mb-6 mb-md-8">
-
-          <div class="col-12 col-md-8 col-lg-10">
-
-            <h2 class="display-4 mb-2 text-center">
-              Other Endpoints related to Companies
-            </h2>
-
-          </div>
-
-        </div> <!-- / .row -->
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-  
-          <!-- API Card -->
-          <div class="col-12 col-lg-6 mb-6 d-flex">
-  
-            <!-- Card -->
-            <div class="card shadow-light-lg lift lift-lg">
-  
-              <!-- Body -->
-              <div class="card-body my-auto">
-  
-                <img alt="chart icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/company-search.svg">
-  
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Company Search Endpoint
-                </h3>
-  
-                <div class="row justify-content-center">
-  
-                  <div class="col-6">
-                    <!-- Input -->
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-  
-                    <!-- Text -->
-                    <p class="mb-0">
-                      Company Profile URL
-                    </p>
-                  </div>
-  
-                  <div class="col-6">
-                    <!-- Input -->
-                    <h4 class="mb-0 text-info">
-                      Output
-                    </h4>
-  
-                    <!-- Text -->
-                    <p class="mb-0">
-                      List companies that meet a set of criteria
-                    </p>
-                  </div>
-  
-  
-              <!-- Sample code -->
-              <div class="col-12 mt-4">
-  
-                <div class="highlight-block">
-  
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>
-  
-                  <pre><code class="language-python">
-  curl \
-      -X GET \
-      -H "Authorization: Bearer ${YOUR_API_KEY}" \
-      https://nubela.co/proxycurl/api/find/company/role?role=ceo&company_name=nubela
-    </code></pre>
-                </div>
-  
-              </div>                
-  
-                </div>
-  
-              </div>
-  
-  
-            </div>
-  
-          </div>
-  
-          <!-- API Card -->
-          <div class="col-12 col-lg-6 mb-6 d-flex">
-  
-            <!-- Card -->
-            <div class="card shadow-light-lg lift lift-lg">
-  
-              <!-- Body -->
-              <div class="card-body my-auto">
-  
-                <img alt="chart icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/job-search.svg">
-  
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Job Search Endpoint
-                </h3>
-  
-                <div class="row justify-content-center">
-  
-                  <div class="col-6">
-                    <!-- Input -->
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-  
-                    <!-- Text -->
-                    <p class="mb-0">
-                      Company Profile URL
-                    </p>
-                  </div>
-  
-                  <div class="col-6">
-                    <!-- Input -->
-                    <h4 class="mb-0 text-info">
-                      Output
-                    </h4>
-  
-                    <!-- Text -->
-                    <p class="mb-0">
-                      List jobs posted by a company on LinkedIn
-                    </p>
-                  </div>
-  
-  
-              <!-- Sample code -->
-              <div class="col-12 mt-4">
-  
-                <div class="highlight-block">
-  
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>
-  
-                  <pre><code class="language-python">
-  curl \
-      -X GET \
-      -H "Authorization: Bearer ${YOUR_API_KEY}" \
-      https://nubela.co/proxycurl/api/find/company/role?role=ceo&company_name=nubela
-    </code></pre>
-                </div>
-  
-              </div>                
-  
-                </div>
-  
-              </div>
-  
-  
-            </div>
-  
-          </div>
-  
-        </div> <!-- / .row -->
-      </div> <!-- container heading--> 
-
-    </section>
-
-    <!-- FOURTH FOLD
-    ================================================== -->
-    <section class="pt-8 pt-md-12 pb-8 pb-md-10 bg-light border-bottom">
-
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-12 col-md-8 col-lg-10">
-
-            <h2 class="display-4 mb-2 text-center mb-6 mb-md-9">
-              Insights built with Company API
-            </h2>
-
-            <div id="carouselBlog" class="carousel slide" data-ride="carousel">
-
-              <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                  <a href="#!" target="_blank">
-                    <img class="d-block w-100 rounded" src="assets/img/illustrations/TLC_The_VC_s_Guide_to_Uncovering_Stealth_Startups.png" alt="First slide">
-                    <p class="h2 text-center mt-4 font-weight-bold"> The VC's Guide to Uncovering Stealth Startups</p>
-
-                  </a>
-                </div>
-
-                <div class="carousel-item">
-                  <a href="#!" target="_blank">
-                    <img class="d-block w-100 rounded" src="assets/img/illustrations/TLC_Using_Proxycurl_Historic_LinkedIn_Employee_Count_Tool_for_Investment_Research_cover-1.png" alt="Second slide">
-                    <p class="h2 text-center mt-4 font-weight-bold"> Using Proxycurl's Historic LinkedIn Employee Count Tool for Investment Research</p>
-
-                  </a>
-                </div>
-
-              </div>
-
-              <a class="carousel-control-prev" href="#carouselBlog" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-
-              <a class="carousel-control-next" href="#carouselBlog" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-
-            </div>
-            
-          </div>
-
-        </div> <!-- / .row -->
-      </div> <!-- container heading--> 
-
-    </section>
-
 
     <!-- FOOTER
     ================================================== -->
