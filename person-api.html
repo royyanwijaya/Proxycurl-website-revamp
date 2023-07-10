@@ -421,7 +421,7 @@ curl \
               </div>
 
               <div class="py-3 px-4 mb-4 border border-primary rounded shadow-lg">
-                https://linkedin.com/in/williamhgates
+                linkedin.com/in/williamhgates
               </div>
 
               <!-- Code block -->
@@ -525,17 +525,21 @@ curl \
         
                   <pre>
   <code class="language-python">
-  curl \
-      -G \
-      -H "Authorization: Bearer ${YOUR_API_KEY}" \
-      'https://nubela.co/proxycurl/api/linkedin/profile/resolve' \
-      --data-urlencode 'company_domain=gatesfoundation.org' \
-      --data-urlencode 'first_name=Bill' \
-      --data-urlencode 'similarity_checks=include' \
-      --data-urlencode 'enrich_profile=enrich' \
-      --data-urlencode 'location=Seattle' \
-      --data-urlencode 'title=Co-chair' \
-      --data-urlencode 'last_name=Gates'
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/v2/linkedin' \
+    --data-urlencode 'url=https://www.linkedin.com/in/johnrmarty/' \
+    --data-urlencode 'fallback_to_cache=on-error' \
+    --data-urlencode 'use_cache=if-present' \
+    --data-urlencode 'skills=include' \
+    --data-urlencode 'inferred_salary=include' \
+    --data-urlencode 'personal_email=include' \
+    --data-urlencode 'personal_contact_number=include' \
+    --data-urlencode 'twitter_profile_id=include' \
+    --data-urlencode 'facebook_profile_id=include' \
+    --data-urlencode 'github_profile_id=include' \
+    --data-urlencode 'extra=include'
   </code></pre>
         
                 </div>
@@ -558,7 +562,6 @@ curl \
             </h1>
           </div>
         
-        
           <div class="col-12 col-md-6">
 
             <div class="card shadow-light">
@@ -569,11 +572,11 @@ curl \
                   Output
                 </span>
 
-                <p class="lead font-weight-bold text-primary">
-                  <i class="neu-data-quality"></i> Rich data awroafjnaawdata
+                <p class="lead font-weight-bold">
+                  <i class="neu-data-quality text-primary"></i> Rich data
                 </p>
 
-                <div class="pt-4 px-4 mb-4 border border-primary rounded">
+                <div class="table-responsive pt-4 px-4 mb-4 border border-primary rounded">
   
                   <table class="table table-borderless table-hover table-sm">
   
@@ -590,7 +593,7 @@ curl \
                       <tr>
                         <th scope="row">
                           <span class="badge badge-secondary-soft mr-1">
-                            company_domain
+                            url
                           </span>
                         </th>
                         <td>
@@ -598,7 +601,7 @@ curl \
                         </td>
                         <td>
                           <span class="badge badge-secondary-soft mr-1">
-                            gatesfoundation.org
+                            linkedin.com/in/williamhgates
                           </span>
                         </td>
                       </tr>
@@ -606,7 +609,7 @@ curl \
                       <tr>
                         <th scope="row">
                           <span class="badge badge-secondary-soft mr-1">
-                            first_name
+                            fallback_to_cache
                           </span>
                         </th>
                         <td>
@@ -614,7 +617,7 @@ curl \
                         </td>
                         <td>
                           <span class="badge badge-secondary-soft mr-1">
-                            Bill
+                            on-error
                           </span>
                         </td>
                       </tr>
@@ -622,7 +625,23 @@ curl \
                       <tr>
                         <th scope="row">
                           <span class="badge badge-secondary-soft mr-1">
-                            similarity_checks
+                            use_cache
+                          </span>
+                        </th>
+                        <td class="text-muted">
+                          no
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            if-present
+                          </span>
+                        </td>
+                      </tr>
+  
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            skills
                           </span>
                         </th>
                         <td class="text-muted">
@@ -638,7 +657,7 @@ curl \
                       <tr>
                         <th scope="row">
                           <span class="badge badge-secondary-soft mr-1">
-                            enrich_profile
+                            inferred_salary
                           </span>
                         </th>
                         <td class="text-muted">
@@ -646,7 +665,7 @@ curl \
                         </td>
                         <td>
                           <span class="badge badge-secondary-soft mr-1">
-                            enrich
+                            include
                           </span>
                         </td>
                       </tr>
@@ -654,7 +673,7 @@ curl \
                       <tr>
                         <th scope="row">
                           <span class="badge badge-secondary-soft mr-1">
-                            location
+                            personal_email
                           </span>
                         </th>
                         <td class="text-muted">
@@ -662,7 +681,7 @@ curl \
                         </td>
                         <td>
                           <span class="badge badge-secondary-soft mr-1">
-                            Seattle
+                            include
                           </span>
                         </td>
                       </tr>
@@ -670,7 +689,7 @@ curl \
                       <tr>
                         <th scope="row">
                           <span class="badge badge-secondary-soft mr-1">
-                            title
+                            personal_contact_number
                           </span>
                         </th>
                         <td class="text-muted">
@@ -678,15 +697,15 @@ curl \
                         </td>
                         <td>
                           <span class="badge badge-secondary-soft mr-1">
-                            Co-chair
+                            include
                           </span>
                         </td>
                       </tr>
-  
+
                       <tr>
                         <th scope="row">
                           <span class="badge badge-secondary-soft mr-1">
-                            last_name
+                            twitter_profile_id
                           </span>
                         </th>
                         <td class="text-muted">
@@ -694,7 +713,55 @@ curl \
                         </td>
                         <td>
                           <span class="badge badge-secondary-soft mr-1">
-                            Gates
+                            include
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            facebook_profile_id
+                          </span>
+                        </th>
+                        <td class="text-muted">
+                          no
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            include
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            github_profile_id
+                          </span>
+                        </th>
+                        <td class="text-muted">
+                          no
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            include
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
+                          <span class="badge badge-secondary-soft mr-1">
+                            extra
+                          </span>
+                        </th>
+                        <td class="text-muted">
+                          no
+                        </td>
+                        <td>
+                          <span class="badge badge-secondary-soft mr-1">
+                            include
                           </span>
                         </td>
                       </tr>
@@ -717,16 +784,19 @@ curl \
           
                   <pre>
   <code class="language-python">                        
-  {
-      'company_domain': 'gatesfoundation.org',
-      'first_name': 'Bill',
-      'similarity_checks': 'include',
-      'enrich_profile': 'enrich',
-      'location': 'Seattle',
-      'title': 'Co-chair',
-      'last_name': 'Gates',
-  }
-  </code></pre>
+{
+    'url': 'linkedin.com/in/williamhgates',
+    'fallback_to_cache': 'on-error',
+    'use_cache': 'if-present',
+    'skills': 'include',
+    'inferred_salary': 'include',
+    'personal_email': 'include',
+    'personal_contact_number': 'include',
+    'twitter_profile_id': 'include',
+    'facebook_profile_id': 'include',
+    'github_profile_id': 'include',
+    'extra': 'include',
+}</code></pre>
           
                 </div>
               </div>
@@ -790,7 +860,7 @@ curl \
                 <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
         
                 <div class="py-3 px-4 border border-primary rounded shadow-lg">
-                  ceo, nubela
+                  co-chair, gates foundation
                 </div>
         
                 <!--arrow-->
@@ -865,7 +935,7 @@ curl \
                 </div>
   
                 <div class="py-3 px-4 mb-4 border border-primary rounded shadow-lg">
-                  https://linkedin.com/in/stevengoh
+                  linkedin.com/in/williamhgates
                 </div>
           
                 <!-- Code block -->
@@ -912,6 +982,382 @@ curl \
       </div>
 
     </section>
+
+    <!-- FIFTH FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-12 bg-light border-bottom">
+
+      <div class="container">
+  
+        <div class="row justify-content-center mb-md-8 md-8">
+    
+          <div class="col-12 col-md-8 col-lg-10">
+    
+            <h2 class="display-4 mb-2 text-center">
+              Person Profile Picture Endpoint <span class="badge badge-rounded badge-success-soft text-uppercase ml-2">Free</span>
+            </h2>
+
+            <p class="text-muted lead text-center">
+              Get the profile picture of a Person
+            </p>
+
+          </div>
+            
+        </div>
+        
+        <div class="row justify-content-between mt-6">
+            
+          <div class="col-12 col-md-5">
+
+            <div class="card shadow-light">
+
+              <div class="card-body">
+
+                <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+        
+                <div class="py-3 px-4 border border-primary rounded shadow-lg">
+                  linkedin.com/in/williamhgates
+                </div>
+        
+                <!--arrow-->
+                <div class="text-center mt-n2">
+                  <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                    <i class="fe fe-arrow-down"></i>
+                  </span>
+                </div>
+        
+                <!-- Code block -->
+                <div class="highlight-block text-left mt-n2">
+        
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+        
+                  <pre>
+  <code class="language-python">
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/linkedin/person/profile-picture' \
+    --data-urlencode 'linkedin_person_profile_url=https://www.linkedin.com/in/williamhgates/'
+</code></pre>
+        
+                </div>
+  
+              </div>
+              
+            </div>
+
+          </div>
+  
+          <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-right"></i>
+            </h1>
+          </div>
+  
+          <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-down"></i>
+            </h1>
+          </div>
+        
+        
+          <div class="col-12 col-md-6">
+
+            <div class="card shadow-light">
+
+              <div class="card-body">
+          
+                <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase">
+                  Output
+                </span>
+                
+                <p class="lead font-weight-bold">
+                  <i class="neu-gallery text-primary"></i> Profile picture
+                </p>
+
+                <img width="128px" class="img img-fluid mb-5 py-2 px-2 rounded-circle border border-primary rounded" alt="Profile picture" src="assets/img/photos/bill gates photo.jpeg">
+          
+                <!-- Code block -->
+                <div class="highlight-block text-left mb-3">
+          
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+          
+                  <pre><code class="language-python">                        
+{
+  'linkedin_person_profile_url': 'https://www.linkedin.com/in/williamhgates/',
+}
+</code></pre>
+          
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        
+        </div>
+            
+        <div class="row justify-content-center">
+  
+          <div class="col-12 text-center mt-6">
+
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+  
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="https://nubela.co/proxycurl/docs?shell#people-api-role-lookup-endpoint" target="_blank">
+              Read API Docs for Person Profile Picture Endpoint
+            </a>
+
+          </div>
+  
+        </div>
+  
+      </div>
+
+    </section>
+
+    <!-- POWERED BY PROXYCURL -->
+    <div class="section pt-12 pt-md-12 pb-8 pb-md-11 border-bottom">
+
+      <div class="container">
+
+        <div class="row justify-content-between align-items-center mb-5">
+
+          <div class="col-12 col-md-4 order-md-2 text-center">
+            <img src="assets/dwarf forms/df-data-driven illustration.svg" alt="Data-driven illustration" data-aos="fade-up" data-aos-delay="100" class="img-fluid w-75 w-md-100 mb-6 mb-md-0 aos-init aos-animate">
+          </div>
+
+          <div class="col-12 col-md-7 order-md-1 mb-6">
+            <h6 class="text-uppercase text-info mb-6">
+              Powered by Proxycurl
+            </h6>
+            <h2 style="max-width: 450px;">
+              Other Endpoints related to People
+            </h2>
+            <div class="lead text-muted-80 mb-4">
+              Scrape LinkedIn profiles; get contact Information; get venture funding data; list jobs
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          
+          <div class="col-12 col-lg-6 mb-6 d-flex">
+
+            <div class="card border shadow-light-lg lift lift-lg">
+
+              <div class="card-body my-auto">
+
+                <img class="img-fluid" alt="img" src="icon placement.png" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-4">
+                  Person Search Endpoint
+                </h3>
+
+                <div class="row text-left justify-content-center">
+
+                  <div class="col-12">
+
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-lg-6 mb-6 d-flex">
+
+            <div class="card border shadow-light-lg lift lift-lg">
+
+              <div class="card-body my-auto">
+
+                <img class="img-fluid" alt="company icon" src="icon placement.png" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-4">
+                  Reverse Email Lookup Endpoint
+                </h3>
+
+                <div class="row text-left justify-content-center">
+                  <div class="col-12">
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/company?categories=include&amp;funding_data=include&amp;extra=include&amp;exit_data=include&amp;acquisitions=include&amp;url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fapple%2F&amp;use_cache=if-present</code></pre>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-lg-6 mb-6 d-flex">
+
+            <div class="card border shadow-light-lg lift lift-lg">
+              <div class="card-body my-auto">
+
+                <img class="img-fluid" alt="img" src="icon placement.png" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-4">
+                  Personal Email Lookup Endpoint
+                </h3>
+
+                <div class="row text-left justify-content-center">
+                  <div class="col-12">
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/profile/email?linkedin_profile_url=https%3A%2F%2Fsg.linkedin.com%2Fin%2Fsteven-goh-6738131b&amp;cache=no-cache&amp;callback_url=https%3A%2F%2Fwebhook.site%2F29e12f17-d5a2-400a-9d08-42ee9d83600a</code></pre>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-lg-6 mb-6 d-flex">
+
+            <div class="card border shadow-light-lg lift lift-lg">
+
+              <div class="card-body my-auto">
+
+                <img class="img-fluid" alt="img" src="icon placement.png" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-4">
+                  Work Email Lookup Endpoint
+                </h3>
+
+                <div class="row text-left justify-content-center">
+
+                  <div class="col-12">
+
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-lg-6 mb-6 d-flex">
+
+            <div class="card border shadow-light-lg lift lift-lg">
+
+              <div class="card-body my-auto">
+
+                <img class="img-fluid" alt="img" src="icon placement.png" width="56">
+                
+                <h3 class="font-weight-bold mt-auto mb-4">
+                  Phone Number Lookup Endpoint
+                </h3>
+
+                <div class="row text-left justify-content-center">
+
+                  <div class="col-12">
+
+                    <div class="highlight-block">
+                      <div class="d-flex">
+                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+                      </div>
+
+                      <pre style="min-height: 140px; max-height: 140px;"><code>
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center mt-md-8">
+          <div class="col-12 text-center">
+            <a href="#!" class="btn mr-md-4 mr-2 lift btn-primary shadow-lg">
+              Get Trial API Key
+            </a>
+            <a href="#!" class="btn lift btn-primary-soft shadow-lg">
+              See API Cheatsheet
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div> 
 
     <!-- FOOTER
     ================================================== -->
