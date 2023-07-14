@@ -360,7 +360,7 @@
                   <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                 </div>
       
-                <pre>
+                <pre style="max-height: 128px;">
 <code class="language-python">
 curl \
     -G \
@@ -409,7 +409,48 @@ curl \
                 Output
               </span>
               
-              <img class="img-fluid rounded mb-5" alt="illustration" src="Illustration_landscape_placement.png">
+              <div class="card shadow shadow-light-lg mb-5">
+
+                <div class="card-body">
+
+                  <div class="row align-items-center justify-content-center mb-4 pb-6 border-bottom">
+
+                    <div class="col-3">
+                      <div class="avatar avatar-xxl">
+                        <img class="avatar-img rounded-circle" src="assets/img/avatars/default-girl-avatar.png" alt="Avatar">
+                      </div>
+                    </div>
+
+                    <div class="col-9">
+                      <h2 class="font-weight-bold mb-0">
+                        Patricia Well
+                      </h2>
+                      <p class="text-gray-700 mb-0">
+                        Stanford University
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-12">
+
+                      <p class="mb-2">
+                        <i class="neu-br-linkedin-sq text-primary h3"></i> LinkedIn URL
+                      </p>
+
+                      <p class="text-primary py-2 px-4 border border-primary rounded mb-0">
+                        linkedin.com/in/...
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
 
               <!-- Code block -->
               <div class="highlight-block text-left">
@@ -421,17 +462,20 @@ curl \
                   <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                 </div>
         
-                <pre>
+                <pre style="max-height: 256px;">
 <code class="language-python">                        
 {
-    'linkedin_school_url': 'https://www.linkedin.com/school/stanford-university',
-    'country': 'us',
-    'enrich_profiles': 'enrich',
-    'search_keyword': 'computer*|cs',
-    'page_size': '100',
-    'student_status': 'current',
-    'sort_by': 'recently-matriculated',
-    'resolve_numeric_id': 'false',
+    "next_page": null,
+    "students": [
+        {
+            "profile": null,
+            "profile_url": "https://www.linkedin.com/in/minghowlogic"
+        },
+        {
+            "profile": null,
+            "profile_url": "https://www.linkedin.com/in/zhengpingzhou"
+        }
+    ]
 }</code></pre>
 
               </div>
@@ -517,7 +561,7 @@ curl \
                     <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                   </div>
         
-                  <pre>
+                  <pre style="max-height: 128px;">
   <code class="language-python">
 curl \
   -G \
@@ -557,8 +601,79 @@ curl \
                   Output
                 </span>
 
-                <img class="img img-fluid mb-5 rounded" alt="illustration" src="Illustration_landscape_placement.png">
-          
+                <div class="card shadow shadow-light-lg mb-5">
+
+                  <div class="card-body">
+  
+                    <div class="row align-items-center justify-content-center mb-4 pb-6 border-bottom">
+  
+                      <div class="col-3">
+                        <div class="avatar avatar-xxl">
+                          <img class="avatar-img" src="assets/img/Misc/NUS logo.jpeg" alt="School profile picture">
+                        </div>
+                      </div>
+  
+                      <div class="col-9">
+                        <h2 class="font-weight-bold mb-0">
+                          National University of Singapore
+                        </h2>
+                        <p class="text-gray-700 mb-0">
+                          Higher Education
+                        </p>
+                      </div>
+  
+                    </div>
+  
+                    <div class="row text-center">
+  
+                      <div class="col-4">
+                        <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m22,7v10c0,1.10455-.89545,2-2,2H4c-1.10455,0-2-.89545-2-2V7c0-1.10461.89545-2,2-2h16c1.10455,0,2,.89539,2,2Z" fill="#93c5fd"/><path d="m20,4.5H4c-1.37891,0-2.5,1.12109-2.5,2.5v10c0,1.37891,1.12109,2.5,2.5,2.5h16c1.37891,0,2.5-1.12109,2.5-2.5V7c0-1.37891-1.12109-2.5-2.5-2.5Zm1.5,12.5c0,.82715-.67285,1.5-1.5,1.5H4c-.82715,0-1.5-.67285-1.5-1.5V7c0-.82715.67285-1.5,1.5-1.5h16c.82715,0,1.5.67285,1.5,1.5v10Zm-3-5c0,.27637-.22363.5-.5.5H6c-.27637,0-.5-.22363-.5-.5s.22363-.5.5-.5h12c.27637,0,.5.22363.5.5Zm-13-3c0-.27637.22363-.5.5-.5h2c.27637,0,.5.22363.5.5s-.22363.5-.5.5h-2c-.27637,0-.5-.22363-.5-.5Zm9,6c0,.27637-.22363.5-.5.5H6c-.27637,0-.5-.22363-.5-.5s.22363-.5.5-.5h8c.27637,0,.5.22363.5.5Z" fill="#1e40af"/></svg>
+                        <p class="small text-truncate font-weight-bold mt-1">
+                          Name
+                        </p>
+                      </div>
+  
+                      <div class="col-4">
+                        <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m22,12c0,5.52285-4.47715,10-10,10S2,17.52285,2,12,6.47715,2,12,2s10,4.47715,10,10Z" fill="#93c5fd"/><path d="m12,1.5C6.20996,1.5,1.5,6.20996,1.5,12s4.70996,10.5,10.5,10.5,10.5-4.70996,10.5-10.5S17.79004,1.5,12,1.5Zm8.36353,6h-3.38263c-.4693-1.93091-1.23291-3.52252-2.19037-4.58026,2.40076.73932,4.39825,2.40576,5.573,4.58026Zm-3.86353,4.5c0,1.22925-.1203,2.41016-.33228,3.5H7.83234c-.21198-1.08984-.33234-2.27075-.33234-3.5s.12036-2.41016.33234-3.5h8.33539c.21198,1.08984.33228,2.27075.33228,3.5ZM12,2.5c1.67426,0,3.16962,2.04968,3.9433,5h-7.8866c.77368-2.95032,2.26904-5,3.9433-5Zm-2.79053.41974c-.95746,1.05774-1.72107,2.64935-2.19037,4.58026h-3.38263c1.17474-2.1745,3.17224-3.84094,5.573-4.58026ZM2.5,12c0-1.23657.24469-2.41541.67651-3.5h3.63165c-.19641,1.0918-.30817,2.26514-.30817,3.5s.11176,2.4082.30817,3.5h-3.63165c-.43182-1.08459-.67651-2.26343-.67651-3.5Zm1.13647,4.5h3.38263c.4693,1.93091,1.23291,3.52246,2.19037,4.58032-2.40076-.73938-4.39825-2.40576-5.573-4.58032Zm8.36353,5c-1.67426,0-3.16962-2.04968-3.9433-5h7.8866c-.77368,2.95032-2.26904,5-3.9433,5Zm2.79053-.41968c.95746-1.05786,1.72107-2.64941,2.19037-4.58032h3.38263c-1.17474,2.17456-3.17224,3.84094-5.573,4.58032Zm2.40131-5.58032c.19641-1.0918.30817-2.26514.30817-3.5s-.11176-2.4082-.30817-3.5h3.63165c.43182,1.08459.67651,2.26343.67651,3.5s-.24469,2.41541-.67651,3.5h-3.63165Z" fill="#1e40af"/></svg>
+                        <p class="small font-weight-bold mt-1">
+                          Website
+                        </p>
+                      </div>
+  
+                      <div class="col-4">
+                        <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m20,3h-2c-.55231,0-1,.44769-1,1v7h-4v-2l-5,2v-2l-3.7428,1.49707c-.75928.30377-1.2572,1.03918-1.2572,1.85699v6.64594c0,1.10455.89545,2,2,2h14c1.10455,0,2-.89545,2-2V4c0-.55231-.44769-1-1-1Z" fill="#93c5fd"/><path d="m20,2.5h-2c-.82715,0-1.5.67285-1.5,1.5v6.5h-3v-1.5c0-.16602-.08203-.3208-.21973-.41406-.13672-.09277-.3125-.1123-.46582-.05029l-4.31445,1.72607v-1.26172c0-.16602-.08203-.3208-.21973-.41406-.13672-.09277-.31348-.1123-.46582-.05029l-3.74316,1.49707c-.95508.38232-1.57129,1.29346-1.57129,2.32129v6.646c0,1.37891,1.12109,2.5,2.5,2.5h14c1.37891,0,2.5-1.12109,2.5-2.5V4c0-.82715-.67285-1.5-1.5-1.5Zm.5,16.5c0,.82715-.67285,1.5-1.5,1.5H5c-.82715,0-1.5-.67285-1.5-1.5v-6.646c0-.6167.37012-1.16357.94238-1.39258l3.05762-1.22314v1.26172c0,.16602.08203.3208.21973.41406.13672.09277.31152.11133.46582.05029l4.31445-1.72607v1.26172c0,.27637.22363.5.5.5h4c.27637,0,.5-.22363.5-.5v-3.5h3v11.5Zm0-12.5h-3v-2.5c0-.27588.22461-.5.5-.5h2c.27539,0,.5.22412.5.5v2.5Zm-11.5,8.5h-4v-2h4v2Zm0,2h-4v2h4v-2Zm6-4h-4v2h4v-2Zm0,4h-4v2h4v-2Zm4-4h-2v2h2v-2Zm0,4h-2v2h2v-2Z" fill="#1e40af"/></svg>
+                        <p class="small text-truncate font-weight-bold mt-1">
+                          Industry
+                        </p>
+                      </div>
+  
+                      <div class="col-4">
+                        <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m12,2c-4.41827,0-8,3.58173-8,8,0,4.90283,2.77008,9.38501,7.1554,11.57764l.8446.42236.8446-.42236c4.38531-2.19263,7.1554-6.6748,7.1554-11.57764,0-4.41827-3.58173-8-8-8Zm0,11c-1.6568,0-3-1.34326-3-3,0-1.65698,1.3432-3,3-3s3,1.34302,3,3c0,1.65674-1.34314,3-3,3Z" fill="#93c5fd"/><path d="m12,6.5c-1.92969,0-3.5,1.57031-3.5,3.5s1.57031,3.5,3.5,3.5,3.5-1.57031,3.5-3.5-1.57031-3.5-3.5-3.5Zm0,6c-1.37891,0-2.5-1.12109-2.5-2.5s1.12109-2.5,2.5-2.5,2.5,1.12109,2.5,2.5-1.12109,2.5-2.5,2.5Zm0-11C7.31348,1.5,3.5,5.31348,3.5,10c0,5.12402,2.84766,9.73242,7.43164,12.02539l.84473.42188c.07031.03516.14746.05273.22363.05273s.15332-.01758.22363-.05273l.84473-.42188c4.58398-2.29297,7.43164-6.90137,7.43164-12.02539,0-4.68652-3.81348-8.5-8.5-8.5Zm.62109,19.63086l-.62109.31055-.62109-.31055c-4.24316-2.12207-6.87891-6.3877-6.87891-11.13086,0-4.13574,3.36426-7.5,7.5-7.5s7.5,3.36426,7.5,7.5c0,4.74316-2.63574,9.00879-6.87891,11.13086Z" fill="#1e40af"/></svg>
+                        <p class="small font-weight-bold mt-1 mb-0">
+                          HQ
+                        </p>
+                      </div>
+  
+                      <div class="col-4">
+                        <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m21,4v12s-3,1-5,1c-3,0-5-2-8-2s-5,1-5,1V4s2-1,5-1,5,2,8,2c2,0,5-1,5-1Z" fill="#93c5fd"/><path d="m21.29248,3.59473c-.13135-.0957-.29834-.11914-.45068-.06934-.0293.00977-2.94727.97461-4.8418.97461-1.40381,0-2.57471-.46875-3.81445-.96387-1.27295-.50977-2.58936-1.03613-4.18555-1.03613-2.05603,0-3.63757.44568-4.5.75757v-1.25757c0-.27637-.22363-.5-.5-.5s-.5.22363-.5.5v20c0,.27637.22363.5.5.5s.5-.22363.5-.5v-5.67163c.61719-.25159,2.26837-.82837,4.5-.82837,1.40381,0,2.57471.46875,3.81445.96387,1.27295.50977,2.58936,1.03613,4.18555,1.03613,2.05762,0,5.03271-.9834,5.1582-1.02539.2041-.06836.3418-.25977.3418-.47461V4c0-.16113-.07715-.31152-.20752-.40527Zm-.79248,12.03906c-.82959.25293-2.98975.86621-4.5.86621-1.40381,0-2.57471-.46875-3.81445-.96387-1.27295-.50977-2.58936-1.03613-4.18555-1.03613-2.05603,0-3.63757.44568-4.5.75757V4.32837c.61719-.25159,2.26837-.82837,4.5-.82837,1.40381,0,2.57471.46875,3.81445.96387,1.27295.50977,2.58936,1.03613,4.18555,1.03613,1.49854,0,3.4834-.52148,4.5-.82129v10.95508Z" fill="#1e40af"/></svg>
+                        <p class="small font-weight-bold mt-1 mb-0">
+                          Founded
+                        </p>
+                      </div>
+  
+                      <div class="col-4">
+                        <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m7,5c0,1.10457-.89543,2-2,2s-2-.89543-2-2,.89543-2,2-2,2,.89543,2,2Zm-2,5c-1.10457,0-2,.89543-2,2s.89543,2,2,2,2-.89543,2-2-.89543-2-2-2Zm0,7c-1.10457,0-2,.89543-2,2s.89543,2,2,2,2-.89543,2-2-.89543-2-2-2Z" fill="#93c5fd"/><path d="m10.5,5c0-.27637.22363-.5.5-.5h10c.27637,0,.5.22363.5.5s-.22363.5-.5.5h-10c-.27637,0-.5-.22363-.5-.5Zm10.5,6.5h-10c-.27637,0-.5.22363-.5.5s.22363.5.5.5h10c.27637,0,.5-.22363.5-.5s-.22363-.5-.5-.5Zm0,7h-10c-.27637,0-.5.22363-.5.5s.22363.5.5.5h10c.27637,0,.5-.22363.5-.5s-.22363-.5-.5-.5ZM7.5,5c0,1.37891-1.12158,2.5-2.5,2.5s-2.5-1.12109-2.5-2.5,1.12158-2.5,2.5-2.5,2.5,1.12109,2.5,2.5Zm-1,0c0-.82715-.67285-1.5-1.5-1.5s-1.5.67285-1.5,1.5.67285,1.5,1.5,1.5,1.5-.67285,1.5-1.5Zm1,7c0,1.37891-1.12158,2.5-2.5,2.5s-2.5-1.12109-2.5-2.5,1.12158-2.5,2.5-2.5,2.5,1.12109,2.5,2.5Zm-1,0c0-.82715-.67285-1.5-1.5-1.5s-1.5.67285-1.5,1.5.67285,1.5,1.5,1.5,1.5-.67285,1.5-1.5Zm1,7c0,1.37891-1.12158,2.5-2.5,2.5s-2.5-1.12109-2.5-2.5,1.12158-2.5,2.5-2.5,2.5,1.12109,2.5,2.5Zm-1,0c0-.82715-.67285-1.5-1.5-1.5s-1.5.67285-1.5,1.5.67285,1.5,1.5,1.5,1.5-.67285,1.5-1.5Z" fill="#1e40af"/></svg>
+                        <p class="small text-truncate font-weight-bold mt-1 mb-0">
+                          Description
+                        </p>
+                      </div>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+
                 <!-- Code block -->
                 <div class="highlight-block text-left">
           
@@ -569,11 +684,97 @@ curl \
                     <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                   </div>
           
-                  <pre>
+                  <pre style="max-height: 256px;">
   <code class="language-python">                        
 {
-    'url': 'https://www.linkedin.com/school/national-university-of-singapore',
-    'use_cache': 'if-present',
+    "affiliated_companies": [],
+    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/national-university-of-singapore/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=0004d7f56a0400b0000000001%2F20230119%2Fus-west-000%2Fs3%2Faws4_request\u0026X-Amz-Date=20230119T071304Z\u0026X-Amz-Expires=3600\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=551f456b6156e4610bc3e7be43e2f9b0e4b071db5f41f56cc0e408fc1b5a1140",
+    "company_size": [
+        5001,
+        10000
+    ],
+    "company_size_on_linkedin": 16084,
+    "company_type": "EDUCATIONAL_INSTITUTION",
+    "description": "At NUS, we are shaping the future through our people and our pursuit of new frontiers in knowledge. In a single century, we have become a university of global influence and an Asian thought leader. Our location at the crossroads of Asia informs our mission and gives us a tremendous vantage point to help create opportunities and address the pressing issues facing Singapore, Asia and the world.\r\rAt NUS, we believe in education, research and service that change lives.",
+    "follower_count": 539321,
+    "founded_year": 1905,
+    "hq": {
+        "city": "Singapore",
+        "country": "SG",
+        "is_hq": true,
+        "line_1": "21 Lower Kent Ridge Road, Singapore",
+        "postal_code": "119077",
+        "state": null
+    },
+    "industry": "Higher Education",
+    "linkedin_internal_id": "5524",
+    "locations": [
+        {
+            "city": "Singapore",
+            "country": "SG",
+            "is_hq": true,
+            "line_1": "21 Lower Kent Ridge Road, Singapore",
+            "postal_code": "119077",
+            "state": null
+        }
+    ],
+    "name": "National University of Singapore",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/national-university-of-singapore/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=0004d7f56a0400b0000000001%2F20230119%2Fus-west-000%2Fs3%2Faws4_request\u0026X-Amz-Date=20230119T071304Z\u0026X-Amz-Expires=3600\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=a66e032f168972bef4ea3821705194ea1c144415a1655bdb328f961ed30e2a24",
+    "search_id": "5524",
+    "similar_companies": [
+        {
+            "industry": "Higher Education",
+            "link": "https://www.linkedin.com/school/nus-business-school/",
+            "location": null,
+            "name": "NUS Business School"
+        },
+        {
+            "industry": "Higher Education",
+            "link": "https://www.linkedin.com/school/nusfass/",
+            "location": null,
+            "name": "NUS Faculty of Arts and Social Sciences"
+        },
+        {
+            "industry": "Research",
+            "link": "https://www.linkedin.com/company/solar-energy-research-institute-of-singapore-seris",
+            "location": null,
+            "name": "Solar Energy Research Institute of Singapore"
+        },
+        {
+            "industry": "Higher Education",
+            "link": "https://www.linkedin.com/school/duke-nus/",
+            "location": null,
+            "name": "Duke-NUS Medical School"
+        },
+        {
+            "industry": "Professional Training \u0026 Coaching",
+            "link": "https://www.linkedin.com/company/iss_nus",
+            "location": null,
+            "name": "NUS-ISS"
+        },
+        {
+            "industry": "Higher Education",
+            "link": "https://www.linkedin.com/company/nusfst",
+            "location": null,
+            "name": "NUS Department of Food Science and Technology"
+        },
+        {
+            "industry": "Education Management",
+            "link": "https://www.linkedin.com/company/centre-for-future-ready-graduates",
+            "location": null,
+            "name": "NUS Centre for Future-ready Graduates"
+        }
+    ],
+    "specialities": [
+        "education",
+        "research",
+        "broad-based curriculum",
+        "cross-faculty enrichment"
+    ],
+    "tagline": null,
+    "universal_name_id": "national-university-of-singapore",
+    "updates": [],
+    "website": "http://nus.edu.sg"
 }</code></pre>
           
                 </div>
@@ -645,7 +846,7 @@ curl \
 
     <!-- PRICING
     ================================================== -->
-    <section class="mt-n8 mt-md-n14 mb-12 border-bottom pb-14">
+    <section class="mt-n8 mt-md-n14 border-bottom pb-14">
       <div class="container">
 
         <div class="row">
