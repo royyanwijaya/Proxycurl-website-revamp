@@ -351,7 +351,7 @@
     <section class="pt-8 pt-md-12 pb-10 pb-md-12 bg-light border-bottom">
 
       <div class="container">
-        <div class="row justify-content-center mb-13">
+        <div class="row justify-content-center">
 
           <div class="col-12 col-md-8 col-lg-10">
 
@@ -363,71 +363,8 @@
               Search for people in LinkDB using 46 data attributes with regular expressions
             </p>
 
-          </div>
-          
-        </div>
-      </div>
-        
-      <div class="container-fluid">    
-        <div class="row justify-content-between px-15">
-    
-          <div class="col-12 col-md-5" data-aos="fade-up">
-    
-                <!-- Code block -->
-                <div class="highlight-block text-left mt-n2 mb-3">
-    
-                  <!-- Controls -->
-                  <div class="d-flex">
-                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  </div>
-    
-                  <pre style="max-height: 256px;">
-                                      <code class="language-python">
-curl \
-    -G \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    'https://nubela.co/proxycurl/api/linkedin/company/employees/' \
-    --data-urlencode 'url=https://www.linkedin.com/company/apple' \
-    --data-urlencode 'country=us' \
-    --data-urlencode 'enrich_profiles=enrich' \
-    --data-urlencode 'role_search=(co)?-?founder' \
-    --data-urlencode 'page_size=100' \
-    --data-urlencode 'employment_status=current' \
-    --data-urlencode 'sort_by=recently-joined' \
-    --data-urlencode 'resolve_numeric_id=false'
-                                  </code></pre>
-    
-                </div>
-          </div>
-    
-    
-          <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-12" data-aos="fade-up" data-aos-delay="100">
-            <h1 class="display-3 mb-0">
-              <i class="fe fe-arrow-right"></i>
-            </h1>
-          </div>
-    
-          <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4" data-aos="fade-up" data-aos-delay="100">
-            <h1 class="display-3 mb-0">
-              <i class="fe fe-arrow-down"></i>
-            </h1>
-          </div>
-    
-    
-          <div class="col-12 col-md-6 mt-n13 ml-n10" data-aos="fade-up" data-aos-delay="200">
+            <img class="img img-fluid rounded mb-4" alt="Database illustration" src="assets/img/illustrations/Database of people.png">
 
-            <img class="w-100" alt="Database illustration" src="assets/img/illustrations/Database of people.png">
-
-
-          </div>
-    
-        </div>
-      </div> 
-
-
-      <div class="container">
             <div class="text-center mt-6">
               <button class="btn btn-primary lift mr-md-4 mr-2">
                 Get Trial API Key
@@ -439,6 +376,9 @@ curl \
             </div>
             
           </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- container heading--> 
 
     </section>
 
