@@ -321,7 +321,7 @@
 
      <!-- Welcome
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-10 pb-md-15">
+    <section class="pt-8 pt-md-11 pb-10 pb-md-12">
 
       <div class="container-fluid px-md-15">
 
@@ -376,14 +376,19 @@
                     Our subscription plans are for businesses with predictable use of credits. Credits purchased via subscription are priced at a lower rate, but they expire at the end of every billing cycle. The best pricing requires commitment and volume.
                   </p>
 
+                  <p class="text-gray-700">
+                    All prices are in USD with applicable taxes added at checkout.
+                  </p>
+
                   <div class="d-flex mb-7 mb-md-9">
 
                     <span class="text-opacity-80">
                       Annual
                     </span>
 
-                    <div class="form-check form-switch mx-3">
-                      <input class="custom-control-input" type="checkbox" id="billingSwitch" data-toggle="price" data-target=".price">
+                    <div class="custom-control custom-switch mx-3">
+                      <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price" data-target=".price">
+                      <label class="custom-control-label" for="billingSwitch"></label>
                     </div>
 
                     <span class="text-opacity-80">
@@ -397,48 +402,19 @@
 
               <div class="table-responsive">
                 <table class="table table-hover">
+
                   <tbody>
+
                     <tr>
                       <td class="font-weight-bold">
-                        1000 Credits
+                        <span class="price mb-0" data-annual="30000" data-monthly="2500">30000 + <span class="text-info">5000</span></span>
+                        credits
                       </td>
                       <td class="text-gray-700">
-                        0.049/credit
+                        0.020/credit
                       </td>
                       <td class="font-weight-bold">
-                        $49
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary-soft btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="font-weight-bold">
-                        7500 Credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.04/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $299
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary-soft btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="font-weight-bold">
-                        29966 Credits
-                      </td>
-                      <td>
-                        0.3/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $899
+                        $<span class="price mb-0" data-annual="490" data-monthly="49">490</span>
                       </td>
                       <td class="font-weight-bold">
                         <button class="btn btn-primary btn-sm w-100">
@@ -446,334 +422,181 @@
                         </button>
                       </td>
                     </tr>
+
                     <tr>
                       <td class="font-weight-bold">
-                        95000 credits
+                        <span class="price mb-0" data-annual="300000" data-monthly="25000">300000 + <span class="text-info">50000</span></span>
+                        credits
+                      </td>
+                      <td class="text-gray-700">
+                        0.012/credit
+                      </td>
+                      <td class="font-weight-bold">
+                        $<span class="price mb-0" data-annual="2990" data-monthly="299">2990</span>
+                      </td>
+                      <td class="font-weight-bold">
+                        <button class="btn btn-primary btn-sm w-100">
+                          Start now
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="font-weight-bold">
+                        <span class="price mb-0" data-annual="1078800" data-monthly="89900">1078800 + <span class="text-info">179800</span></span>
+                        credits
+                      </td>
+                      <td class="text-gray-700">
+                        0.010/credit
+                      </td>
+                      <td class="font-weight-bold">
+                        $<span class="price mb-0" data-annual="8990" data-monthly="899">8990</span>
+                      </td>
+                      <td class="font-weight-bold">
+                        <button class="btn btn-primary btn-sm w-100">
+                          Start now
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="font-weight-bold">
+                        <span class="price mb-0" data-annual="2532000" data-monthly="211000">2532000 + <span class="text-info">422000</span></span>
+                        credits
+                      </td>
+                      <td class="text-gray-700">
+                        0.009/credit
+                      </td>
+                      <td class="font-weight-bold">
+                        $<span class="price mb-0" data-annual="18990" data-monthly="1899">18990</span>
+                      </td>
+                      <td class="font-weight-bold">
+                        <button class="btn btn-primary btn-sm w-100">
+                          Start now
+                        </button>
+                      </td>
+                    </tr>
+
+                  </tbody>
+
+                </table>
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="nav-payasyougo" role="tabpanel" aria-labelledby="nav-payasyougo-tab">
+              
+              <div class="row align-items-center">
+
+                <div class="col-12 col-md-8">
+                  <h2 class="display-3 mt-6 mt-md-8 font-weight-bold">
+                    Pay-as-you-go
+                  </h2>
+    
+                  <p class="text-gray-700">
+                    Our Pay-as-you-go credits are perfect for casual API users because they do not expire and cost more.
+                  </p>
+
+                  <p class="text-gray-700 mb-7 mb-md-9">
+                    All prices are in USD with applicable taxes added at checkout.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover">
+
+                  <tbody>
+
+                    <tr>
+                      <td class="font-weight-bold">
+                        100 credits
+                      </td>
+                      <td class="text-gray-700">
+                        0.10/credit
+                      </td>
+                      <td class="font-weight-bold">
+                        $10
+                      </td>
+                      <td class="font-weight-bold">
+                        <button class="btn btn-primary btn-sm w-100">
+                          Start now
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="font-weight-bold">
+                        1000 credits
+                      </td>
+                      <td class="text-gray-700">
+                        0.05/credit
+                      </td>
+                      <td class="font-weight-bold">
+                        $50
+                      </td>
+                      <td class="font-weight-bold">
+                        <button class="btn btn-primary btn-sm w-100">
+                          Start now
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="font-weight-bold">
+                        4546 credits
+                      </td>
+                      <td class="text-gray-700">
+                        0.022/credit
+                      </td>
+                      <td class="font-weight-bold">
+                        $100
+                      </td>
+                      <td class="font-weight-bold">
+                        <button class="btn btn-primary btn-sm w-100">
+                          Start now
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="font-weight-bold">
+                        25000 credits
                       </td>
                       <td class="text-gray-700">
                         0.02/credit
                       </td>
                       <td class="font-weight-bold">
-                        $1899
+                        $500
                       </td>
                       <td class="font-weight-bold">
-                        <button class="btn btn-primary-soft btn-sm w-100">
+                        <button class="btn btn-primary btn-sm w-100">
                           Start now
                         </button>
                       </td>
                     </tr>
+
+                    <tr>
+                      <td class="font-weight-bold">
+                        55556 credits
+                      </td>
+                      <td class="text-gray-700">
+                        0.018/credit
+                      </td>
+                      <td class="font-weight-bold">
+                        $1000
+                      </td>
+                      <td class="font-weight-bold">
+                        <button class="btn btn-primary btn-sm w-100">
+                          Start now
+                        </button>
+                      </td>
+                    </tr>
+
                   </tbody>
+
                 </table>
-              </div>
-
-              <div class="row">
-
-                <div class="col-12 col-md-4">
-
-                  <!-- Card -->
-                  <div class="card shadow-lg mb-6 mb-md-0">
-                    <div class="card-body">
-      
-                      <!-- Preheading -->
-                      <div class="text-center mb-3">
-                        <span class="badge rounded-pill bg-primary-soft">
-                          <span class="h6 text-uppercase">Basic</span>
-                        </span>
-                      </div>
-      
-                      <!-- Price -->
-                      <div class="d-flex justify-content-center">
-                        <span class="h2 mb-0 mt-2">$</span>
-                        <span class="price display-2 mb-0" data-annual="0" data-monthly="0">0</span>
-                        <span class="h2 align-self-end mb-1">/mo</span>
-                      </div>
-      
-                      <!-- Text -->
-                      <p class="text-center text-muted mb-5">
-                        per seat
-                      </p>
-      
-                      <!-- List -->
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          Rich landing pages
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p class="mb-5">
-                          100+ components
-                        </p>
-      
-                      </div>
-      
-                      <!-- Button -->
-                      <a href="#!" class="btn w-100 btn-primary-soft">
-                        Start for free <i class="fe fe-arrow-right ms-3"></i>
-                      </a>
-      
-                    </div>
-                  </div>
-      
-                </div>
-
-                <div class="col-12 col-md-4">
-      
-                  <!-- Card -->
-                  <div class="card shadow-lg mb-6 mb-md-0">
-                    <div class="card-body">
-      
-                      <!-- Preheading -->
-                      <div class="text-center mb-3">
-                        <span class="badge rounded-pill bg-primary-soft">
-                          <span class="h6 text-uppercase">Standard</span>
-                        </span>
-                      </div>
-      
-                      <!-- Price -->
-                      <div class="d-flex justify-content-center">
-                        <span class="h2 mb-0 mt-2">$</span>
-                        <span class="price display-2 mb-0" data-annual="29" data-monthly="49">29</span>
-                        <span class="h2 align-self-end mb-1">/mo</span>
-                      </div>
-      
-                      <!-- Text -->
-                      <p class="text-center text-muted mb-5">
-                        per seat
-                      </p>
-      
-                      <!-- List -->
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          Rich landing pages
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          100+ components
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          Flexible licensing
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          Speedy build tooling
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p class="mb-5">
-                          6 months free support
-                        </p>
-      
-                      </div>
-      
-                      <!-- Button -->
-                      <a href="#!" class="btn w-100 btn-primary">
-                        Start with Standard <i class="fe fe-arrow-right ms-3"></i>
-                      </a>
-      
-                    </div>
-                  </div>
-      
-                </div>
-
-                <div class="col-12 col-md-4">
-      
-                  <!-- Card -->
-                  <div class="card shadow-lg mb-md-0">
-                    <div class="card-body">
-      
-                      <!-- Preheading -->
-                      <div class="text-center mb-3">
-                        <span class="badge rounded-pill bg-primary-soft">
-                          <span class="h6 text-uppercase">Premium</span>
-                        </span>
-                      </div>
-      
-                      <!-- Price -->
-                      <div class="d-flex justify-content-center">
-                        <span class="h2 mb-0 mt-2">$</span>
-                        <span class="price display-2 mb-0" data-annual="49" data-monthly="69">49</span>
-                        <span class="h2 align-self-end mb-1">/mo</span>
-                      </div>
-      
-                      <!-- Text -->
-                      <p class="text-center text-muted mb-5">
-                        per seat
-                      </p>
-      
-                      <!-- List -->
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          Rich landing pages
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          100+ components
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          Flexible licensing
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          Speedy build tooling
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          6 months free support
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          256-bit encryption
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p>
-                          Guaranteed 100% uptime
-                        </p>
-      
-                      </div>
-                      <div class="d-flex">
-      
-                        <!-- Badge -->
-                        <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                          <i class="fe fe-check"></i>
-                        </div>
-      
-                        <!-- Text -->
-                        <p class="mb-5">
-                          Unlimited users
-                        </p>
-      
-                      </div>
-      
-                      <!-- Button -->
-                      <a href="#!" class="btn w-100 btn-primary-soft">
-                        Start with Premium <i class="fe fe-arrow-right ms-3"></i>
-                      </a>
-      
-                    </div>
-                  </div>
-      
-                </div>
-
               </div>
 
             </div>
@@ -791,317 +614,6 @@
       <div class="shape shape-bottom shape-fluid-x text-light">
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
     </div>
-
-    <!-- PRICING -->
-    <section class="mt-n8 mt-md-n14">
-      <div class="container">
-        <div class="row gx-4">
-          <div class="col-12 col-md-4">
-
-            <!-- Card -->
-            <div class="card shadow-lg mb-6 mb-md-0">
-              <div class="card-body">
-
-                <!-- Preheading -->
-                <div class="text-center mb-3">
-                  <span class="badge rounded-pill bg-primary-soft">
-                    <span class="h6 text-uppercase">Basic</span>
-                  </span>
-                </div>
-
-                <!-- Price -->
-                <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0" data-annual="0" data-monthly="0">0</span>
-                  <span class="h2 align-self-end mb-1">/mo</span>
-                </div>
-
-                <!-- Text -->
-                <p class="text-center text-muted mb-5">
-                  per seat
-                </p>
-
-                <!-- List -->
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Rich landing pages
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="mb-5">
-                    100+ components
-                  </p>
-
-                </div>
-
-                <!-- Button -->
-                <a href="#!" class="btn w-100 btn-primary-soft">
-                  Start for free <i class="fe fe-arrow-right ms-3"></i>
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-          <div class="col-12 col-md-4">
-
-            <!-- Card -->
-            <div class="card shadow-lg mb-6 mb-md-0">
-              <div class="card-body">
-
-                <!-- Preheading -->
-                <div class="text-center mb-3">
-                  <span class="badge rounded-pill bg-primary-soft">
-                    <span class="h6 text-uppercase">Standard</span>
-                  </span>
-                </div>
-
-                <!-- Price -->
-                <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0" data-annual="29" data-monthly="49">29</span>
-                  <span class="h2 align-self-end mb-1">/mo</span>
-                </div>
-
-                <!-- Text -->
-                <p class="text-center text-muted mb-5">
-                  per seat
-                </p>
-
-                <!-- List -->
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Rich landing pages
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    100+ components
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Flexible licensing
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Speedy build tooling
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="mb-5">
-                    6 months free support
-                  </p>
-
-                </div>
-
-                <!-- Button -->
-                <a href="#!" class="btn w-100 btn-primary">
-                  Start with Standard <i class="fe fe-arrow-right ms-3"></i>
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-          <div class="col-12 col-md-4">
-
-            <!-- Card -->
-            <div class="card shadow-lg mb-md-0">
-              <div class="card-body">
-
-                <!-- Preheading -->
-                <div class="text-center mb-3">
-                  <span class="badge rounded-pill bg-primary-soft">
-                    <span class="h6 text-uppercase">Premium</span>
-                  </span>
-                </div>
-
-                <!-- Price -->
-                <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0" data-annual="49" data-monthly="69">49</span>
-                  <span class="h2 align-self-end mb-1">/mo</span>
-                </div>
-
-                <!-- Text -->
-                <p class="text-center text-muted mb-5">
-                  per seat
-                </p>
-
-                <!-- List -->
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Rich landing pages
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    100+ components
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Flexible licensing
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Speedy build tooling
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    6 months free support
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    256-bit encryption
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p>
-                    Guaranteed 100% uptime
-                  </p>
-
-                </div>
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="mb-5">
-                    Unlimited users
-                  </p>
-
-                </div>
-
-                <!-- Button -->
-                <a href="#!" class="btn w-100 btn-primary-soft">
-                  Start with Premium <i class="fe fe-arrow-right ms-3"></i>
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
 
     <section class="py-8 py-md-11 bg-white border-bottom">
       <div class="container">
@@ -1282,9 +794,7 @@
 
           <!-- Heading -->
           <div class="badge badge-pill badge-info-soft text-uppercase py-2 mb-5">
-
             LinkDB
-
           </div>
 
           <!-- Heading -->
