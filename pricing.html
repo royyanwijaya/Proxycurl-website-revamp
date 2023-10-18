@@ -321,66 +321,98 @@
 
      <!-- Welcome
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-10 pb-md-12">
+    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
 
-      <div class="container-fluid px-md-15">
-
-        <div class="row align-items-center mb-md-6 mb-4">
-
-          <div class="col-12 col-md-6">
-            <h1 class="display-1 font-weight-bold mb-2">
+      <!-- Shape -->
+      <div class="shape shape-blur-3 svg-shim text-white">
+        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)" />
+          <defs>
+            <linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse">
+              <stop stop-color="currentColor" stop-opacity=".075" />
+              <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+  
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+  
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
               Pricing Plans
             </h1>
-            <p class="text-muted lead">
-              We have pricing plans for every level of usage. 
+  
+            <!-- Text -->
+            <p class="lead text-white-80 mb-6 mb-md-4">
+              We have pricing plans for every level of usage.
+            <h6 class="text-white-80">Our Pay-as-you-go credits are perfect for casual API users
+              because they do not expire and cost more.
+              Our subscription plans are for businesses with predictable use of credits.
+              Credits purchased via subscription are priced at a lower rate,
+              but they expire at the end of every billing cycle. The best pricing requires
+              commitment and volume.</h6>
             </p>
+  
           </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+  
+    </section>
+  
+    <!-- SHAPE
+      ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+  
+    <!-- FIRST FOLD-->
+    <section class="mt-n8 mt-md-n14 pb-8 pb-md-11 border-bottom">
+      <div class="container-fluid px-md-16">
 
-          <div class="col-12 col-md-6">
-            <p class="text-muted small mb-0">
-              Our Pay-as-you-go credits are perfect for casual API users because they do not expire and cost more. Our subscription plans are for businesses with predictable use of credits. Credits purchased via subscription are priced at a lower rate, but they expire at the end of every billing cycle. The best pricing requires commitment and volume.
-            </p>
-          </div>
+        <div class="card shadow-lg card-body bg-light">
+          <div class="row align-items-center pr-md-5">
 
-        </div>
+            <!-- pricing -->
+            <div class="col-12 col-md-8 mb-8 mb-md-0 pr-md-6">
 
-        <div class="card card-body shadow-lg">
+              <!-- Nav-->
+              <nav class="pb-md-6 pb-4">
+                <div class="nav nav-pills nav-fill flex-column flex-sm-row" id="nav-tab" role="tablist">
+                 
+                  <a class="lead font-weight-bold nav-item nav-link active" id="nav-subs-tab" data-toggle="tab"
+                    href="#nav-subs" role="tab" aria-controls="nav-subs" aria-selected="false">Subscription
+                    <p class="h6">
+                      Credits expire every billing period
+                    </p>
+                  </a>
 
-          <nav>
+                  <a class="lead font-weight-bold nav-item nav-link" id="nav-payg-tab" data-toggle="tab"
+                    href="#nav-payg" role="tab" aria-controls="nav-payg" aria-selected="true">
+                    Pay-as-you-go
+                    <p class="h6">
+                      Credits do not expire
+                    </p>
+                  </a>
+                  
+                </div>
+              </nav>
+              <!-- content-->
+              <div class="tab-content" id="nav-tabContent">
 
-            <div class="nav nav-pills nav-fill flex-column flex-sm-row" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link lead active" id="nav-subscription-tab" data-toggle="tab"
-                href="#nav-subscription" role="tab" aria-controls="nav-subscription" aria-selected="true">
-                Subscription
-              </a>
-              <a class="nav-item nav-link lead" id="nav-payasyougo-tab" data-toggle="tab"
-                href="#nav-payasyougo" role="tab" aria-controls="nav-payasyougo" aria-selected="false">
-                Pay-as-you-go
-              </a>
-            </div>
+                <!-- Subscription-->
+                <div class="table-responsive tab-pane fade show active" id="nav-subs" role="tabpanel"
+                  aria-labelledby="nav-subs-tab">
 
-          </nav>
-
-          <div class="tab-content" id="nav-tabContent">
-            
-            <div class="tab-pane fade show active" id="nav-subscription" role="tabpanel" aria-labelledby="nav-subscription-tab">
-              
-              <div class="row align-items-center">
-
-                <div class="col-12 col-md-8">
-                  <h2 class="display-3 mt-6 mt-md-8 font-weight-bold">
-                    Subscription
-                  </h2>
-    
-                  <p class="text-gray-700">
-                    Our subscription plans are for businesses with predictable use of credits. Credits purchased via subscription are priced at a lower rate, but they expire at the end of every billing cycle. The best pricing requires commitment and volume.
-                  </p>
-
-                  <p class="text-gray-700">
-                    All prices are in USD with applicable taxes added at checkout.
-                  </p>
-
-                  <div class="d-flex mb-7 mb-md-9">
+                  <!-- Toggle -->
+                  <div class="d-flex justify-content-center mb-4 mb-md-6">
 
                     <span class="text-opacity-80">
                       Annual
@@ -396,224 +428,139 @@
                     </span>
       
                   </div>
+
+                  <table class="table bg-light table-hover">
+                    <tbody>
+
+                      <tr class="clickable table-secondary" onclick="window.location='#!'">
+                        <td class="col-5 font-weight-bold">
+                          <span class="price mb-0" data-annual="30000" data-monthly="2500">30000</span>
+                          credits
+                        </td>
+                        <td class="col-5 text-gray-700">0.049/credit</td>
+                        <td class="col-2 text-right pr-9 font-weight-bold">
+                          $<span class="price mb-0" data-annual="490" data-monthly="49">490</span>
+                        </td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="font-weight-bold">
+                          <span class="price mb-0" data-annual="300000" data-monthly="25000">300000</span>
+                          credits
+                        </td>
+                        <td class="text-gray-700">0.04/credit</td>
+                        <td class="text-right pr-9 font-weight-bold">
+                          $<span class="price mb-0" data-annual="2990" data-monthly="299">2900</span>
+                        </td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="font-weight-bold">
+                          <span class="price mb-0" data-annual="1078800" data-monthly="89900">1078800</span>
+                          credits
+                        </td>
+                        <td class="text-gray-700">0.3/credit</td>
+                        <td class="text-right pr-9 font-weight-bold">
+                          $<span class="price mb-0" data-annual="8990" data-monthly="899">8990</span>
+                        </td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="font-weight-bold">
+                          <span class="price mb-0" data-annual="2532000" data-monthly="211000">2532000</span>
+                          credits
+                        </td>
+                        <td class="text-gray-700">0.02/credit</td>
+                        <td class="text-right pr-9 font-weight-bold">
+                          $<span class="price mb-0" data-annual="18990" data-monthly="1899">18990</span>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+
+                <!-- PAYG-->
+                <div class="table-responsive tab-pane fade" id="nav-payg" role="tabpanel"
+                  aria-labelledby="nav-payasyougo-tab">
+
+                  <table class="table bg-light table-hover">
+                    <tbody>
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-5 font-weight-bold">100 Credits</td>
+                        <td class="col-5 text-gray-700">0.1/credit</td>
+                        <td class="col-2 text-right pr-9 font-weight-bold">$10</td>
+                      </tr>
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="font-weight-bold">600 Credits</td>
+                        <td class="text-gray-700">0.8166/credit</td>
+                        <td class="text-right font-weight-bold pr-9 font-weight-bold">$49</td>
+                      </tr>
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td>6000 Credits</td>
+                        <td class="text-gray-700">0.06/credit</td>
+                        <td class="text-right pr-9 font-weight-bold">$299</td>
+                      </tr>
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="font-weight-bold">18000 Credits</td>
+                        <td class="text-gray-700">0.5/credit</td>
+                        <td class="text-right pr-9 font-weight-bold">$899</td>
+                      </tr>
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="font-weight-bold">47475 Credits </td>
+                        <td class="text-gray-700">0.04/credit</td>
+                        <td class="text-right pr-9 font-weight-bold">$1899</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
                 </div>
 
               </div>
-
-              <div class="table-responsive">
-                <table class="table table-hover">
-
-                  <tbody>
-
-                    <tr>
-                      <td class="font-weight-bold">
-                        <span class="price mb-0" data-annual="30000" data-monthly="2500">30000 + <span class="text-info">5000</span></span>
-                        credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.020/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $<span class="price mb-0" data-annual="490" data-monthly="49">490</span>
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td class="font-weight-bold">
-                        <span class="price mb-0" data-annual="300000" data-monthly="25000">300000 + <span class="text-info">50000</span></span>
-                        credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.012/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $<span class="price mb-0" data-annual="2990" data-monthly="299">2990</span>
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td class="font-weight-bold">
-                        <span class="price mb-0" data-annual="1078800" data-monthly="89900">1078800 + <span class="text-info">179800</span></span>
-                        credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.010/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $<span class="price mb-0" data-annual="8990" data-monthly="899">8990</span>
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td class="font-weight-bold">
-                        <span class="price mb-0" data-annual="2532000" data-monthly="211000">2532000 + <span class="text-info">422000</span></span>
-                        credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.009/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $<span class="price mb-0" data-annual="18990" data-monthly="1899">18990</span>
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
-
-                  </tbody>
-
-                </table>
-              </div>
-
             </div>
 
-            <div class="tab-pane fade" id="nav-payasyougo" role="tabpanel" aria-labelledby="nav-payasyougo-tab">
-              
-              <div class="row align-items-center">
+            <!-- right card info -->
+            <div class="col-12 col-md-4 text-center py-md-9 pt-6 pb-0 shadow-light bg-white rounded border border-primary" id="nav-tabContent">
 
-                <div class="col-12 col-md-8">
-                  <h2 class="display-3 mt-6 mt-md-8 font-weight-bold">
-                    Pay-as-you-go
-                  </h2>
-    
-                  <p class="text-gray-700">
-                    Our Pay-as-you-go credits are perfect for casual API users because they do not expire and cost more.
-                  </p>
+              <div class="tab-pane fade show active" id="nav-payg" role="tabpanel" aria-labelledby="nav-payg-tab">
 
-                  <p class="text-gray-700 mb-7 mb-md-9">
-                    All prices are in USD with applicable taxes added at checkout.
-                  </p>
-                </div>
+              <span class="badge badge-pill badge-primary-soft mb-6">
+                <span class="h6 text-uppercase">Annual</span>
+              </span>
 
+              <div class="d-flex justify-content-center pb-4">
+                <span class="h2 mb-0 mt-2">$</span>
+                <span class="display-2 font-weight-bold">490</span>
+                <span class="h2 align-self-end mb-1">/year</span>
               </div>
 
-              <div class="table-responsive">
-                <table class="table table-hover">
+              <p class="mb-0 font-weight-bold">
+                30,000 credits
+              </p>
 
-                  <tbody>
+              <p class="mb-3 text-gray-700 small font-weight-bold">
+                0.049/credits
+              </p>
 
-                    <tr>
-                      <td class="font-weight-bold">
-                        100 credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.10/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $10
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
+              <p class="mb-6 small text-muted">
+                Credits expire every year
+              </p>
 
-                    <tr>
-                      <td class="font-weight-bold">
-                        1000 credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.05/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $50
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
+              <a href="#!" class="btn btn-sm btn-block btn-primary">
+                Start now
+              </a>
 
-                    <tr>
-                      <td class="font-weight-bold">
-                        4546 credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.022/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $100
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td class="font-weight-bold">
-                        25000 credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.02/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $500
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td class="font-weight-bold">
-                        55556 credits
-                      </td>
-                      <td class="text-gray-700">
-                        0.018/credit
-                      </td>
-                      <td class="font-weight-bold">
-                        $1000
-                      </td>
-                      <td class="font-weight-bold">
-                        <button class="btn btn-primary btn-sm w-100">
-                          Start now
-                        </button>
-                      </td>
-                    </tr>
-
-                  </tbody>
-
-                </table>
               </div>
 
             </div>
 
           </div>
-
         </div>
 
       </div>
-
+  
     </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x text-light">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
-    </div>
 
     <section class="py-8 py-md-11 bg-white border-bottom">
       <div class="container">
