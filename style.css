@@ -1,3 +1,9 @@
+/* Select the element you want to underline */
+.text-underline {
+  /* Set the text-decoration property to underline */
+  text-decoration: underline;
+}
+
 html {
   scroll-behavior: smooth;
 }
