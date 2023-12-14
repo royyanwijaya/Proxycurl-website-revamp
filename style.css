@@ -1,3 +1,19 @@
+.rounded-16 {
+  border-radius: 16px !important;  
+}
+
+.border-zinc-200 {
+  border: 1px solid #e4e4e7 !important;
+}
+
+.bg-zinc-100 {
+  background-color: #f4f4f5 !important;
+}
+
+.bg-yellow-50 {
+  background-color: #fefce8 !important;
+}
+
 /* Select the element you want to underline */
 .text-underline {
   /* Set the text-decoration property to underline */
