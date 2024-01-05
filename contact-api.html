@@ -65,7 +65,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
+          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
         </a>
 
         <!-- Toggler -->
@@ -86,9 +86,12 @@
 
             <!-- Products -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+              <a href="products.html" class="nav-link" id="navbarPages">
                 Products <i class="fe fe-chevron-down"></i>
               </a>
+              <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
               <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
                 <div class="row no-gutters">
                   <div class="col-12">
@@ -160,8 +163,11 @@
                         <a class="dropdown-item" href="#!">
                           Jobs API
                         </a>
-                        <a class="dropdown-item mb-5 font-weight-bold" href="#!">
+                        <a class="dropdown-item" href="#!">
                           API Documentation <i class="fe fe-arrow-right"></i>
+                        </a>
+                        <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
+                          See all products <i class="fe fe-arrow-right"></i>
                         </a>
 
                       </div>
@@ -174,58 +180,107 @@
 
             <!-- Solution -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
                 Solutions <i class="fe fe-chevron-down"></i>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
 
-              <!-- Heading -->
-              <h6 class="dropdown-header">
-                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg>
-                Solutions
-              </h6>
+                      <div class="col-12 col-lg-6">
 
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    LinkedIn Scraper API
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Crunchbase Scraper API
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Investment signals
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Accelerating Growth Startups
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Sales and Marketing Automation
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Data for HR Tech
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Clearbit Alternative
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    PeopleDataLabs Alternative
-                  </a>
-                </li>
-              </ul>
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg"> Use Cases
+                        </h6>
+
+                        <!-- List -->
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="person-profile-api.html">
+                            LinkedIn Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Crunchbase Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="data-teams-in-investment-firms.html">
+                            Investment Signals
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Accelerating Growth Startups
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="hr-tech.html">
+                            Data for HR Tech
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Automated Recruitment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="sales-and-marketing-automation.html">
+                            Sales and Marketing Automation
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Identifying Buyer Intent Data
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            CRM Data Enrichment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="clearbit-alternative.html">
+                            Clearbit Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="">
+                            People Data Labs Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright mt-4">
+                          <a class="text-primary font-weight-bold" href="use-cases.html">
+                            See all use-cases <i class="fe fe-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg> Demos
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Track Job Changes
+                        </a>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="#!">
+                          Reverse Email Lookup
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
             </li>
 
             <!-- Pricing -->
