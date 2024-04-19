@@ -334,28 +334,25 @@
               Free Reverse Email Lookup Tool
             </h1>
         
-            <p class="lead text-muted ">
+            <p class="lead text-muted mb-6">
               Reverse lookup emails and get profile data of persons, companies and more
             </p>
 
-            <form class="mt-auto">
-              <div class="row">
-                <div class="col">
-                  
-                  <!-- Input -->
-                  <input type="email" class="form-control" placeholder="Try an email">
+            <form class="text-center">
 
-                </div>
-                <div class="col-auto ml-n5">
-                  
-                  <!-- Button -->
-                  <a class="btn btn-primary" href="#possibleResults">
-                    Lookup now
-                  </a>
+              <div class="form-group">
+                <input class="form-control" id="exampleInputEmail1" type="email" placeholder="Try an email">
+              </div>
 
-                </div>
-              </div> <!-- / .row -->
-            </form> 
+              <!-- captcha sample-->
+              <div class="g-recaptcha mb-4 d-inline-block" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              style="transform-origin: 0 0;"></div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Lookup now
+              </button>
+
+            </form>
 
           </div>
 
@@ -1710,6 +1707,25 @@ curl \
       </div> <!-- / .container -->
     </footer>
 
+<script>
+
+function get_action(form) 
+{
+    var v = grecaptcha.getResponse();
+    if(v.length == 0)
+    {
+        document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+        return false;
+    }
+    else
+    {
+         document.getElementById('captcha').innerHTML="Captcha completed";
+        return true; 
+    }
+}
+
+</script>
+
     <!-- JAVASCRIPT
     ================================================== -->
     <!-- Libs JS -->
@@ -1738,6 +1754,8 @@ curl \
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
 
+    <!-- Google captcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
       
   </body>
 </html>
